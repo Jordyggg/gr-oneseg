@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg" kind="class"><name>gr::oneseg::ofdm_synchronization_1seg</name>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg_1a8b6e722068ee76d22e2d31c9f148da71" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg_1a9c6c06c9de0aba7e91efd9794ec777d0" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl" kind="class"><name>gr::oneseg::ofdm_synchronization_1seg_impl</name>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1afa98ecc7ff336af678ed5e79700992f5" kind="variable"><name>d_carriers_per_segment_2k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a88bf336bab32f2acc7e4cb93018e2790" kind="variable"><name>tmcc_carriers_size_2k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1af62045edbffbe478dfa7791207917b9c" kind="variable"><name>tmcc_carriers_2k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ab09e3e07008f50bb6d3e049d560656bd" kind="variable"><name>tmcc_carriers_size_4k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1aa69c914f394789f8f8f787927d6c8acb" kind="variable"><name>tmcc_carriers_4k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ad9ff0bdc64e82cb09920aaa13f88a57f" kind="variable"><name>tmcc_carriers_size_8k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a1e916c2ebd8665d1673aa3705f546ac2" kind="variable"><name>tmcc_carriers_8k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a303852e08357d8326fc936bac364b6a6" kind="variable"><name>ac_carriers_size_2k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1acbbb02ad941315df035070b8b240d59d" kind="variable"><name>ac_carriers_2k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1afd466d7a0c56ba392cb4de50c726aff0" kind="variable"><name>ac_carriers_size_4k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a7619811aa359afc2f19b99b3efc9fb2d" kind="variable"><name>ac_carriers_4k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1aea09fa8080076d8288219dfe02080094" kind="variable"><name>ac_carriers_size_8k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a537455db9eb711b31912b7403bff17a0" kind="variable"><name>ac_carriers_8k</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a892c55e223ad4893ab5fe372e26319cd" kind="variable"><name>d_fft_length</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1aa70b08079ea0ae6df8690d0d37d4b199" kind="variable"><name>d_cp_length</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ac3e65761e7968b4cf4c5ac1980bb316f" kind="variable"><name>d_active_carriers</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a7748d80aeecdd103f31be037a3bb417d" kind="variable"><name>d_cp_start</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a3f2799d3be5ca2e4e41c61a6e2aa19c4" kind="variable"><name>d_cp_found</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a4b2a6add64d249be0e387de17def5ed2" kind="variable"><name>d_gamma</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ae2953929f34280d127bc4c4a13266714" kind="variable"><name>d_phi</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a57a62ecfedb426a7c2c69e0cb58a6e40" kind="variable"><name>d_lambda</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ab65f302017c88d7536b0e4923fded97d" kind="variable"><name>d_peak_epsilon</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1af5b6c8f7510a5c171639ae59c031ac03" kind="variable"><name>d_derot</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a0c8b8b8b4bd68fc54cbc8d742e1b8005" kind="variable"><name>d_conj</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a8584fec53f28e2967fe5deaed7260e74" kind="variable"><name>d_norm</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a170f2c81ff003d4bb6487303ec3756f0" kind="variable"><name>d_corr</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a5c1b873e36678a1e63dc31be4663c3b7" kind="variable"><name>d_snr</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a5796080533846b4752df3409c7203439" kind="variable"><name>d_rho</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a680142b85005b474ec44d2e3242ab62a" kind="variable"><name>d_threshold_factor_rise</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a0a807a174a962a84cb19b68f02844e4f" kind="variable"><name>d_avg_alpha</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a682a441c74aabd868c1b4106c67ce671" kind="variable"><name>d_avg_max</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a5d8fc8d217046ec8c295a21149ef73d1" kind="variable"><name>d_avg_min</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1af2ea4abfc6c1576bad801347871093bc" kind="variable"><name>d_phaseinc</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a296bc375789c047491db9268afa65f33" kind="variable"><name>d_nextphaseinc</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a54fa1806aa3334e0a91c1b3ca3782d4d" kind="variable"><name>d_nextpos</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a1011e0268290d792d2f26d1c85274641" kind="variable"><name>d_phase</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a277280cb047dc3da61157b35c4d4597c" kind="variable"><name>d_initial_acquired</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a295e5d85842b668a1eaec561e130de83" kind="variable"><name>d_consumed</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a9c1bb851c730028f838e8d530c4e32eb" kind="variable"><name>d_out</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1acd63ebdf1a366934fe1ed40ec80e635f" kind="variable"><name>d_prefft_synched</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1abcab719e6c4a744e58c36bdd7aeb3aad" kind="variable"><name>d_postfft</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a1d9481927f5c17a4635a6a1b71f095f4" kind="variable"><name>d_fft_calculator</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a291c17086a982350d7306525294da898" kind="variable"><name>d_zeros_on_left</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1abb1703a1b409c90777b907477ae98e73" kind="variable"><name>d_freq_offset_max</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a35d4013784c73d52fe6bee3e1766b3b2" kind="variable"><name>d_freq_offset</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a2a6fb90ad8d25687d93fce7776ba77f9" kind="variable"><name>d_freq_offset_disagree_count</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a907229230851c6f8daaa5ced03f76fba" kind="variable"><name>d_freq_offset_candidate</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a369c2bba4046a75ee4f421cc85f571d3" kind="variable"><name>d_tmcc_carriers_size</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a26dd42c84b8643edfa54bc5b3196f54b" kind="variable"><name>d_tmcc_carriers</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a08012f50fb95a1d39b6fac794590d6e6" kind="variable"><name>d_ac_carriers_size</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a0d4a161d8b3900059dcf70e903ec74a2" kind="variable"><name>d_ac_carriers</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a6e9b64aa2740b3f16fb3aaeb2222e37d" kind="variable"><name>d_known_phase_diff_tmcc</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ab98be112629fc3a781535eac2f9ca77a" kind="variable"><name>d_known_phase_diff_ac</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1adda9d61aa1df951bac2c740084fe2304" kind="variable"><name>d_integer_freq_derotated</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1add7566fd31ed122f0ab7c960c1d64de2" kind="variable"><name>d_pilot_values</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a8080a1969114b08e929ab9d3d6b0019c" kind="variable"><name>d_sp_carriers_size</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a04884ed086f281c68e363ee866db7e54" kind="variable"><name>d_channel_gain</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a3f8fb91b0a7bd5e70d068e2790cb31d5" kind="variable"><name>d_current_symbol</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1aafb96a378bd2cd2c748167a690c633a0" kind="variable"><name>d_previous_symbol</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1adc876a16c1fa0e1e1fbf9e0730d6578b" kind="variable"><name>d_symbol_acq</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a66603fd38518cfceaee40e344556c060" kind="variable"><name>d_symbol_correct_count</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a7a112db7a40981f16b9f20d26126d308" kind="variable"><name>d_corr_sp</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1af19f3acab8259afd9c59d91b09df0d3d" kind="variable"><name>d_previous_channel_gain</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1afebf5e42c89cb3262007ccc138256870" kind="variable"><name>d_delta_channel_gains</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1abdb9a1614017c1564109caba10939619" kind="variable"><name>d_interpolated</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1aee253358eac6871437ead44000d8b578" kind="variable"><name>d_inter</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a6074531388be371ffa44729f75f0fc82" kind="variable"><name>d_samp_inc</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a5c77d1fd5d8e7b4616cde0acb2ec9a34" kind="variable"><name>d_samp_phase</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a6d14b65a7d097ac8c3fe16842cafc9ee" kind="variable"><name>d_cp_start_offset</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a8463da0e39285622c300da273249fca1" kind="variable"><name>d_alpha_freq</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ae9009f47dfc5da8efd367a185a71a7d5" kind="variable"><name>d_beta_freq</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ab1972aa6280aaa61f3cc2530e90ab4a8" kind="variable"><name>d_alpha_timing</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ad8c2fbe2e4bb8421498834268552be29" kind="variable"><name>d_beta_timing</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a2b3a4bf57312414f48cd20542bff684b" kind="variable"><name>d_freq_aux</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a8eb27f1024c89f9fb1ca90a6185c077c" kind="variable"><name>d_est_freq</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a7d19406fe25d681a1f0534421ccc069d" kind="variable"><name>d_delta_aux</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a5c98425e6417c43db9fd52227c47eb23" kind="variable"><name>d_est_delta</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a40eb2963ec0a22e35a4b21a1dc32bf5d" kind="variable"><name>d_moved_cp</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a65a5b6d52bab200c342743e61b34caec" kind="function"><name>advance_freq_loop</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a55294cbd98a436693471ad46a5c0106d" kind="function"><name>advance_delta_loop</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a19ef3e5c7ab5c4ffd3961386cd2e1a89" kind="function"><name>interpolate_input</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a3c58fb2df27fc178f969dbfa44bd15b3" kind="function"><name>estimate_fine_synchro</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a608bdcd21fa3fc8f72d12f82175672f9" kind="function"><name>send_symbol_index_and_resync</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a7e79152d21ebf6ea22dd8c3c820d04e5" kind="function"><name>linearly_estimate_channel_taps</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a968c901459fd8aa59299ad262b30fc15" kind="function"><name>calculate_channel_taps_sp</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a737d71644292e0f1b32b40d19d42b9dc" kind="function"><name>estimate_symbol_index</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ad25f578012ddd19f9559c3b627eb0fe2" kind="function"><name>tmcc_and_ac_positions</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1aaedf47d58b38f7c0e2e425a63663546b" kind="function"><name>get_pilot_value</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a269fe98a3419e4ecc93552961b3381c5" kind="function"><name>generate_prbs</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a984b85562764adc10e82a20786022bea" kind="function"><name>estimate_integer_freq_offset</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1aaadf1d6c834e45dc38b6b949fb0ae652" kind="function"><name>calculate_fft</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a5b9e2edbe5dac4e0f91c8f3a71b31033" kind="function"><name>ml_sync</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1addca21817619036ed450fd47035afc14" kind="function"><name>peak_detect_init</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a45c4b1bbe90d2056c5ca6083c18ab011" kind="function"><name>peak_detect_process</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a252a5a1fa93d13635ee3e0d63564c332" kind="function"><name>send_sync_start</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a2add4f740442f1bd97a1dc1d42b9920d" kind="function"><name>derotate</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a9ade54e53c34689fd6fc675cb3179b16" kind="function"><name>ofdm_synchronization_1seg_impl</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a804be7a84179f08307432deb8e53ed36" kind="function"><name>~ofdm_synchronization_1seg_impl</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1ab2c397404bee3eefcf54b5915f5b006c" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg__impl_1a14c4c55c349557db21d91d4865453d30" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1oneseg" kind="namespace"><name>gr::oneseg</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a22aa77d34977f6074d597568205cafe1" kind="define"><name>ONESEG_API</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="ofdm__synchronization__1seg_8h" kind="file"><name>ofdm_synchronization_1seg.h</name>
+  </compound>
+  <compound refid="ofdm__synchronization__1seg__impl_8h" kind="file"><name>ofdm_synchronization_1seg_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_9a355c674ef78837709c9b02761cd832" kind="dir"><name>oneseg</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
