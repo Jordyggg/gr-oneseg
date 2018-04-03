@@ -1,0 +1,3 @@
+In order for the receiver's full-sec code to work, the gr-isdbt project must be installed. In this application, it recovers the signal from the ISDB-Tb channel throughout the 6MHz spectrum, showing the video and audio in its different services. At the same time it performs an analysis of the signal in all services.
+
+https://github.com/git-artes/gr-isdbt
