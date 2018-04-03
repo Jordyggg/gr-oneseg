@@ -1,0 +1,39 @@
+<block>
+  <name>Bit Deinterleaver</name>
+  <key>oneseg_bit_deinterleaver</key>
+  <category>oneseg</category>
+  <import>import oneseg</import>
+  <make>oneseg.bit_deinterleaver($mode, $segments, $constellation_size)</make>
+
+  <param>
+      <name>Transmission Mode</name>
+	  <key>mode</key>
+	  <value>3</value>
+	  <type>int</type>
+
+  </param> 
+
+  <param>
+      <name>Layer Segments</name>
+      <key>segments</key>
+      <value>1</value>
+      <type>int</type>
+  </param>
+
+  <param>
+	  <name>Layer Modulation Scheme</name>
+	  <key>constellation_size</key>
+	  <value>4</value>
+	  <type>int</type>
+
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+    <vlen>($segments)*96*(2**($mode-1))</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

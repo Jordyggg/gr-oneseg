@@ -25,7 +25,16 @@ include(GrPlatform) #define LIB_SUFFIX
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND oneseg_sources
-    ofdm_synchronization_1seg_impl.cc )
+    ofdm_synchronization_1seg_impl.cc
+    tmcc_decoder_1seg_impl.cc
+    frequency_deinterleaver_1seg_impl.cc
+    time_deinterleaver_1seg_impl.cc
+    symbol_demapper_1seg_impl.cc
+    bit_deinterleaver_impl.cc
+    viterbi_decoder_impl.cc
+    byte_deinterleaver_impl.cc
+    energy_descrambler_impl.cc
+    reed_solomon_dec_isdbt_impl.cc )
 
 set(oneseg_sources "${oneseg_sources}" PARENT_SCOPE)
 if(NOT oneseg_sources)
@@ -58,6 +67,15 @@ include_directories(${CPPUNIT_INCLUDE_DIRS})
 list(APPEND test_oneseg_sources
     ${CMAKE_CURRENT_SOURCE_DIR}/test_oneseg.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_oneseg.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_reed_solomon_dec_isdbt.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_energy_descrambler.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_byte_deinterleaver.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_viterbi_decoder.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_bit_deinterleaver.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_symbol_demapper_1seg.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_time_deinterleaver_1seg.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_frequency_deinterleaver_1seg.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_tmcc_decoder_1seg.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_ofdm_synchronization_1seg.cc
     )
 

@@ -27,12 +27,30 @@
 
 #include "qa_oneseg.h"
 #include "qa_ofdm_synchronization_1seg.h"
+#include "qa_tmcc_decoder_1seg.h"
+#include "qa_frequency_deinterleaver_1seg.h"
+#include "qa_time_deinterleaver_1seg.h"
+#include "qa_symbol_demapper_1seg.h"
+#include "qa_bit_deinterleaver.h"
+#include "qa_viterbi_decoder.h"
+#include "qa_byte_deinterleaver.h"
+#include "qa_energy_descrambler.h"
+#include "qa_reed_solomon_dec_isdbt.h"
 
 CppUnit::TestSuite *
 qa_oneseg::suite()
 {
   CppUnit::TestSuite *s = new CppUnit::TestSuite("oneseg");
   s->addTest(gr::oneseg::qa_ofdm_synchronization_1seg::suite());
+  s->addTest(gr::oneseg::qa_tmcc_decoder_1seg::suite());
+  s->addTest(gr::oneseg::qa_frequency_deinterleaver_1seg::suite());
+  s->addTest(gr::oneseg::qa_time_deinterleaver_1seg::suite());
+  s->addTest(gr::oneseg::qa_symbol_demapper_1seg::suite());
+  s->addTest(gr::oneseg::qa_bit_deinterleaver::suite());
+  s->addTest(gr::oneseg::qa_viterbi_decoder::suite());
+  s->addTest(gr::oneseg::qa_byte_deinterleaver::suite());
+  s->addTest(gr::oneseg::qa_energy_descrambler::suite());
+  s->addTest(gr::oneseg::qa_reed_solomon_dec_isdbt::suite());
 
   return s;
 }

@@ -1,0 +1,34 @@
+<block>
+  <name>Viterbi Decoder</name>
+  <key>oneseg_viterbi_decoder</key>
+  <category>oneseg</category>
+  <import>import oneseg</import>
+  <make>oneseg.viterbi_decoder($constellation_size, $rate)</make>
+  <param>
+	<name>Modulation Scheme</name>
+	<key>constellation_size</key>
+	<value>4</value>
+	<type>int</type>
+
+  </param>
+  <param>
+	<name>Rate</name>
+	<key>rate</key>
+	<value>1</value>
+	<type>int</type>
+
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <optional>1</optional>
+  </source>
+</block>

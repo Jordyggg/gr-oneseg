@@ -33,6 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES "/home/jordy/gr-oneseg/grc/oneseg_ofdm_synchronization_1seg.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
+    "/home/jordy/gr-oneseg/grc/oneseg_ofdm_synchronization_1seg.xml"
+    "/home/jordy/gr-oneseg/grc/oneseg_tmcc_decoder_1seg.xml"
+    "/home/jordy/gr-oneseg/grc/oneseg_frequency_deinterleaver_1seg.xml"
+    "/home/jordy/gr-oneseg/grc/oneseg_time_deinterleaver_1seg.xml"
+    "/home/jordy/gr-oneseg/grc/oneseg_symbol_demapper_1seg.xml"
+    "/home/jordy/gr-oneseg/grc/oneseg_bit_deinterleaver.xml"
+    "/home/jordy/gr-oneseg/grc/oneseg_viterbi_decoder.xml"
+    "/home/jordy/gr-oneseg/grc/oneseg_byte_deinterleaver.xml"
+    "/home/jordy/gr-oneseg/grc/oneseg_energy_descrambler.xml"
+    "/home/jordy/gr-oneseg/grc/oneseg_reed_solomon_dec_isdbt.xml"
+    )
 endif()
 

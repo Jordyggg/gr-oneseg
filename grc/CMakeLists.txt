@@ -17,5 +17,14 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 install(FILES
-    oneseg_ofdm_synchronization_1seg.xml DESTINATION share/gnuradio/grc/blocks
+    oneseg_ofdm_synchronization_1seg.xml
+    oneseg_tmcc_decoder_1seg.xml
+    oneseg_frequency_deinterleaver_1seg.xml
+    oneseg_time_deinterleaver_1seg.xml
+    oneseg_symbol_demapper_1seg.xml
+    oneseg_bit_deinterleaver.xml
+    oneseg_viterbi_decoder.xml
+    oneseg_byte_deinterleaver.xml
+    oneseg_energy_descrambler.xml
+    oneseg_reed_solomon_dec_isdbt.xml DESTINATION share/gnuradio/grc/blocks
 )

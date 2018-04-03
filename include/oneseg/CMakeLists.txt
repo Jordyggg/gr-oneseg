@@ -22,5 +22,14 @@
 ########################################################################
 install(FILES
     api.h
-    ofdm_synchronization_1seg.h DESTINATION include/oneseg
+    ofdm_synchronization_1seg.h
+    tmcc_decoder_1seg.h
+    frequency_deinterleaver_1seg.h
+    time_deinterleaver_1seg.h
+    symbol_demapper_1seg.h
+    bit_deinterleaver.h
+    viterbi_decoder.h
+    byte_deinterleaver.h
+    energy_descrambler.h
+    reed_solomon_dec_isdbt.h DESTINATION include/oneseg
 )

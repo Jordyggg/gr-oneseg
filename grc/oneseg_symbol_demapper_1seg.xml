@@ -1,0 +1,31 @@
+<block>
+  <name>Symbol Demapper 1-Seg</name>
+  <key>oneseg_symbol_demapper_1seg</key>
+  <category>oneseg</category>
+  <import>import oneseg</import>
+  <make>oneseg.symbol_demapper_1seg($mode, $constellation_size)</make>
+  <param>
+      <name>Transmission mode</name>
+      <key>mode</key>
+      <value>3</value>
+    <type>int</type>
+
+  </param>
+  <param>
+    <name>Constellation size</name>
+    <key>constellation_size</key>
+    <value>4</value>
+    <type>int</type>
+
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>1*96*(2**($mode-1))</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <vlen>1*96*(2**($mode-1))</vlen>
+  </source>
+</block>

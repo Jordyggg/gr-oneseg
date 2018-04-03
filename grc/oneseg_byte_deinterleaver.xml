@@ -1,0 +1,16 @@
+<block>
+  <name>Byte Deinterleaver</name>
+  <key>oneseg_byte_deinterleaver</key>
+  <category>oneseg</category>
+  <import>import oneseg</import>
+  <make>oneseg.byte_deinterleaver()</make>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <vlen>204</vlen>
+  </source>
+</block>

@@ -36,6 +36,15 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/oneseg" TYPE FILE FILES
     "/home/jordy/gr-oneseg/include/oneseg/api.h"
     "/home/jordy/gr-oneseg/include/oneseg/ofdm_synchronization_1seg.h"
+    "/home/jordy/gr-oneseg/include/oneseg/tmcc_decoder_1seg.h"
+    "/home/jordy/gr-oneseg/include/oneseg/frequency_deinterleaver_1seg.h"
+    "/home/jordy/gr-oneseg/include/oneseg/time_deinterleaver_1seg.h"
+    "/home/jordy/gr-oneseg/include/oneseg/symbol_demapper_1seg.h"
+    "/home/jordy/gr-oneseg/include/oneseg/bit_deinterleaver.h"
+    "/home/jordy/gr-oneseg/include/oneseg/viterbi_decoder.h"
+    "/home/jordy/gr-oneseg/include/oneseg/byte_deinterleaver.h"
+    "/home/jordy/gr-oneseg/include/oneseg/energy_descrambler.h"
+    "/home/jordy/gr-oneseg/include/oneseg/reed_solomon_dec_isdbt.h"
     )
 endif()
 

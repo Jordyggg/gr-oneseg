@@ -1,0 +1,25 @@
+<block>
+  <name>Frequency Deinterleaver 1-Seg</name>
+  <key>oneseg_frequency_deinterleaver_1seg</key>
+  <category>oneseg</category>
+  <import>import oneseg</import>
+  <make>oneseg.frequency_deinterleaver_1seg($mode)</make>
+  <param>
+      <name>Mode</name>
+      <key>mode</key>
+      <value>3</value>
+      <type>int</type>
+
+  </param> 
+
+  <sink>
+      <name>in</name>
+      <type>complex</type>
+      <vlen>1*96*(2**($mode-1))</vlen>
+  </sink>
+  <source>
+      <name>out</name>
+      <type>complex</type>
+      <vlen>1*96*(2**($mode-1))</vlen>
+  </source>
+</block>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<block>
+  <name>TMCC Decoder 1-seg</name>
+  <key>oneseg_tmcc_decoder_1seg</key>
+  <category>oneseg</category>
+  <import>import oneseg</import>
+  <make>oneseg.tmcc_decoder_1seg($transmission_mode, $print_params)</make>
+  <param>
+    <name>Transmission Mode</name>
+    <key>transmission_mode</key>
+    <value>3</value>
+    <type>int</type>
+
+</param>
+  <param>
+      <name>Print params.</name>
+      <key>print_params</key>
+      <value>True</value>
+      <type>enum</type>
+      <option>
+          <name>Yes</name>
+          <key>True</key>
+      </option>
+      <option>
+          <name>No</name>
+          <key>False</key>
+      </option>
+  </param>
+  <sink>
+  	<name>in</name>
+	<type>complex</type>
+	<vlen>108*(2**($transmission_mode-1))</vlen>
+  </sink>
+  <source>
+  	<name>out</name>
+	<type>complex</type>
+	<vlen>96*(2**($transmission_mode-1))</vlen>
+  </source>
+</block>
