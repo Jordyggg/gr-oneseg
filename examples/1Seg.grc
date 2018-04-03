@@ -782,7 +782,11 @@
     </param>
     <param>
       <key>_coordinate</key>
+<<<<<<< HEAD
       <value>(712, 724)</value>
+=======
+      <value>(720, 724)</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     </param>
     <param>
       <key>_rotation</key>
@@ -790,7 +794,11 @@
     </param>
     <param>
       <key>id</key>
+<<<<<<< HEAD
       <value>MER_OneSeg_1</value>
+=======
+      <value>MER_OneSeg_0</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -802,7 +810,11 @@
     </param>
     <param>
       <key>Portadoras_OneSeg</key>
+<<<<<<< HEAD
       <value>96*2**(2)</value>
+=======
+      <value>96*2**(mode-1)</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     </param>
   </block>
   <block>
@@ -821,11 +833,19 @@
     </param>
     <param>
       <key>_enabled</key>
+<<<<<<< HEAD
       <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
       <value>(688, 416)</value>
+=======
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(688, 448)</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     </param>
     <param>
       <key>_rotation</key>
@@ -833,7 +853,11 @@
     </param>
     <param>
       <key>id</key>
+<<<<<<< HEAD
       <value>SYNC_DEM_OFDM_1SEG_0</value>
+=======
+      <value>SYNC_DEM_OFDM_1SEG_1</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     </param>
     <param>
       <key>guarda</key>
@@ -1244,7 +1268,11 @@
     </param>
   </block>
   <block>
+<<<<<<< HEAD
     <key>blocks_vector_to_stream</key>
+=======
+    <key>blocks_udp_sink</key>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <param>
       <key>alias</key>
       <value></value>
@@ -1258,12 +1286,29 @@
       <value></value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>_enabled</key>
       <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
       <value>(240, 716)</value>
+=======
+      <key>ipaddr</key>
+      <value>127.0.0.1</value>
+    </param>
+    <param>
+      <key>port</key>
+      <value>5005</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(1208, 976)</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     </param>
     <param>
       <key>_rotation</key>
@@ -1271,13 +1316,18 @@
     </param>
     <param>
       <key>id</key>
+<<<<<<< HEAD
       <value>blocks_vector_to_stream_0</value>
+=======
+      <value>blocks_udp_sink_0</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     </param>
     <param>
       <key>type</key>
       <value>byte</value>
     </param>
     <param>
+<<<<<<< HEAD
       <key>maxoutbuf</key>
       <value>0</value>
     </param>
@@ -1288,6 +1338,14 @@
     <param>
       <key>num_items</key>
       <value>188</value>
+=======
+      <key>psize</key>
+      <value>1472</value>
+    </param>
+    <param>
+      <key>eof</key>
+      <value>True</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     </param>
     <param>
       <key>vlen</key>
@@ -1310,6 +1368,96 @@
     </param>
     <param>
       <key>_enabled</key>
+<<<<<<< HEAD
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(712, 644)</value>
+=======
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(240, 716)</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+<<<<<<< HEAD
+      <value>blocks_vector_to_stream_0_2</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>complex</value>
+=======
+      <value>blocks_vector_to_stream_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_items</key>
+<<<<<<< HEAD
+      <value>96*2**(mode-1)</value>
+=======
+      <value>188</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+<<<<<<< HEAD
+    <key>decoder_1seg</key>
+=======
+    <key>blocks_vector_to_stream</key>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+<<<<<<< HEAD
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(248, 880)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>180</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>decoder_1seg_0</value>
+=======
       <value>1</value>
     </param>
     <param>
@@ -1327,6 +1475,7 @@
     <param>
       <key>type</key>
       <value>complex</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1337,6 +1486,26 @@
       <value>0</value>
     </param>
     <param>
+<<<<<<< HEAD
+      <key>mode</key>
+      <value>mode</value>
+    </param>
+    <param>
+      <key>mod</key>
+      <value>4</value>
+    </param>
+    <param>
+      <key>rate</key>
+      <value>rate</value>
+    </param>
+  </block>
+  <block>
+    <key>low_pass_filter</key>
+    <param>
+      <key>beta</key>
+      <value>6.76</value>
+    </param>
+=======
       <key>num_items</key>
       <value>96*2**(mode-1)</value>
     </param>
@@ -1347,6 +1516,112 @@
   </block>
   <block>
     <key>decoder_1seg</key>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+<<<<<<< HEAD
+      <key>cutoff_freq</key>
+      <value>500e3/2.0</value>
+    </param>
+    <param>
+      <key>decim</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>fir_filter_ccf</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(464, 400)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>gain</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>low_pass_filter_0</value>
+    </param>
+    <param>
+      <key>interp</key>
+      <value>1</value>
+=======
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(248, 768)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>180</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>decoder_1seg_1</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+<<<<<<< HEAD
+      <key>samp_rate</key>
+      <value>samp_rate</value>
+    </param>
+    <param>
+      <key>width</key>
+      <value>5e3</value>
+    </param>
+    <param>
+      <key>win</key>
+      <value>firdes.WIN_HAMMING</value>
+    </param>
+  </block>
+  <block>
+    <key>oneseg_frequency_deinterleaver_1seg</key>
+=======
+      <key>mode</key>
+      <value>mode</value>
+    </param>
+    <param>
+      <key>mod</key>
+      <value>4</value>
+    </param>
+    <param>
+      <key>rate</key>
+      <value>rate</value>
+    </param>
+  </block>
+  <block>
+    <key>isdbt_frequency_deinterleaver_1seg</key>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <param>
       <key>alias</key>
       <value></value>
@@ -1365,7 +1640,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(248, 880)</value>
+      <value>(912, 796)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1373,7 +1648,11 @@
     </param>
     <param>
       <key>id</key>
-      <value>decoder_1seg_0</value>
+<<<<<<< HEAD
+      <value>oneseg_frequency_deinterleaver_1seg_0</value>
+=======
+      <value>isdbt_frequency_deinterleaver_1seg_0</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1387,16 +1666,234 @@
       <key>mode</key>
       <value>mode</value>
     </param>
+  </block>
+  <block>
+<<<<<<< HEAD
+    <key>oneseg_ofdm_synchronization_1seg</key>
+=======
+    <key>isdbt_ofdm_synchronization_1seg</key>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <param>
-      <key>mod</key>
-      <value>4</value>
+      <key>alias</key>
+      <value></value>
     </param>
     <param>
-      <key>rate</key>
-      <value>rate</value>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(920, 388)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>cp_length</key>
+      <value>guard</value>
+    </param>
+    <param>
+      <key>id</key>
+<<<<<<< HEAD
+      <value>oneseg_ofdm_synchronization_1seg_0</value>
+=======
+      <value>isdbt_ofdm_synchronization_1seg_0</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>mode</key>
+      <value>mode</value>
     </param>
   </block>
   <block>
+<<<<<<< HEAD
+    <key>oneseg_symbol_demapper_1seg</key>
+=======
+    <key>isdbt_symbol_demapper_1seg</key>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>constellation_size</key>
+      <value>4</value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(416, 788)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>180</value>
+    </param>
+    <param>
+      <key>id</key>
+<<<<<<< HEAD
+      <value>oneseg_symbol_demapper_1seg_0</value>
+=======
+      <value>isdbt_symbol_demapper_1seg_0</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>mode</key>
+      <value>mode</value>
+    </param>
+  </block>
+  <block>
+<<<<<<< HEAD
+    <key>oneseg_time_deinterleaver_1seg</key>
+=======
+    <key>isdbt_time_deinterleaver_1seg</key>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(664, 788)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>180</value>
+    </param>
+    <param>
+      <key>id</key>
+<<<<<<< HEAD
+      <value>oneseg_time_deinterleaver_1seg_0</value>
+=======
+      <value>isdbt_time_deinterleaver_1seg_0</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    </param>
+    <param>
+      <key>length</key>
+      <value>time</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>mode</key>
+      <value>mode</value>
+    </param>
+  </block>
+  <block>
+<<<<<<< HEAD
+    <key>oneseg_tmcc_decoder_1seg</key>
+=======
+    <key>isdbt_tmcc_decoder_1seg</key>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+<<<<<<< HEAD
+      <value>(1192, 332)</value>
+=======
+      <value>(1192, 388)</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+<<<<<<< HEAD
+      <value>oneseg_tmcc_decoder_1seg_0</value>
+=======
+      <value>isdbt_tmcc_decoder_1seg_0</value>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>print_params</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>transmission_mode</key>
+      <value>mode</value>
+    </param>
+  </block>
+  <block>
+<<<<<<< HEAD
+=======
     <key>low_pass_filter</key>
     <param>
       <key>beta</key>
@@ -1472,237 +1969,7 @@
     </param>
   </block>
   <block>
-    <key>oneseg_frequency_deinterleaver_1seg</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(912, 796)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>oneseg_frequency_deinterleaver_1seg_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>mode</key>
-      <value>mode</value>
-    </param>
-  </block>
-  <block>
-    <key>oneseg_ofdm_synchronization_1seg</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(920, 388)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>cp_length</key>
-      <value>guard</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>oneseg_ofdm_synchronization_1seg_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>mode</key>
-      <value>mode</value>
-    </param>
-  </block>
-  <block>
-    <key>oneseg_symbol_demapper_1seg</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>constellation_size</key>
-      <value>4</value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(416, 788)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>oneseg_symbol_demapper_1seg_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>mode</key>
-      <value>mode</value>
-    </param>
-  </block>
-  <block>
-    <key>oneseg_time_deinterleaver_1seg</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(664, 788)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>oneseg_time_deinterleaver_1seg_0</value>
-    </param>
-    <param>
-      <key>length</key>
-      <value>time</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>mode</key>
-      <value>mode</value>
-    </param>
-  </block>
-  <block>
-    <key>oneseg_tmcc_decoder_1seg</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1192, 332)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>oneseg_tmcc_decoder_1seg_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>print_params</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>transmission_mode</key>
-      <value>mode</value>
-    </param>
-  </block>
-  <block>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <key>qtgui_const_sink_x</key>
     <param>
       <key>autoscale</key>
@@ -5034,25 +5301,42 @@
     </param>
   </block>
   <connection>
+<<<<<<< HEAD
     <source_block_id>MER_OneSeg_1</source_block_id>
+=======
+    <source_block_id>MER_OneSeg_0</source_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <sink_block_id>qtgui_number_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>SYNC_DEM_OFDM_1SEG_0</source_block_id>
+=======
+    <source_block_id>SYNC_DEM_OFDM_1SEG_1</source_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
     <source_key>2</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>SYNC_DEM_OFDM_1SEG_0</source_block_id>
     <sink_block_id>oneseg_ofdm_synchronization_1seg_0</sink_block_id>
+=======
+    <source_block_id>SYNC_DEM_OFDM_1SEG_1</source_block_id>
+    <sink_block_id>isdbt_ofdm_synchronization_1seg_0</sink_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>SYNC_DEM_OFDM_1SEG_0</source_block_id>
+=======
+    <source_block_id>SYNC_DEM_OFDM_1SEG_1</source_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <sink_block_id>qtgui_number_sink_0_1</sink_block_id>
     <source_key>1</source_key>
     <sink_key>0</sink_key>
@@ -5082,74 +5366,131 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>decoder_1seg_0</source_block_id>
+=======
+    <source_block_id>decoder_1seg_1</source_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <sink_block_id>qtgui_number_sink_0_0_0</sink_block_id>
     <source_key>1</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>decoder_1seg_0</source_block_id>
+=======
+    <source_block_id>decoder_1seg_1</source_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <sink_block_id>qtgui_number_sink_0_0</sink_block_id>
     <source_key>2</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>decoder_1seg_0</source_block_id>
+=======
+    <source_block_id>decoder_1seg_1</source_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <sink_block_id>blocks_vector_to_stream_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>low_pass_filter_0</source_block_id>
     <sink_block_id>SYNC_DEM_OFDM_1SEG_0</sink_block_id>
+=======
+    <source_block_id>isdbt_frequency_deinterleaver_1seg_0</source_block_id>
+    <sink_block_id>isdbt_time_deinterleaver_1seg_0</sink_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>low_pass_filter_0</source_block_id>
     <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
+=======
+    <source_block_id>isdbt_ofdm_synchronization_1seg_0</source_block_id>
+    <sink_block_id>isdbt_tmcc_decoder_1seg_0</sink_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>oneseg_frequency_deinterleaver_1seg_0</source_block_id>
     <sink_block_id>oneseg_time_deinterleaver_1seg_0</sink_block_id>
+=======
+    <source_block_id>isdbt_symbol_demapper_1seg_0</source_block_id>
+    <sink_block_id>decoder_1seg_1</sink_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>oneseg_ofdm_synchronization_1seg_0</source_block_id>
     <sink_block_id>oneseg_tmcc_decoder_1seg_0</sink_block_id>
+=======
+    <source_block_id>isdbt_time_deinterleaver_1seg_0</source_block_id>
+    <sink_block_id>MER_OneSeg_0</sink_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>oneseg_symbol_demapper_1seg_0</source_block_id>
     <sink_block_id>decoder_1seg_0</sink_block_id>
+=======
+    <source_block_id>isdbt_time_deinterleaver_1seg_0</source_block_id>
+    <sink_block_id>blocks_vector_to_stream_0_2</sink_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>oneseg_time_deinterleaver_1seg_0</source_block_id>
     <sink_block_id>MER_OneSeg_1</sink_block_id>
+=======
+    <source_block_id>isdbt_time_deinterleaver_1seg_0</source_block_id>
+    <sink_block_id>isdbt_symbol_demapper_1seg_0</sink_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>oneseg_time_deinterleaver_1seg_0</source_block_id>
     <sink_block_id>blocks_vector_to_stream_0_2</sink_block_id>
+=======
+    <source_block_id>isdbt_tmcc_decoder_1seg_0</source_block_id>
+    <sink_block_id>isdbt_frequency_deinterleaver_1seg_0</sink_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>oneseg_time_deinterleaver_1seg_0</source_block_id>
     <sink_block_id>oneseg_symbol_demapper_1seg_0</sink_block_id>
+=======
+    <source_block_id>low_pass_filter_0</source_block_id>
+    <sink_block_id>SYNC_DEM_OFDM_1SEG_1</sink_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+<<<<<<< HEAD
     <source_block_id>oneseg_tmcc_decoder_1seg_0</source_block_id>
     <sink_block_id>oneseg_frequency_deinterleaver_1seg_0</sink_block_id>
+=======
+    <source_block_id>low_pass_filter_0</source_block_id>
+    <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
+>>>>>>> e7f732a636fdeeba6fc6f5d1a2b3f5897b1ba428
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
