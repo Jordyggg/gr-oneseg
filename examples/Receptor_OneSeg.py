@@ -3,9 +3,8 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Receptor ISDBTb ONESEG
-# Author: Jordy Garzón
 # Description: demodula la señal de IDSBT de un segmento
-# Generated: Mon Apr  2 13:53:33 2018
+# Generated: Tue Apr  3 12:36:43 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -32,11 +31,13 @@ from gnuradio import eng_notation
 from gnuradio import filter
 from gnuradio import gr
 from gnuradio import qtgui
+from gnuradio import uhd
 from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
 from optparse import OptionParser
 import oneseg
 import sip
+import time
 
 
 class Receptor_OneSeg(gr.top_block, Qt.QWidget):
@@ -174,6 +175,30 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self.Tabber_layout_3.addLayout(self.Tabber_grid_layout_3)
         self.Tabber.addTab(self.Tabber_widget_3, 'Measurements')
         self.top_grid_layout.addWidget(self.Tabber, 0,2,1,2)
+        self._DB_tool_bar = Qt.QToolBar(self)
+        self._DB_tool_bar.addWidget(Qt.QLabel('Ganancia USRP (dB)'+": "))
+        self._DB_line_edit = Qt.QLineEdit(str(self.DB))
+        self._DB_tool_bar.addWidget(self._DB_line_edit)
+        self._DB_line_edit.returnPressed.connect(
+        	lambda: self.set_DB(eng_notation.str_to_num(str(self._DB_line_edit.text().toAscii()))))
+        self.top_layout.addWidget(self._DB_tool_bar)
+        self.uhd_usrp_source_0 = uhd.usrp_source(
+        	",".join(('addr=192.168.10.2', "")),
+        	uhd.stream_args(
+        		cpu_format="fc32",
+        		channels=range(1),
+        	),
+        )
+        self.uhd_usrp_source_0.set_samp_rate(100e6/99)
+        self.uhd_usrp_source_0.set_center_freq(center_freq, 0)
+        self.uhd_usrp_source_0.set_gain(DB, 0)
+        self.uhd_usrp_source_0.set_antenna('TX/RX', 0)
+        self.rational_resampler_xxx_0 = filter.rational_resampler_ccc(
+                interpolation=176,
+                decimation=175,
+                taps=None,
+                fractional_bw=None,
+        )
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
         	2*(int(total_carriers*(1+guard))), #size
         	samp_rate, #samp_rate
@@ -432,7 +457,7 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self.oneseg_tmcc_decoder_1seg_0 = oneseg.tmcc_decoder_1seg(mode, True)
         self.oneseg_time_deinterleaver_1seg_0 = oneseg.time_deinterleaver_1seg(mode, time)
         self.oneseg_symbol_demapper_1seg_0 = oneseg.symbol_demapper_1seg(mode, 4)
-        self.oneseg_ofdm_synchronization_1seg_0 = oneseg.ofdm_synchronization_1seg(mode, guard)
+        self.oneseg_ofdm_synchronization_1seg_0 = oneseg.ofdm_synchronization_1seg(3, 0.0625)
         self.oneseg_frequency_deinterleaver_1seg_0 = oneseg.frequency_deinterleaver_1seg(mode)
         self.low_pass_filter_0 = filter.fir_filter_ccf(1, firdes.low_pass(
         	1, samp_rate, 500e3/2.0, 5e3, firdes.WIN_HAMMING, 6.76))
@@ -443,8 +468,6 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         )
         self.blocks_vector_to_stream_0_2 = blocks.vector_to_stream(gr.sizeof_gr_complex*1, 96*2**(mode-1))
         self.blocks_vector_to_stream_0 = blocks.vector_to_stream(gr.sizeof_char*1, 188)
-        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_gr_complex*1, samp_rate,True)
-        self.blocks_file_source_1_0 = blocks.file_source(gr.sizeof_gr_complex*1, '/home/jordy/gr-isdbt/examples/SAVECANALES/GAMA_15.dat', True)
         self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/jordy/ones.ts', False)
         self.blocks_file_sink_0.set_unbuffered(False)
         self.SYNC_DEM_OFDM_1SEG_0 = SYNC_DEM_OFDM_1SEG(
@@ -452,15 +475,8 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
             guarda=guard,
         )
         self.MER_OneSeg_1 = MER_OneSeg(
-            Portadoras_OneSeg=96*2**(2),
+            Portadoras_OneSeg=96*2**(mode-1),
         )
-        self._DB_tool_bar = Qt.QToolBar(self)
-        self._DB_tool_bar.addWidget(Qt.QLabel('Ganancia USRP (dB)'+": "))
-        self._DB_line_edit = Qt.QLineEdit(str(self.DB))
-        self._DB_tool_bar.addWidget(self._DB_line_edit)
-        self._DB_line_edit.returnPressed.connect(
-        	lambda: self.set_DB(eng_notation.str_to_num(str(self._DB_line_edit.text().toAscii()))))
-        self.top_layout.addWidget(self._DB_tool_bar)
 
         ##################################################
         # Connections
@@ -469,8 +485,6 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self.connect((self.SYNC_DEM_OFDM_1SEG_0, 0), (self.oneseg_ofdm_synchronization_1seg_0, 0))    
         self.connect((self.SYNC_DEM_OFDM_1SEG_0, 1), (self.qtgui_number_sink_0_1, 0))    
         self.connect((self.SYNC_DEM_OFDM_1SEG_0, 2), (self.qtgui_time_sink_x_0, 0))    
-        self.connect((self.blocks_file_source_1_0, 0), (self.blocks_throttle_0, 0))    
-        self.connect((self.blocks_throttle_0, 0), (self.low_pass_filter_0, 0))    
         self.connect((self.blocks_vector_to_stream_0, 0), (self.blocks_file_sink_0, 0))    
         self.connect((self.blocks_vector_to_stream_0_2, 0), (self.qtgui_const_sink_x_0, 0))    
         self.connect((self.decoder_1seg_0, 0), (self.blocks_vector_to_stream_0, 0))    
@@ -485,6 +499,8 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self.connect((self.oneseg_time_deinterleaver_1seg_0, 0), (self.blocks_vector_to_stream_0_2, 0))    
         self.connect((self.oneseg_time_deinterleaver_1seg_0, 0), (self.oneseg_symbol_demapper_1seg_0, 0))    
         self.connect((self.oneseg_tmcc_decoder_1seg_0, 0), (self.oneseg_frequency_deinterleaver_1seg_0, 0))    
+        self.connect((self.rational_resampler_xxx_0, 0), (self.low_pass_filter_0, 0))    
+        self.connect((self.uhd_usrp_source_0, 0), (self.rational_resampler_xxx_0, 0))    
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "Receptor_OneSeg")
@@ -502,6 +518,7 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self.decoder_1seg_0.set_mode(self.mode)
         self.set_data_carriers(96*2**(self.mode-1))
         self.set_active_carriers(108*2**(self.mode-1))
+        self.MER_OneSeg_1.set_Portadoras_OneSeg(96*2**(self.mode-1))
 
     def get_total_carriers(self):
         return self.total_carriers
@@ -525,7 +542,6 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
         self.qtgui_freq_sink_x_0.set_frequency_range(self.center_freq, self.samp_rate)
         self.low_pass_filter_0.set_taps(firdes.low_pass(1, self.samp_rate, 500e3/2.0, 5e3, firdes.WIN_HAMMING, 6.76))
-        self.blocks_throttle_0.set_sample_rate(self.samp_rate)
 
     def get_rate(self):
         return self.rate
@@ -555,6 +571,7 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
     def set_center_freq(self, center_freq):
         self.center_freq = center_freq
         Qt.QMetaObject.invokeMethod(self._center_freq_line_edit, "setText", Qt.Q_ARG("QString", eng_notation.num_to_str(self.center_freq)))
+        self.uhd_usrp_source_0.set_center_freq(self.center_freq, 0)
         self.qtgui_freq_sink_x_0.set_frequency_range(self.center_freq, self.samp_rate)
 
     def get_active_carriers(self):
@@ -569,6 +586,8 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
     def set_DB(self, DB):
         self.DB = DB
         Qt.QMetaObject.invokeMethod(self._DB_line_edit, "setText", Qt.Q_ARG("QString", eng_notation.num_to_str(self.DB)))
+        self.uhd_usrp_source_0.set_gain(self.DB, 0)
+        	
 
 
 def main(top_block_cls=Receptor_OneSeg, options=None):
