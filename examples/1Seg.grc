@@ -825,7 +825,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(688, 464)</value>
+      <value>(688, 448)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -833,7 +833,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>SYNC_DEM_OFDM_1SEG_0</value>
+      <value>SYNC_DEM_OFDM_1SEG_1</value>
     </param>
     <param>
       <key>guarda</key>
@@ -1542,7 +1542,7 @@
     </param>
     <param>
       <key>cp_length</key>
-      <value>0.0625</value>
+      <value>guard</value>
     </param>
     <param>
       <key>id</key>
@@ -1558,7 +1558,7 @@
     </param>
     <param>
       <key>mode</key>
-      <value>3</value>
+      <value>mode</value>
     </param>
   </block>
   <block>
@@ -5040,19 +5040,19 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>SYNC_DEM_OFDM_1SEG_0</source_block_id>
+    <source_block_id>SYNC_DEM_OFDM_1SEG_1</source_block_id>
     <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
     <source_key>2</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>SYNC_DEM_OFDM_1SEG_0</source_block_id>
+    <source_block_id>SYNC_DEM_OFDM_1SEG_1</source_block_id>
     <sink_block_id>oneseg_ofdm_synchronization_1seg_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>SYNC_DEM_OFDM_1SEG_0</source_block_id>
+    <source_block_id>SYNC_DEM_OFDM_1SEG_1</source_block_id>
     <sink_block_id>qtgui_number_sink_0_1</sink_block_id>
     <source_key>1</source_key>
     <sink_key>0</sink_key>
@@ -5101,7 +5101,7 @@
   </connection>
   <connection>
     <source_block_id>low_pass_filter_0</source_block_id>
-    <sink_block_id>SYNC_DEM_OFDM_1SEG_0</sink_block_id>
+    <sink_block_id>SYNC_DEM_OFDM_1SEG_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
