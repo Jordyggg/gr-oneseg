@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::oneseg::symbol_demapper_1seg_impl</compoundname>
+    <basecompoundref refid="classgr_1_1oneseg_1_1symbol__demapper__1seg" prot="public" virt="non-virtual">gr::oneseg::symbol_demapper_1seg</basecompoundref>
+    <includes refid="symbol__demapper__1seg__impl_8h" local="no">symbol_demapper_1seg_impl.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1aacc8e5a91cc63b99d43aad1b850aa977" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::symbol_demapper_1seg_impl::d_data_carriers_mode1</definition>
+        <argsstring></argsstring>
+        <name>d_data_carriers_mode1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="33" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1ae948eda136a54619e73dde1367896061" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::symbol_demapper_1seg_impl::d_total_segments</definition>
+        <argsstring></argsstring>
+        <name>d_total_segments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="34" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1ab9eddc81194e6ff8cbeec37693701fe6" prot="private" static="yes" mutable="no">
+        <type>const gr_complex</type>
+        <definition>const gr_complex gr::oneseg::symbol_demapper_1seg_impl::d_constellation_qpsk[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_constellation_qpsk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="36" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1abeab8dec640d914347d120cd7383cda1" prot="private" static="yes" mutable="no">
+        <type>const gr_complex</type>
+        <definition>const gr_complex gr::oneseg::symbol_demapper_1seg_impl::d_constellation_16qam[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_constellation_16qam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="37" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a683448af43ea2ef3f5d5ed454e184ba8" prot="private" static="yes" mutable="no">
+        <type>const gr_complex</type>
+        <definition>const gr_complex gr::oneseg::symbol_demapper_1seg_impl::d_constellation_64qam[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_constellation_64qam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="38" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a7e34f165eb32954ee33180903e792d47" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::symbol_demapper_1seg_impl::d_mode</definition>
+        <argsstring></argsstring>
+        <name>d_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="40" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1ade5bb6586eb1af9a1e1321cc175b67e8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::symbol_demapper_1seg_impl::d_const_size</definition>
+        <argsstring></argsstring>
+        <name>d_const_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="41" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1af9c96b4507fda2b0ae8db3fba282dc36" prot="private" static="no" mutable="no">
+        <type>const gr_complex *</type>
+        <definition>const gr_complex* gr::oneseg::symbol_demapper_1seg_impl::d_constellation</definition>
+        <argsstring></argsstring>
+        <name>d_constellation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="42" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a3c5e1bc07ba88360984af420a77e4e82" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::symbol_demapper_1seg_impl::d_carriers_per_segment</definition>
+        <argsstring></argsstring>
+        <name>d_carriers_per_segment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="43" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1aa70fda7be3a794ec5dd36858b4f7de9b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::symbol_demapper_1seg_impl::d_noutput</definition>
+        <argsstring></argsstring>
+        <name>d_noutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="44" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a83187a5f4bdcf0fdef178ece8b12a76c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::oneseg::symbol_demapper_1seg_impl::find_constellation_value</definition>
+        <argsstring>(gr_complex val)</argsstring>
+        <name>find_constellation_value</name>
+        <param>
+          <type>gr_complex</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO This function is currently not optimized and is somewhat slow. Copy the implementation of the full-seg version. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1ad887b220d707ca315b889e0f061abfa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::oneseg::symbol_demapper_1seg_impl::symbol_demapper_1seg_impl</definition>
+        <argsstring>(int mode, int constellation_size)</argsstring>
+        <name>symbol_demapper_1seg_impl</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>constellation_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a9238b08c97e78029e1a772e8bdd080c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::oneseg::symbol_demapper_1seg_impl::~symbol_demapper_1seg_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~symbol_demapper_1seg_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a4c4daae77bc9653c7b01b7100bc64f77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::oneseg::symbol_demapper_1seg_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="56" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="71">
+        <label>gr::oneseg::symbol_demapper_1seg_impl</label>
+        <link refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>gr::oneseg::symbol_demapper_1seg</label>
+        <link refid="classgr_1_1oneseg_1_1symbol__demapper__1seg"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>gr::sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="74">
+        <label>gr::oneseg::symbol_demapper_1seg_impl</label>
+        <link refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>gr::oneseg::symbol_demapper_1seg</label>
+        <link refid="classgr_1_1oneseg_1_1symbol__demapper__1seg"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>gr::sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" line="30" column="1" bodyfile="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h" bodystart="29" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a3c5e1bc07ba88360984af420a77e4e82" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>d_carriers_per_segment</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1ade5bb6586eb1af9a1e1321cc175b67e8" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>d_const_size</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1af9c96b4507fda2b0ae8db3fba282dc36" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>d_constellation</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1abeab8dec640d914347d120cd7383cda1" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>d_constellation_16qam</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a683448af43ea2ef3f5d5ed454e184ba8" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>d_constellation_64qam</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1ab9eddc81194e6ff8cbeec37693701fe6" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>d_constellation_qpsk</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1aacc8e5a91cc63b99d43aad1b850aa977" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>d_data_carriers_mode1</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a7e34f165eb32954ee33180903e792d47" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>d_mode</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1aa70fda7be3a794ec5dd36858b4f7de9b" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>d_noutput</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1ae948eda136a54619e73dde1367896061" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>d_total_segments</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a83187a5f4bdcf0fdef178ece8b12a76c" prot="private" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>find_constellation_value</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg_1a556f03046afc400cff97e2e7f970bfb1" prot="public" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg_1a3470c08c83d09eb9f2365bce8a2753c2" prot="public" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1ad887b220d707ca315b889e0f061abfa6" prot="public" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>symbol_demapper_1seg_impl</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a4c4daae77bc9653c7b01b7100bc64f77" prot="public" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl_1a9238b08c97e78029e1a772e8bdd080c0" prot="public" virt="non-virtual"><scope>gr::oneseg::symbol_demapper_1seg_impl</scope><name>~symbol_demapper_1seg_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

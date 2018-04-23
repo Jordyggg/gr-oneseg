@@ -500,7 +500,7 @@ ofdm_synchronization_1seg_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (s
 ofdm_synchronization_1seg = ofdm_synchronization_1seg.make;
 
 class tmcc_decoder_1seg(object):
-    """Proxy of C++ gr::oneseg::tmcc_decoder_1seg class."""
+    """<+description of block+>"""
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -509,7 +509,15 @@ class tmcc_decoder_1seg(object):
     __repr__ = _swig_repr
 
     def make(mode, print_params):
-        """make(int mode, bool print_params) -> tmcc_decoder_1seg_sptr"""
+        """
+        make(int mode, bool print_params) -> tmcc_decoder_1seg_sptr
+
+        Return a shared_ptr to a new instance of oneseg::tmcc_decoder_1seg.
+
+        To avoid accidental use of raw pointers, oneseg::tmcc_decoder_1seg's constructor is in a private implementation class. oneseg::tmcc_decoder_1seg::make is the public interface for creating new instances.
+
+        Params: (mode, print_params)
+        """
         return _oneseg_swig.tmcc_decoder_1seg_make(mode, print_params)
 
     make = staticmethod(make)
@@ -519,7 +527,15 @@ tmcc_decoder_1seg_swigregister = _oneseg_swig.tmcc_decoder_1seg_swigregister
 tmcc_decoder_1seg_swigregister(tmcc_decoder_1seg)
 
 def tmcc_decoder_1seg_make(mode, print_params):
-    """tmcc_decoder_1seg_make(int mode, bool print_params) -> tmcc_decoder_1seg_sptr"""
+    """
+    tmcc_decoder_1seg_make(int mode, bool print_params) -> tmcc_decoder_1seg_sptr
+
+    Return a shared_ptr to a new instance of oneseg::tmcc_decoder_1seg.
+
+    To avoid accidental use of raw pointers, oneseg::tmcc_decoder_1seg's constructor is in a private implementation class. oneseg::tmcc_decoder_1seg::make is the public interface for creating new instances.
+
+    Params: (mode, print_params)
+    """
     return _oneseg_swig.tmcc_decoder_1seg_make(mode, print_params)
 
 class tmcc_decoder_1seg_sptr(object):
@@ -547,7 +563,15 @@ class tmcc_decoder_1seg_sptr(object):
     __del__ = lambda self: None
 
     def make(self, mode, print_params):
-        """make(tmcc_decoder_1seg_sptr self, int mode, bool print_params) -> tmcc_decoder_1seg_sptr"""
+        """
+        make(tmcc_decoder_1seg_sptr self, int mode, bool print_params) -> tmcc_decoder_1seg_sptr
+
+        Return a shared_ptr to a new instance of oneseg::tmcc_decoder_1seg.
+
+        To avoid accidental use of raw pointers, oneseg::tmcc_decoder_1seg's constructor is in a private implementation class. oneseg::tmcc_decoder_1seg::make is the public interface for creating new instances.
+
+        Params: (mode, print_params)
+        """
         return _oneseg_swig.tmcc_decoder_1seg_sptr_make(self, mode, print_params)
 
 
@@ -860,7 +884,7 @@ tmcc_decoder_1seg_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name
 tmcc_decoder_1seg = tmcc_decoder_1seg.make;
 
 class frequency_deinterleaver_1seg(object):
-    """Proxy of C++ gr::oneseg::frequency_deinterleaver_1seg class."""
+    """<+description of block+>"""
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -869,7 +893,15 @@ class frequency_deinterleaver_1seg(object):
     __repr__ = _swig_repr
 
     def make(mode):
-        """make(int mode) -> frequency_deinterleaver_1seg_sptr"""
+        """
+        make(int mode) -> frequency_deinterleaver_1seg_sptr
+
+        Return a shared_ptr to a new instance of oneseg::frequency_deinterleaver_1seg.
+
+        To avoid accidental use of raw pointers, oneseg::frequency_deinterleaver_1seg's constructor is in a private implementation class. oneseg::frequency_deinterleaver_1seg::make is the public interface for creating new instances.
+
+        Params: (mode)
+        """
         return _oneseg_swig.frequency_deinterleaver_1seg_make(mode)
 
     make = staticmethod(make)
@@ -879,7 +911,15 @@ frequency_deinterleaver_1seg_swigregister = _oneseg_swig.frequency_deinterleaver
 frequency_deinterleaver_1seg_swigregister(frequency_deinterleaver_1seg)
 
 def frequency_deinterleaver_1seg_make(mode):
-    """frequency_deinterleaver_1seg_make(int mode) -> frequency_deinterleaver_1seg_sptr"""
+    """
+    frequency_deinterleaver_1seg_make(int mode) -> frequency_deinterleaver_1seg_sptr
+
+    Return a shared_ptr to a new instance of oneseg::frequency_deinterleaver_1seg.
+
+    To avoid accidental use of raw pointers, oneseg::frequency_deinterleaver_1seg's constructor is in a private implementation class. oneseg::frequency_deinterleaver_1seg::make is the public interface for creating new instances.
+
+    Params: (mode)
+    """
     return _oneseg_swig.frequency_deinterleaver_1seg_make(mode)
 
 class frequency_deinterleaver_1seg_sptr(object):
@@ -907,7 +947,15 @@ class frequency_deinterleaver_1seg_sptr(object):
     __del__ = lambda self: None
 
     def make(self, mode):
-        """make(frequency_deinterleaver_1seg_sptr self, int mode) -> frequency_deinterleaver_1seg_sptr"""
+        """
+        make(frequency_deinterleaver_1seg_sptr self, int mode) -> frequency_deinterleaver_1seg_sptr
+
+        Return a shared_ptr to a new instance of oneseg::frequency_deinterleaver_1seg.
+
+        To avoid accidental use of raw pointers, oneseg::frequency_deinterleaver_1seg's constructor is in a private implementation class. oneseg::frequency_deinterleaver_1seg::make is the public interface for creating new instances.
+
+        Params: (mode)
+        """
         return _oneseg_swig.frequency_deinterleaver_1seg_sptr_make(self, mode)
 
 
@@ -1220,7 +1268,7 @@ frequency_deinterleaver_1seg_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" %
 frequency_deinterleaver_1seg = frequency_deinterleaver_1seg.make;
 
 class time_deinterleaver_1seg(object):
-    """Proxy of C++ gr::oneseg::time_deinterleaver_1seg class."""
+    """<+description of block+>"""
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -1229,7 +1277,15 @@ class time_deinterleaver_1seg(object):
     __repr__ = _swig_repr
 
     def make(mode, length):
-        """make(int mode, int length) -> time_deinterleaver_1seg_sptr"""
+        """
+        make(int mode, int length) -> time_deinterleaver_1seg_sptr
+
+        Return a shared_ptr to a new instance of oneseg::time_deinterleaver_1seg.
+
+        To avoid accidental use of raw pointers, oneseg::time_deinterleaver_1seg's constructor is in a private implementation class. oneseg::time_deinterleaver_1seg::make is the public interface for creating new instances.
+
+        Params: (mode, length)
+        """
         return _oneseg_swig.time_deinterleaver_1seg_make(mode, length)
 
     make = staticmethod(make)
@@ -1239,7 +1295,15 @@ time_deinterleaver_1seg_swigregister = _oneseg_swig.time_deinterleaver_1seg_swig
 time_deinterleaver_1seg_swigregister(time_deinterleaver_1seg)
 
 def time_deinterleaver_1seg_make(mode, length):
-    """time_deinterleaver_1seg_make(int mode, int length) -> time_deinterleaver_1seg_sptr"""
+    """
+    time_deinterleaver_1seg_make(int mode, int length) -> time_deinterleaver_1seg_sptr
+
+    Return a shared_ptr to a new instance of oneseg::time_deinterleaver_1seg.
+
+    To avoid accidental use of raw pointers, oneseg::time_deinterleaver_1seg's constructor is in a private implementation class. oneseg::time_deinterleaver_1seg::make is the public interface for creating new instances.
+
+    Params: (mode, length)
+    """
     return _oneseg_swig.time_deinterleaver_1seg_make(mode, length)
 
 class time_deinterleaver_1seg_sptr(object):
@@ -1267,7 +1331,15 @@ class time_deinterleaver_1seg_sptr(object):
     __del__ = lambda self: None
 
     def make(self, mode, length):
-        """make(time_deinterleaver_1seg_sptr self, int mode, int length) -> time_deinterleaver_1seg_sptr"""
+        """
+        make(time_deinterleaver_1seg_sptr self, int mode, int length) -> time_deinterleaver_1seg_sptr
+
+        Return a shared_ptr to a new instance of oneseg::time_deinterleaver_1seg.
+
+        To avoid accidental use of raw pointers, oneseg::time_deinterleaver_1seg's constructor is in a private implementation class. oneseg::time_deinterleaver_1seg::make is the public interface for creating new instances.
+
+        Params: (mode, length)
+        """
         return _oneseg_swig.time_deinterleaver_1seg_sptr_make(self, mode, length)
 
 
@@ -1580,7 +1652,7 @@ time_deinterleaver_1seg_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (sel
 time_deinterleaver_1seg = time_deinterleaver_1seg.make;
 
 class symbol_demapper_1seg(object):
-    """Proxy of C++ gr::oneseg::symbol_demapper_1seg class."""
+    """<+description of block+>"""
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -1589,7 +1661,15 @@ class symbol_demapper_1seg(object):
     __repr__ = _swig_repr
 
     def make(mode, constellation_size):
-        """make(int mode, int constellation_size) -> symbol_demapper_1seg_sptr"""
+        """
+        make(int mode, int constellation_size) -> symbol_demapper_1seg_sptr
+
+        Return a shared_ptr to a new instance of oneseg::symbol_demapper_1seg.
+
+        To avoid accidental use of raw pointers, oneseg::symbol_demapper_1seg's constructor is in a private implementation class. oneseg::symbol_demapper_1seg::make is the public interface for creating new instances.
+
+        Params: (mode, constellation_size)
+        """
         return _oneseg_swig.symbol_demapper_1seg_make(mode, constellation_size)
 
     make = staticmethod(make)
@@ -1599,7 +1679,15 @@ symbol_demapper_1seg_swigregister = _oneseg_swig.symbol_demapper_1seg_swigregist
 symbol_demapper_1seg_swigregister(symbol_demapper_1seg)
 
 def symbol_demapper_1seg_make(mode, constellation_size):
-    """symbol_demapper_1seg_make(int mode, int constellation_size) -> symbol_demapper_1seg_sptr"""
+    """
+    symbol_demapper_1seg_make(int mode, int constellation_size) -> symbol_demapper_1seg_sptr
+
+    Return a shared_ptr to a new instance of oneseg::symbol_demapper_1seg.
+
+    To avoid accidental use of raw pointers, oneseg::symbol_demapper_1seg's constructor is in a private implementation class. oneseg::symbol_demapper_1seg::make is the public interface for creating new instances.
+
+    Params: (mode, constellation_size)
+    """
     return _oneseg_swig.symbol_demapper_1seg_make(mode, constellation_size)
 
 class symbol_demapper_1seg_sptr(object):
@@ -1627,7 +1715,15 @@ class symbol_demapper_1seg_sptr(object):
     __del__ = lambda self: None
 
     def make(self, mode, constellation_size):
-        """make(symbol_demapper_1seg_sptr self, int mode, int constellation_size) -> symbol_demapper_1seg_sptr"""
+        """
+        make(symbol_demapper_1seg_sptr self, int mode, int constellation_size) -> symbol_demapper_1seg_sptr
+
+        Return a shared_ptr to a new instance of oneseg::symbol_demapper_1seg.
+
+        To avoid accidental use of raw pointers, oneseg::symbol_demapper_1seg's constructor is in a private implementation class. oneseg::symbol_demapper_1seg::make is the public interface for creating new instances.
+
+        Params: (mode, constellation_size)
+        """
         return _oneseg_swig.symbol_demapper_1seg_sptr_make(self, mode, constellation_size)
 
 
@@ -1940,7 +2036,7 @@ symbol_demapper_1seg_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.n
 symbol_demapper_1seg = symbol_demapper_1seg.make;
 
 class bit_deinterleaver(object):
-    """Proxy of C++ gr::oneseg::bit_deinterleaver class."""
+    """<+description of block+>"""
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -1949,7 +2045,15 @@ class bit_deinterleaver(object):
     __repr__ = _swig_repr
 
     def make(mode, segments, constellation_size):
-        """make(int mode, int segments, int constellation_size) -> bit_deinterleaver_sptr"""
+        """
+        make(int mode, int segments, int constellation_size) -> bit_deinterleaver_sptr
+
+        Return a shared_ptr to a new instance of oneseg::bit_deinterleaver.
+
+        To avoid accidental use of raw pointers, oneseg::bit_deinterleaver's constructor is in a private implementation class. oneseg::bit_deinterleaver::make is the public interface for creating new instances.
+
+        Params: (mode, segments, constellation_size)
+        """
         return _oneseg_swig.bit_deinterleaver_make(mode, segments, constellation_size)
 
     make = staticmethod(make)
@@ -1959,7 +2063,15 @@ bit_deinterleaver_swigregister = _oneseg_swig.bit_deinterleaver_swigregister
 bit_deinterleaver_swigregister(bit_deinterleaver)
 
 def bit_deinterleaver_make(mode, segments, constellation_size):
-    """bit_deinterleaver_make(int mode, int segments, int constellation_size) -> bit_deinterleaver_sptr"""
+    """
+    bit_deinterleaver_make(int mode, int segments, int constellation_size) -> bit_deinterleaver_sptr
+
+    Return a shared_ptr to a new instance of oneseg::bit_deinterleaver.
+
+    To avoid accidental use of raw pointers, oneseg::bit_deinterleaver's constructor is in a private implementation class. oneseg::bit_deinterleaver::make is the public interface for creating new instances.
+
+    Params: (mode, segments, constellation_size)
+    """
     return _oneseg_swig.bit_deinterleaver_make(mode, segments, constellation_size)
 
 class bit_deinterleaver_sptr(object):
@@ -1987,7 +2099,15 @@ class bit_deinterleaver_sptr(object):
     __del__ = lambda self: None
 
     def make(self, mode, segments, constellation_size):
-        """make(bit_deinterleaver_sptr self, int mode, int segments, int constellation_size) -> bit_deinterleaver_sptr"""
+        """
+        make(bit_deinterleaver_sptr self, int mode, int segments, int constellation_size) -> bit_deinterleaver_sptr
+
+        Return a shared_ptr to a new instance of oneseg::bit_deinterleaver.
+
+        To avoid accidental use of raw pointers, oneseg::bit_deinterleaver's constructor is in a private implementation class. oneseg::bit_deinterleaver::make is the public interface for creating new instances.
+
+        Params: (mode, segments, constellation_size)
+        """
         return _oneseg_swig.bit_deinterleaver_sptr_make(self, mode, segments, constellation_size)
 
 
@@ -2300,7 +2420,7 @@ bit_deinterleaver_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name
 bit_deinterleaver = bit_deinterleaver.make;
 
 class viterbi_decoder(object):
-    """Proxy of C++ gr::oneseg::viterbi_decoder class."""
+    """<+description of block+>"""
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -2309,7 +2429,15 @@ class viterbi_decoder(object):
     __repr__ = _swig_repr
 
     def make(constellation_size, rate):
-        """make(int constellation_size, int rate) -> viterbi_decoder_sptr"""
+        """
+        make(int constellation_size, int rate) -> viterbi_decoder_sptr
+
+        Return a shared_ptr to a new instance of oneseg::viterbi_decoder.
+
+        To avoid accidental use of raw pointers, oneseg::viterbi_decoder's constructor is in a private implementation class. oneseg::viterbi_decoder::make is the public interface for creating new instances.
+
+        Params: (constellation_size, rate)
+        """
         return _oneseg_swig.viterbi_decoder_make(constellation_size, rate)
 
     make = staticmethod(make)
@@ -2319,7 +2447,15 @@ viterbi_decoder_swigregister = _oneseg_swig.viterbi_decoder_swigregister
 viterbi_decoder_swigregister(viterbi_decoder)
 
 def viterbi_decoder_make(constellation_size, rate):
-    """viterbi_decoder_make(int constellation_size, int rate) -> viterbi_decoder_sptr"""
+    """
+    viterbi_decoder_make(int constellation_size, int rate) -> viterbi_decoder_sptr
+
+    Return a shared_ptr to a new instance of oneseg::viterbi_decoder.
+
+    To avoid accidental use of raw pointers, oneseg::viterbi_decoder's constructor is in a private implementation class. oneseg::viterbi_decoder::make is the public interface for creating new instances.
+
+    Params: (constellation_size, rate)
+    """
     return _oneseg_swig.viterbi_decoder_make(constellation_size, rate)
 
 class viterbi_decoder_sptr(object):
@@ -2347,7 +2483,15 @@ class viterbi_decoder_sptr(object):
     __del__ = lambda self: None
 
     def make(self, constellation_size, rate):
-        """make(viterbi_decoder_sptr self, int constellation_size, int rate) -> viterbi_decoder_sptr"""
+        """
+        make(viterbi_decoder_sptr self, int constellation_size, int rate) -> viterbi_decoder_sptr
+
+        Return a shared_ptr to a new instance of oneseg::viterbi_decoder.
+
+        To avoid accidental use of raw pointers, oneseg::viterbi_decoder's constructor is in a private implementation class. oneseg::viterbi_decoder::make is the public interface for creating new instances.
+
+        Params: (constellation_size, rate)
+        """
         return _oneseg_swig.viterbi_decoder_sptr_make(self, constellation_size, rate)
 
 
@@ -2660,7 +2804,7 @@ viterbi_decoder_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name()
 viterbi_decoder = viterbi_decoder.make;
 
 class byte_deinterleaver(object):
-    """Proxy of C++ gr::oneseg::byte_deinterleaver class."""
+    """<+description of block+>"""
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -2669,7 +2813,15 @@ class byte_deinterleaver(object):
     __repr__ = _swig_repr
 
     def make():
-        """make() -> byte_deinterleaver_sptr"""
+        """
+        make() -> byte_deinterleaver_sptr
+
+        Return a shared_ptr to a new instance of oneseg::byte_deinterleaver.
+
+        To avoid accidental use of raw pointers, oneseg::byte_deinterleaver's constructor is in a private implementation class. oneseg::byte_deinterleaver::make is the public interface for creating new instances.
+
+        Params: (NONE)
+        """
         return _oneseg_swig.byte_deinterleaver_make()
 
     make = staticmethod(make)
@@ -2679,7 +2831,15 @@ byte_deinterleaver_swigregister = _oneseg_swig.byte_deinterleaver_swigregister
 byte_deinterleaver_swigregister(byte_deinterleaver)
 
 def byte_deinterleaver_make():
-    """byte_deinterleaver_make() -> byte_deinterleaver_sptr"""
+    """
+    byte_deinterleaver_make() -> byte_deinterleaver_sptr
+
+    Return a shared_ptr to a new instance of oneseg::byte_deinterleaver.
+
+    To avoid accidental use of raw pointers, oneseg::byte_deinterleaver's constructor is in a private implementation class. oneseg::byte_deinterleaver::make is the public interface for creating new instances.
+
+    Params: (NONE)
+    """
     return _oneseg_swig.byte_deinterleaver_make()
 
 class byte_deinterleaver_sptr(object):
@@ -2707,7 +2867,15 @@ class byte_deinterleaver_sptr(object):
     __del__ = lambda self: None
 
     def make(self):
-        """make(byte_deinterleaver_sptr self) -> byte_deinterleaver_sptr"""
+        """
+        make(byte_deinterleaver_sptr self) -> byte_deinterleaver_sptr
+
+        Return a shared_ptr to a new instance of oneseg::byte_deinterleaver.
+
+        To avoid accidental use of raw pointers, oneseg::byte_deinterleaver's constructor is in a private implementation class. oneseg::byte_deinterleaver::make is the public interface for creating new instances.
+
+        Params: (NONE)
+        """
         return _oneseg_swig.byte_deinterleaver_sptr_make(self)
 
 
@@ -3020,7 +3188,7 @@ byte_deinterleaver_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.nam
 byte_deinterleaver = byte_deinterleaver.make;
 
 class energy_descrambler(object):
-    """Proxy of C++ gr::oneseg::energy_descrambler class."""
+    """<+description of block+>"""
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -3029,7 +3197,15 @@ class energy_descrambler(object):
     __repr__ = _swig_repr
 
     def make():
-        """make() -> energy_descrambler_sptr"""
+        """
+        make() -> energy_descrambler_sptr
+
+        Return a shared_ptr to a new instance of oneseg::energy_descrambler.
+
+        To avoid accidental use of raw pointers, oneseg::energy_descrambler's constructor is in a private implementation class. oneseg::energy_descrambler::make is the public interface for creating new instances.
+
+        Params: (NONE)
+        """
         return _oneseg_swig.energy_descrambler_make()
 
     make = staticmethod(make)
@@ -3039,7 +3215,15 @@ energy_descrambler_swigregister = _oneseg_swig.energy_descrambler_swigregister
 energy_descrambler_swigregister(energy_descrambler)
 
 def energy_descrambler_make():
-    """energy_descrambler_make() -> energy_descrambler_sptr"""
+    """
+    energy_descrambler_make() -> energy_descrambler_sptr
+
+    Return a shared_ptr to a new instance of oneseg::energy_descrambler.
+
+    To avoid accidental use of raw pointers, oneseg::energy_descrambler's constructor is in a private implementation class. oneseg::energy_descrambler::make is the public interface for creating new instances.
+
+    Params: (NONE)
+    """
     return _oneseg_swig.energy_descrambler_make()
 
 class energy_descrambler_sptr(object):
@@ -3067,7 +3251,15 @@ class energy_descrambler_sptr(object):
     __del__ = lambda self: None
 
     def make(self):
-        """make(energy_descrambler_sptr self) -> energy_descrambler_sptr"""
+        """
+        make(energy_descrambler_sptr self) -> energy_descrambler_sptr
+
+        Return a shared_ptr to a new instance of oneseg::energy_descrambler.
+
+        To avoid accidental use of raw pointers, oneseg::energy_descrambler's constructor is in a private implementation class. oneseg::energy_descrambler::make is the public interface for creating new instances.
+
+        Params: (NONE)
+        """
         return _oneseg_swig.energy_descrambler_sptr_make(self)
 
 
@@ -3380,7 +3572,7 @@ energy_descrambler_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.nam
 energy_descrambler = energy_descrambler.make;
 
 class reed_solomon_dec_isdbt(object):
-    """Proxy of C++ gr::oneseg::reed_solomon_dec_isdbt class."""
+    """<+description of block+>"""
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -3389,7 +3581,15 @@ class reed_solomon_dec_isdbt(object):
     __repr__ = _swig_repr
 
     def make():
-        """make() -> reed_solomon_dec_isdbt_sptr"""
+        """
+        make() -> reed_solomon_dec_isdbt_sptr
+
+        Return a shared_ptr to a new instance of oneseg::reed_solomon_dec_isdbt.
+
+        To avoid accidental use of raw pointers, oneseg::reed_solomon_dec_isdbt's constructor is in a private implementation class. oneseg::reed_solomon_dec_isdbt::make is the public interface for creating new instances.
+
+        Params: (NONE)
+        """
         return _oneseg_swig.reed_solomon_dec_isdbt_make()
 
     make = staticmethod(make)
@@ -3399,7 +3599,15 @@ reed_solomon_dec_isdbt_swigregister = _oneseg_swig.reed_solomon_dec_isdbt_swigre
 reed_solomon_dec_isdbt_swigregister(reed_solomon_dec_isdbt)
 
 def reed_solomon_dec_isdbt_make():
-    """reed_solomon_dec_isdbt_make() -> reed_solomon_dec_isdbt_sptr"""
+    """
+    reed_solomon_dec_isdbt_make() -> reed_solomon_dec_isdbt_sptr
+
+    Return a shared_ptr to a new instance of oneseg::reed_solomon_dec_isdbt.
+
+    To avoid accidental use of raw pointers, oneseg::reed_solomon_dec_isdbt's constructor is in a private implementation class. oneseg::reed_solomon_dec_isdbt::make is the public interface for creating new instances.
+
+    Params: (NONE)
+    """
     return _oneseg_swig.reed_solomon_dec_isdbt_make()
 
 class reed_solomon_dec_isdbt_sptr(object):
@@ -3427,7 +3635,15 @@ class reed_solomon_dec_isdbt_sptr(object):
     __del__ = lambda self: None
 
     def make(self):
-        """make(reed_solomon_dec_isdbt_sptr self) -> reed_solomon_dec_isdbt_sptr"""
+        """
+        make(reed_solomon_dec_isdbt_sptr self) -> reed_solomon_dec_isdbt_sptr
+
+        Return a shared_ptr to a new instance of oneseg::reed_solomon_dec_isdbt.
+
+        To avoid accidental use of raw pointers, oneseg::reed_solomon_dec_isdbt's constructor is in a private implementation class. oneseg::reed_solomon_dec_isdbt::make is the public interface for creating new instances.
+
+        Params: (NONE)
+        """
         return _oneseg_swig.reed_solomon_dec_isdbt_sptr_make(self)
 
 

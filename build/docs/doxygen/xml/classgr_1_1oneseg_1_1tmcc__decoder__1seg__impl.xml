@@ -1,0 +1,1241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::oneseg::tmcc_decoder_1seg_impl</compoundname>
+    <basecompoundref refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg" prot="public" virt="non-virtual">gr::oneseg::tmcc_decoder_1seg</basecompoundref>
+    <includes refid="tmcc__decoder__1seg__impl_8h" local="no">tmcc_decoder_1seg_impl.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01852f22910bf83bf099bb92542bae93" prot="private" static="no">
+        <name>_modulation_scheme</name>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01852f22910bf83bf099bb92542bae93a57781cecfc0321ab4e35fd82bfd74458" prot="private">
+          <name>QPSK</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01852f22910bf83bf099bb92542bae93a08e5e3f408089d3b7611d408c7c8dbc7" prot="private">
+          <name>QAM16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01852f22910bf83bf099bb92542bae93a7f9186752839d12636edc6dae715dca3" prot="private">
+          <name>QAM64</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01852f22910bf83bf099bb92542bae93a7ddd261f4a650d83aa6d32063dc73d39" prot="private">
+          <name>M_UNUSED</name>
+          <initializer>=7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="35" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="enum" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90b" prot="private" static="no">
+        <name>_convolutional_code</name>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90bad5a900613cefae991ec86796668f2afc" prot="private">
+          <name>RATE_1_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90bac4ce561d423ef55141c203feb0977b1f" prot="private">
+          <name>RATE_2_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90ba625a4824f3fe14151ba73c437e6c05b5" prot="private">
+          <name>RATE_3_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90ba1fdf52c88d64b01c80fc7a7b713e7193" prot="private">
+          <name>RATE_5_6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90ba9dcb6fa3b064e3b13f02a6e68f56aeca" prot="private">
+          <name>RATE_7_8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90ba5a5061f9ca172e93b9b68dd715fe185b" prot="private">
+          <name>C_UNUSED</name>
+          <initializer>=7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="36" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="enum" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6" prot="private" static="no">
+        <name>_interleaving_length</name>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6adc1c8a15cb74c17fdfbb34c96a3eb35b" prot="private">
+          <name>I_0_0_0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6a99c9f8310ea086f4ae2788a96c0cd814" prot="private">
+          <name>I_4_2_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6a753d280d6a1ac1ae657480fe91ed35d0" prot="private">
+          <name>I_8_4_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6ab75442b2c3c2c7934cc73194ad4f09c0" prot="private">
+          <name>I_16_8_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6aea7a00e6b17d3c8da1d02f474da9e7d4" prot="private">
+          <name>I_UNUSED</name>
+          <initializer>=7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="37" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="enum" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15d" prot="private" static="no">
+        <name>_number_segments</name>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15daf3e044f8211f454b2a1faef72625aec1" prot="private">
+          <name>SEG_1</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da23c18a7278357fe60f8c5c96d18034e3" prot="private">
+          <name>SEG_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da342447c6e1244cd5492c61934df322eb" prot="private">
+          <name>SEG_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da0228f3bde78c224d19a53ddaff8f03b5" prot="private">
+          <name>SEG_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da96b55674c47eefb3304db26be8eac162" prot="private">
+          <name>SEG_5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da61fd80eec487323bd1d3a3d7c6ac58cd" prot="private">
+          <name>SEG_6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da4fd17be9542fa3be719d49cf6c2fb844" prot="private">
+          <name>SEG_7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15dafcbe0c76ed05a8ddc8da064357aa3bc5" prot="private">
+          <name>SEG_8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da537e9cb22e3f62080bc51b9c4734f0de" prot="private">
+          <name>SEG_9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15daad9b9301540baa37651705746dd5c915" prot="private">
+          <name>SEG_10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da209f408d36c0f3e4c890f58a3d09a4b3" prot="private">
+          <name>SEG_11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da54281595782846f5f7eefb50f552c08f" prot="private">
+          <name>SEG_12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da75c80bbe9047ca13d65f4ff936f14052" prot="private">
+          <name>SEG_13</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15daba30409f781e365cbffcd818ea06452a" prot="private">
+          <name>S_UNUSED</name>
+          <initializer>=15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="38" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1af67f0f710d76beacd7f4a6e8980ffd83" prot="private" static="no">
+        <type>enum gr::oneseg::tmcc_decoder_1seg_impl::_modulation_scheme</type>
+        <definition>typedef enum gr::oneseg::tmcc_decoder_1seg_impl::_modulation_scheme  gr::oneseg::tmcc_decoder_1seg_impl::modulation_scheme_t</definition>
+        <argsstring></argsstring>
+        <name>modulation_scheme_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a3d8c4ffdafb02627ff09caa26c7f4bae" prot="private" static="no">
+        <type>enum gr::oneseg::tmcc_decoder_1seg_impl::_convolutional_code</type>
+        <definition>typedef enum gr::oneseg::tmcc_decoder_1seg_impl::_convolutional_code  gr::oneseg::tmcc_decoder_1seg_impl::convolutional_code_t</definition>
+        <argsstring></argsstring>
+        <name>convolutional_code_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ac469c59dcfe9e0517d1182e4fb6ffeec" prot="private" static="no">
+        <type>enum gr::oneseg::tmcc_decoder_1seg_impl::_interleaving_length</type>
+        <definition>typedef enum gr::oneseg::tmcc_decoder_1seg_impl::_interleaving_length  gr::oneseg::tmcc_decoder_1seg_impl::interleaving_length_t</definition>
+        <argsstring></argsstring>
+        <name>interleaving_length_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a5fda8d5dd0b618cd4dfff6fde5977df0" prot="private" static="no">
+        <type>enum gr::oneseg::tmcc_decoder_1seg_impl::_number_segments</type>
+        <definition>typedef enum gr::oneseg::tmcc_decoder_1seg_impl::_number_segments  gr::oneseg::tmcc_decoder_1seg_impl::number_segments_t</definition>
+        <argsstring></argsstring>
+        <name>number_segments_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="38" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0c65e4bf86f585aa7f5fe4aadcd88bfe" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::tmcc_carriers_size_2k</definition>
+        <argsstring></argsstring>
+        <name>tmcc_carriers_size_2k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="42" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a5aae0711311784722e1b4117572c2e62" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::tmcc_carriers_2k[]</definition>
+        <argsstring>[]</argsstring>
+        <name>tmcc_carriers_2k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="43" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ae3ce2af1985c1b1c3cca6cf2dab95cb2" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::tmcc_carriers_size_4k</definition>
+        <argsstring></argsstring>
+        <name>tmcc_carriers_size_4k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="44" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ab78c2c55831c03a49ee215786c7b2bcc" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::tmcc_carriers_4k[]</definition>
+        <argsstring>[]</argsstring>
+        <name>tmcc_carriers_4k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="45" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a8842bdfbf1c57ecc9b81e5dedb8caab8" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::tmcc_carriers_size_8k</definition>
+        <argsstring></argsstring>
+        <name>tmcc_carriers_size_8k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="46" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0f910fc05c18705b1dc6af029887010c" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::tmcc_carriers_8k[]</definition>
+        <argsstring>[]</argsstring>
+        <name>tmcc_carriers_8k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="47" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a76412e5c3b3a2f7011e060233604344e" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_ac_carriers_2k[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_ac_carriers_2k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="52" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a1a37e76be002c933f1e8c06e22242c6c" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::ac_carriers_size_2k</definition>
+        <argsstring></argsstring>
+        <name>ac_carriers_size_2k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="53" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a4f937e2579124f7a7efb5f813a47a5b3" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_ac_carriers_4k[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_ac_carriers_4k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="54" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ace78c12cd24c66285ad45de625777c7a" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::ac_carriers_size_4k</definition>
+        <argsstring></argsstring>
+        <name>ac_carriers_size_4k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="55" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a6cbc8dcf38582745374f51611dacc9ec" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_ac_carriers_8k[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_ac_carriers_8k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="56" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a656cae1902196bcbf12185a09480f4e4" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::ac_carriers_size_8k</definition>
+        <argsstring></argsstring>
+        <name>ac_carriers_size_8k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="57" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a9297ef7b64f8edfcbfe0647205576ab0" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_data_carriers_per_segment_2k</definition>
+        <argsstring></argsstring>
+        <name>d_data_carriers_per_segment_2k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="62" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ad93e4a41af42e2d58eedd49989650400" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_data_carriers_per_segment_4k</definition>
+        <argsstring></argsstring>
+        <name>d_data_carriers_per_segment_4k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="63" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ab8b51432f0b35a4f132bac4000f7c597" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_data_carriers_per_segment_8k</definition>
+        <argsstring></argsstring>
+        <name>d_data_carriers_per_segment_8k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="64" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a8326f48c0b93d5fbc0531463c23ae8b5" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_carriers_per_segment_2k</definition>
+        <argsstring></argsstring>
+        <name>d_carriers_per_segment_2k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="65" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ab77297013ff12291887ddc6696c0228b" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::sp_per_segment_2k</definition>
+        <argsstring></argsstring>
+        <name>sp_per_segment_2k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="70" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a95d14fe597df6d152ab74122055ee723" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::sp_per_segment_4k</definition>
+        <argsstring></argsstring>
+        <name>sp_per_segment_4k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="71" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a5be252c87d10d38a18ec3f322437f9c3" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::sp_per_segment_8k</definition>
+        <argsstring></argsstring>
+        <name>sp_per_segment_8k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="72" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a6eb309696ed3bc8e9c7b23017347174a" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_symbols_per_frame</definition>
+        <argsstring></argsstring>
+        <name>d_symbols_per_frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="83" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ad9675773230aa237781b59b6e7fa1833" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_tmcc_sync_size</definition>
+        <argsstring></argsstring>
+        <name>d_tmcc_sync_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="88" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a058521180652109e66436596ba73e76f" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_tmcc_sync_even[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_tmcc_sync_even</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="98" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1aa14a6facd8a7559be6455206d72692fa" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::tmcc_decoder_1seg_impl::d_tmcc_sync_odd[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_tmcc_sync_odd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="99" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1aa00a2c33dae4bf167994446926c50fa5" prot="private" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char gr::oneseg::tmcc_decoder_1seg_impl::d_h[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="102" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a985b7f335a89153beb510b766d5e9682" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::tmcc_carriers_size</definition>
+        <argsstring></argsstring>
+        <name>tmcc_carriers_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="49" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a16b0d1b9c905b1da896db7cbaaa2a109" prot="private" static="no" mutable="no">
+        <type>const int *</type>
+        <definition>const int* gr::oneseg::tmcc_decoder_1seg_impl::tmcc_carriers</definition>
+        <argsstring></argsstring>
+        <name>tmcc_carriers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="50" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0a50eee437b3b44534c2fe3c7d1429f4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::ac_carriers_size</definition>
+        <argsstring></argsstring>
+        <name>ac_carriers_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="59" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a4f6e08040c7d318b6b870d9a7694576c" prot="private" static="no" mutable="no">
+        <type>const int *</type>
+        <definition>const int* gr::oneseg::tmcc_decoder_1seg_impl::d_ac_carriers</definition>
+        <argsstring></argsstring>
+        <name>d_ac_carriers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="60" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1af011805639e21c17391370ce6b9d77c3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::d_data_carriers_per_segment</definition>
+        <argsstring></argsstring>
+        <name>d_data_carriers_per_segment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="68" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a7e0566bb98b08a75e6a87ddd7c07a504" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::sp_per_segment</definition>
+        <argsstring></argsstring>
+        <name>sp_per_segment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="74" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ac40039460375261e734bce541e44faf2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::d_active_carriers</definition>
+        <argsstring></argsstring>
+        <name>d_active_carriers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="77" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a09f7f62b5aa822c754e3f86407ca991e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::d_total_data_carriers</definition>
+        <argsstring></argsstring>
+        <name>d_total_data_carriers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="80" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf31749ca5da316d1302622cbe94cf92" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::d_carriers_per_segment</definition>
+        <argsstring></argsstring>
+        <name>d_carriers_per_segment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="86" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a521c13a7cbdc44ec620460b04931a867" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; char &gt;</type>
+        <definition>std::deque&lt;char&gt; gr::oneseg::tmcc_decoder_1seg_impl::d_rcv_tmcc_data</definition>
+        <argsstring></argsstring>
+        <name>d_rcv_tmcc_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="93" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a6e049a6fdbe8b0b4f2c1df3544577052" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; char &gt;</type>
+        <definition>std::deque&lt;char&gt; gr::oneseg::tmcc_decoder_1seg_impl::d_tmcc_sync_evenv</definition>
+        <argsstring></argsstring>
+        <name>d_tmcc_sync_evenv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="95" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a6f057550f511ecf33275993481b27d44" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; char &gt;</type>
+        <definition>std::deque&lt;char&gt; gr::oneseg::tmcc_decoder_1seg_impl::d_tmcc_sync_oddv</definition>
+        <argsstring></argsstring>
+        <name>d_tmcc_sync_oddv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="96" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1aed492705508ad81394e8ae980c4a54ab" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::oneseg::tmcc_decoder_1seg_impl::d_print_params</definition>
+        <argsstring></argsstring>
+        <name>d_print_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="105" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a2b4fdb34d41f88c814650bd952c891ab" prot="private" static="no" mutable="no">
+        <type>gr_complex *</type>
+        <definition>gr_complex* gr::oneseg::tmcc_decoder_1seg_impl::d_prev_tmcc_symbol</definition>
+        <argsstring></argsstring>
+        <name>d_prev_tmcc_symbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="108" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a95c62e0c02c617b4ba3bc5f97557948d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::d_symbol_index_known</definition>
+        <argsstring></argsstring>
+        <name>d_symbol_index_known</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="111" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ae42b51a5dfd3824634928554b1e32cef" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::oneseg::tmcc_decoder_1seg_impl::d_frame_end</definition>
+        <argsstring></argsstring>
+        <name>d_frame_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="114" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1aa2b03b9278d5efdffbebd02a59578f86" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::oneseg::tmcc_decoder_1seg_impl::d_resync</definition>
+        <argsstring></argsstring>
+        <name>d_resync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="116" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a04f6ac1e8b601e1ace87b33ffb3bba77" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::d_symbol_index</definition>
+        <argsstring></argsstring>
+        <name>d_symbol_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="119" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adb4b6a068c7164ef574b171998bba1a8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::number_symbol</definition>
+        <argsstring></argsstring>
+        <name>number_symbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="121" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1acdb9cf55c5bca9872d0a3e3a40ae3098" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::d_since_last_tmcc</definition>
+        <argsstring></argsstring>
+        <name>d_since_last_tmcc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="124" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ab6280239029bac2cc2f16bea539d09ab" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* gr::oneseg::tmcc_decoder_1seg_impl::d_data_carriers</definition>
+        <argsstring></argsstring>
+        <name>d_data_carriers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="128" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ad9a6bd1f9df47cbec59470edc9401dd4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::tmcc_parity_check</definition>
+        <argsstring>()</argsstring>
+        <name>tmcc_parity_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method checks whether or not the BCH code in d_rcv_tmcc_data is correct. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ae9807b4003ec7b0ad211d5c58c109fc8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::oneseg::tmcc_decoder_1seg_impl::print_modulation_scheme</definition>
+        <argsstring>(modulation_scheme_t modulation_scheme)</argsstring>
+        <name>print_modulation_scheme</name>
+        <param>
+          <type>modulation_scheme_t</type>
+          <declname>modulation_scheme</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a657f1228d0c544ef6d904d19212e33d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::oneseg::tmcc_decoder_1seg_impl::print_convolutional_code</definition>
+        <argsstring>(convolutional_code_t convolutional_code)</argsstring>
+        <name>print_convolutional_code</name>
+        <param>
+          <type>convolutional_code_t</type>
+          <declname>convolutional_code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a7f324ecf90127d0a678859d82c259da1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::oneseg::tmcc_decoder_1seg_impl::print_interleaving_length</definition>
+        <argsstring>(interleaving_length_t interleaving_length)</argsstring>
+        <name>print_interleaving_length</name>
+        <param>
+          <type>interleaving_length_t</type>
+          <declname>interleaving_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a167056f05640f614bb99b52573fac323" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::oneseg::tmcc_decoder_1seg_impl::print_number_segments</definition>
+        <argsstring>(number_segments_t number_segments)</argsstring>
+        <name>print_number_segments</name>
+        <param>
+          <type>number_segments_t</type>
+          <declname>number_segments</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a9b48c2efdf00267d6cb442d5dc8f9dea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::tmcc_print</definition>
+        <argsstring>()</argsstring>
+        <name>tmcc_print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints the decoded TMCC in d_rcv_tmcc_data in a somewhat nice and human-readable format. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adfb053c6cb6cc866a86deaa2a04d9266" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::process_tmcc_data</definition>
+        <argsstring>(const gr_complex *in)</argsstring>
+        <name>process_tmcc_data</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>The method decodes the TMCC carriers of a given symbol, thus appending a new bit to those received so far. If 203 were received since the last complete tmcc, we check whether the sync word if present at the beginning, and if it passes the BCH parity code. </para>        </briefdescription>
+        <detaileddescription>
+<para>Our present implementation simply performs the differential demodulation (TMCC is transmitted in DBPSK) for every carrier, and then performs a majority vote between all carriers to verify which bit was sent. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01f08f565a5e0d5694e7d9d9028060f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::oneseg::tmcc_decoder_1seg_impl::set_carriers_parameters</definition>
+        <argsstring>(int payload)</argsstring>
+        <name>set_carriers_parameters</name>
+        <param>
+          <type>int</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets several parameters used throughout the rest of the methods </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a22a128f9cddb15233b5c91603712567e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::oneseg::tmcc_decoder_1seg_impl::construct_data_carriers_list</definition>
+        <argsstring>()</argsstring>
+        <name>construct_data_carriers_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>it constructs the d_data_carriers list, which contains the list of carriers that have actual DTV data. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="167" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a1372402f27d33d69e129942c47792050" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::oneseg::tmcc_decoder_1seg_impl::tmcc_decoder_1seg_impl</definition>
+        <argsstring>(int mode, bool print_params)</argsstring>
+        <name>tmcc_decoder_1seg_impl</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>print_params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1accabab60dc458104a668f2b2ecff3ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::oneseg::tmcc_decoder_1seg_impl::~tmcc_decoder_1seg_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~tmcc_decoder_1seg_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a9c54904170b42ed109ce342ba53d66b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::oneseg::tmcc_decoder_1seg_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="174" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="94">
+        <label>gr::oneseg::tmcc_decoder_1seg</label>
+        <link refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>gr::oneseg::tmcc_decoder_1seg_impl</label>
+        <link refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>sync_block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="97">
+        <label>gr::oneseg::tmcc_decoder_1seg</label>
+        <link refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>gr::oneseg::tmcc_decoder_1seg_impl</label>
+        <link refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" line="31" column="1" bodyfile="/home/jordy/gr-oneseg/lib/tmcc_decoder_1seg_impl.h" bodystart="30" bodyend="177"/>
+    <listofallmembers>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90b" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>_convolutional_code</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>_interleaving_length</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01852f22910bf83bf099bb92542bae93" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>_modulation_scheme</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15d" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>_number_segments</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0a50eee437b3b44534c2fe3c7d1429f4" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>ac_carriers_size</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a1a37e76be002c933f1e8c06e22242c6c" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>ac_carriers_size_2k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ace78c12cd24c66285ad45de625777c7a" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>ac_carriers_size_4k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a656cae1902196bcbf12185a09480f4e4" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>ac_carriers_size_8k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90ba5a5061f9ca172e93b9b68dd715fe185b" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>C_UNUSED</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a22a128f9cddb15233b5c91603712567e" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>construct_data_carriers_list</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a3d8c4ffdafb02627ff09caa26c7f4bae" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>convolutional_code_t</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a4f6e08040c7d318b6b870d9a7694576c" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_ac_carriers</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a76412e5c3b3a2f7011e060233604344e" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_ac_carriers_2k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a4f937e2579124f7a7efb5f813a47a5b3" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_ac_carriers_4k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a6cbc8dcf38582745374f51611dacc9ec" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_ac_carriers_8k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ac40039460375261e734bce541e44faf2" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_active_carriers</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf31749ca5da316d1302622cbe94cf92" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_carriers_per_segment</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a8326f48c0b93d5fbc0531463c23ae8b5" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_carriers_per_segment_2k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ab6280239029bac2cc2f16bea539d09ab" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_data_carriers</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1af011805639e21c17391370ce6b9d77c3" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_data_carriers_per_segment</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a9297ef7b64f8edfcbfe0647205576ab0" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_data_carriers_per_segment_2k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ad93e4a41af42e2d58eedd49989650400" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_data_carriers_per_segment_4k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ab8b51432f0b35a4f132bac4000f7c597" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_data_carriers_per_segment_8k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ae42b51a5dfd3824634928554b1e32cef" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_frame_end</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1aa00a2c33dae4bf167994446926c50fa5" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_h</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a2b4fdb34d41f88c814650bd952c891ab" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_prev_tmcc_symbol</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1aed492705508ad81394e8ae980c4a54ab" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_print_params</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a521c13a7cbdc44ec620460b04931a867" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_rcv_tmcc_data</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1aa2b03b9278d5efdffbebd02a59578f86" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_resync</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1acdb9cf55c5bca9872d0a3e3a40ae3098" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_since_last_tmcc</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a04f6ac1e8b601e1ace87b33ffb3bba77" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_symbol_index</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a95c62e0c02c617b4ba3bc5f97557948d" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_symbol_index_known</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a6eb309696ed3bc8e9c7b23017347174a" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_symbols_per_frame</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a058521180652109e66436596ba73e76f" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_tmcc_sync_even</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a6e049a6fdbe8b0b4f2c1df3544577052" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_tmcc_sync_evenv</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1aa14a6facd8a7559be6455206d72692fa" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_tmcc_sync_odd</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a6f057550f511ecf33275993481b27d44" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_tmcc_sync_oddv</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ad9675773230aa237781b59b6e7fa1833" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_tmcc_sync_size</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a09f7f62b5aa822c754e3f86407ca991e" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>d_total_data_carriers</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6adc1c8a15cb74c17fdfbb34c96a3eb35b" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>I_0_0_0</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6ab75442b2c3c2c7934cc73194ad4f09c0" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>I_16_8_4</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6a99c9f8310ea086f4ae2788a96c0cd814" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>I_4_2_1</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6a753d280d6a1ac1ae657480fe91ed35d0" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>I_8_4_2</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1afbb31177459ae4c3164f8a8ce7b2aea6aea7a00e6b17d3c8da1d02f474da9e7d4" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>I_UNUSED</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ac469c59dcfe9e0517d1182e4fb6ffeec" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>interleaving_length_t</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01852f22910bf83bf099bb92542bae93a7ddd261f4a650d83aa6d32063dc73d39" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>M_UNUSED</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg_1a9e72e9dd36ea1ab26d7854a9d09590e2" prot="public" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1af67f0f710d76beacd7f4a6e8980ffd83" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>modulation_scheme_t</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a5fda8d5dd0b618cd4dfff6fde5977df0" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>number_segments_t</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adb4b6a068c7164ef574b171998bba1a8" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>number_symbol</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a657f1228d0c544ef6d904d19212e33d7" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>print_convolutional_code</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a7f324ecf90127d0a678859d82c259da1" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>print_interleaving_length</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ae9807b4003ec7b0ad211d5c58c109fc8" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>print_modulation_scheme</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a167056f05640f614bb99b52573fac323" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>print_number_segments</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adfb053c6cb6cc866a86deaa2a04d9266" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>process_tmcc_data</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01852f22910bf83bf099bb92542bae93a08e5e3f408089d3b7611d408c7c8dbc7" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>QAM16</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01852f22910bf83bf099bb92542bae93a7f9186752839d12636edc6dae715dca3" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>QAM64</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01852f22910bf83bf099bb92542bae93a57781cecfc0321ab4e35fd82bfd74458" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>QPSK</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90bad5a900613cefae991ec86796668f2afc" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>RATE_1_2</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90bac4ce561d423ef55141c203feb0977b1f" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>RATE_2_3</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90ba625a4824f3fe14151ba73c437e6c05b5" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>RATE_3_4</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90ba1fdf52c88d64b01c80fc7a7b713e7193" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>RATE_5_6</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1adf9448be103e0d18a76a8bdc1c83c90ba9dcb6fa3b064e3b13f02a6e68f56aeca" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>RATE_7_8</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15daba30409f781e365cbffcd818ea06452a" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>S_UNUSED</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15daf3e044f8211f454b2a1faef72625aec1" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_1</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15daad9b9301540baa37651705746dd5c915" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_10</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da209f408d36c0f3e4c890f58a3d09a4b3" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_11</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da54281595782846f5f7eefb50f552c08f" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_12</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da75c80bbe9047ca13d65f4ff936f14052" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_13</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da23c18a7278357fe60f8c5c96d18034e3" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_2</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da342447c6e1244cd5492c61934df322eb" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_3</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da0228f3bde78c224d19a53ddaff8f03b5" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_4</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da96b55674c47eefb3304db26be8eac162" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_5</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da61fd80eec487323bd1d3a3d7c6ac58cd" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_6</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da4fd17be9542fa3be719d49cf6c2fb844" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_7</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15dafcbe0c76ed05a8ddc8da064357aa3bc5" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_8</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0d12c5a65deaa35ff8cc0c9f3b91c15da537e9cb22e3f62080bc51b9c4734f0de" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>SEG_9</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a01f08f565a5e0d5694e7d9d9028060f7" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>set_carriers_parameters</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a7e0566bb98b08a75e6a87ddd7c07a504" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>sp_per_segment</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ab77297013ff12291887ddc6696c0228b" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>sp_per_segment_2k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a95d14fe597df6d152ab74122055ee723" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>sp_per_segment_4k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a5be252c87d10d38a18ec3f322437f9c3" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>sp_per_segment_8k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg_1a88f9e34ff4e8e6d0015eb02b5db0a0a8" prot="public" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a16b0d1b9c905b1da896db7cbaaa2a109" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_carriers</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a5aae0711311784722e1b4117572c2e62" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_carriers_2k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ab78c2c55831c03a49ee215786c7b2bcc" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_carriers_4k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0f910fc05c18705b1dc6af029887010c" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_carriers_8k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a985b7f335a89153beb510b766d5e9682" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_carriers_size</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a0c65e4bf86f585aa7f5fe4aadcd88bfe" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_carriers_size_2k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ae3ce2af1985c1b1c3cca6cf2dab95cb2" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_carriers_size_4k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a8842bdfbf1c57ecc9b81e5dedb8caab8" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_carriers_size_8k</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a1372402f27d33d69e129942c47792050" prot="public" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_decoder_1seg_impl</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1ad9a6bd1f9df47cbec59470edc9401dd4" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_parity_check</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a9b48c2efdf00267d6cb442d5dc8f9dea" prot="private" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>tmcc_print</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1a9c54904170b42ed109ce342ba53d66b8" prot="public" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1oneseg_1_1tmcc__decoder__1seg__impl_1accabab60dc458104a668f2b2ecff3ce1" prot="public" virt="non-virtual"><scope>gr::oneseg::tmcc_decoder_1seg_impl</scope><name>~tmcc_decoder_1seg_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

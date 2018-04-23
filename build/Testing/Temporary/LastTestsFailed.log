@@ -1,0 +1,10 @@
+2:qa_ofdm_synchronization_1seg
+3:qa_tmcc_decoder_1seg
+4:qa_frequency_deinterleaver_1seg
+5:qa_time_deinterleaver_1seg
+6:qa_symbol_demapper_1seg
+7:qa_bit_deinterleaver
+8:qa_viterbi_decoder
+9:qa_byte_deinterleaver
+10:qa_energy_descrambler
+11:qa_reed_solomon_dec_isdbt

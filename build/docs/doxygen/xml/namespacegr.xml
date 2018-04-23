@@ -7,6 +7,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/jordy/gr-oneseg/include/oneseg/ofdm_synchronization_1seg.h" line="28" column="1"/>
+    <location file="/home/jordy/gr-oneseg/include/oneseg/bit_deinterleaver.h" line="28" column="1"/>
   </compounddef>
 </doxygen>

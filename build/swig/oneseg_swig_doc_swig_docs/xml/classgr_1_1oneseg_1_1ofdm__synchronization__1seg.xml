@@ -47,24 +47,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="0">
+      <node id="16">
         <label>gr::oneseg::ofdm_synchronization_1seg</label>
         <link refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg"/>
-        <childnode refid="1" relation="public-inheritance">
+        <childnode refid="17" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1">
+      <node id="17">
         <label>gr::block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
+      <node id="18">
         <label>gr::oneseg::ofdm_synchronization_1seg</label>
         <link refid="classgr_1_1oneseg_1_1ofdm__synchronization__1seg"/>
-        <childnode refid="3" relation="public-inheritance">
+        <childnode refid="19" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
+      <node id="19">
         <label>gr::block</label>
       </node>
     </collaborationgraph>

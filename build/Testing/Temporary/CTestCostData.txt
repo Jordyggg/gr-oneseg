@@ -1,0 +1,22 @@
+test_oneseg 8 0.000899732
+qa_ofdm_synchronization_1seg 0 0
+qa_tmcc_decoder_1seg 0 0
+qa_frequency_deinterleaver_1seg 0 0
+qa_time_deinterleaver_1seg 0 0
+qa_symbol_demapper_1seg 0 0
+qa_bit_deinterleaver 0 0
+qa_viterbi_decoder 0 0
+qa_byte_deinterleaver 0 0
+qa_energy_descrambler 0 0
+qa_reed_solomon_dec_isdbt 0 0
+---
+qa_ofdm_synchronization_1seg
+qa_tmcc_decoder_1seg
+qa_frequency_deinterleaver_1seg
+qa_time_deinterleaver_1seg
+qa_symbol_demapper_1seg
+qa_bit_deinterleaver
+qa_viterbi_decoder
+qa_byte_deinterleaver
+qa_energy_descrambler
+qa_reed_solomon_dec_isdbt

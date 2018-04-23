@@ -102,6 +102,12 @@ swig/_oneseg_swig.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 swig/_oneseg_swig.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
 swig/_oneseg_swig.so: /usr/local/lib/libgnuradio-runtime.so
 swig/_oneseg_swig.so: /usr/local/lib/libgnuradio-pmt.so
+swig/_oneseg_swig.so: /usr/local/lib/libgnuradio-analog.so
+swig/_oneseg_swig.so: /usr/local/lib/libvolk.so
+swig/_oneseg_swig.so: /usr/local/lib/libgnuradio-blocks.so
+swig/_oneseg_swig.so: /usr/local/lib/libgnuradio-digital.so
+swig/_oneseg_swig.so: /usr/local/lib/libgnuradio-fft.so
+swig/_oneseg_swig.so: /usr/local/lib/libgnuradio-filter.so
 swig/_oneseg_swig.so: swig/CMakeFiles/_oneseg_swig.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared module _oneseg_swig.so"
 	cd /home/jordy/gr-oneseg/build/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/_oneseg_swig.dir/link.txt --verbose=$(VERBOSE)

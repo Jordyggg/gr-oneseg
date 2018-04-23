@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="symbol__demapper__1seg_8h" kind="file" language="C++">
+    <compoundname>symbol_demapper_1seg.h</compoundname>
+    <includes refid="api_8h" local="no">oneseg/api.h</includes>
+    <includes local="no">gnuradio/sync_block.h</includes>
+    <includedby refid="symbol__demapper__1seg__impl_8h" local="no">symbol_demapper_1seg_impl.h</includedby>
+    <incdepgraph>
+      <node id="109">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="108">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="106">
+        <label>symbol_demapper_1seg.h</label>
+        <link refid="symbol_demapper_1seg.h"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>oneseg/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="110">
+        <label>symbol_demapper_1seg.h</label>
+        <link refid="symbol_demapper_1seg.h"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>symbol_demapper_1seg_impl.h</label>
+        <link refid="symbol__demapper__1seg__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1oneseg_1_1symbol__demapper__1seg" prot="public">gr::oneseg::symbol_demapper_1seg</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1oneseg">gr::oneseg</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jordy/gr-oneseg/include/oneseg/symbol_demapper_1seg.h"/>
+  </compounddef>
+</doxygen>

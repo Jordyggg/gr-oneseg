@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1oneseg_1_1viterbi__decoder__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::oneseg::viterbi_decoder_impl</compoundname>
+    <basecompoundref refid="classgr_1_1oneseg_1_1viterbi__decoder" prot="public" virt="non-virtual">gr::oneseg::viterbi_decoder</basecompoundref>
+    <includes refid="viterbi__decoder__impl_8h" local="no">viterbi_decoder_impl.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a85a00af265da4772bfebed2f44f3fe00" prot="private" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char gr::oneseg::viterbi_decoder_impl::d_puncture_1_2[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_puncture_1_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="37" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a4fa1f08bc1cd98664f977f63440fff8a" prot="private" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char gr::oneseg::viterbi_decoder_impl::d_puncture_2_3[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_puncture_2_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="38" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a28b6001c6387f5437ed4ae3f0cb3db14" prot="private" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char gr::oneseg::viterbi_decoder_impl::d_puncture_3_4[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_puncture_3_4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="39" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a0bd45e12a56078617fc36d7ecacae1f0" prot="private" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char gr::oneseg::viterbi_decoder_impl::d_puncture_5_6[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_puncture_5_6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="40" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1adaf11e35f46017ec1839f6d4433ef7af" prot="private" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char gr::oneseg::viterbi_decoder_impl::d_puncture_7_8[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_puncture_7_8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="41" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1adb6ba807dc2111f48ae4078815600f14" prot="private" static="no" mutable="no">
+        <type>const unsigned char *</type>
+        <definition>const unsigned char* gr::oneseg::viterbi_decoder_impl::d_puncture</definition>
+        <argsstring></argsstring>
+        <name>d_puncture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="44" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a27aee38499f01d5dbea2fbed96fa2c54" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_k</definition>
+        <argsstring></argsstring>
+        <name>d_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="48" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a05f858ce1b2762de729e9e80658d3679" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_n</definition>
+        <argsstring></argsstring>
+        <name>d_n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="49" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1ad1f18b5c8a0d00e90597c1d4413f7b9d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_m</definition>
+        <argsstring></argsstring>
+        <name>d_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="51" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a832a6b255404117daaea07fe07f76f4d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_bsize</definition>
+        <argsstring></argsstring>
+        <name>d_bsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="54" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a5217ca9868167a7a67dc503af1eac598" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_nsymbols</definition>
+        <argsstring></argsstring>
+        <name>d_nsymbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="56" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1afa5e612b342d57fe8700b806fa2619eb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_nbits</definition>
+        <argsstring></argsstring>
+        <name>d_nbits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="58" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a1a2172f18c22f8c6acf9fe842c5ec471" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_nout</definition>
+        <argsstring></argsstring>
+        <name>d_nout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="60" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a80b38ff8f37929d617ca7bbf23b72928" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_S0</definition>
+        <argsstring></argsstring>
+        <name>d_S0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="63" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a512187073d9f09f7b6448723322f9c60" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_SK</definition>
+        <argsstring></argsstring>
+        <name>d_SK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="65" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a29427209d8331ec543e15acc184ae67d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_ntraceback</definition>
+        <argsstring></argsstring>
+        <name>d_ntraceback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="68" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1af26cf964e34807dc88149e0eaa7a4d48" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* gr::oneseg::viterbi_decoder_impl::d_vp</definition>
+        <argsstring></argsstring>
+        <name>d_vp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="71" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1ab6c1105a3e4b251687ab185d6474bcf4" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="structviterbi__state" kindref="compound">viterbi_state</ref></type>
+        <definition>struct viterbi_state gr::oneseg::viterbi_decoder_impl::state0[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>state0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="71" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a958e94366fb60a897c17e5fcac4ff90b" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="structviterbi__state" kindref="compound">viterbi_state</ref></type>
+        <definition>struct viterbi_state gr::oneseg::viterbi_decoder_impl::state1[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>state1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="71" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1ad33f4ab864be819b6cf8a2abb6198efe" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::mettab[2][256]</definition>
+        <argsstring>[2][256]</argsstring>
+        <name>mettab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="76" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1aebfe4c84447cd69243d3241d603b2243" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* gr::oneseg::viterbi_decoder_impl::d_inbits</definition>
+        <argsstring></argsstring>
+        <name>d_inbits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="79" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1ae227cb5f6026506c6d8e104d78355c03" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::d_init</definition>
+        <argsstring></argsstring>
+        <name>d_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="82" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a5d8290998a8a42acc799e1eaae57c992" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::oneseg::viterbi_decoder_impl::d_alpha_avg</definition>
+        <argsstring></argsstring>
+        <name>d_alpha_avg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="85" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1acc2d2962f35e2f56a01f0403f6dd7f0c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::oneseg::viterbi_decoder_impl::d_last_ber_out</definition>
+        <argsstring></argsstring>
+        <name>d_last_ber_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="87" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a170da2a4ade67ac827d7aa43d34fa0b4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::oneseg::viterbi_decoder_impl::d_new_ber</definition>
+        <argsstring></argsstring>
+        <name>d_new_ber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="89" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1adac987da7f72d3837304e52b57d51e48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::oneseg::viterbi_decoder_impl::viterbi_decoder_impl</definition>
+        <argsstring>(int constellation_size, int rate)</argsstring>
+        <name>viterbi_decoder_impl</name>
+        <param>
+          <type>int</type>
+          <declname>constellation_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a10771d8efccdec752f4032d247411ac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::oneseg::viterbi_decoder_impl::~viterbi_decoder_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~viterbi_decoder_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1ac965a93209ec76bf795e56b65606397d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::oneseg::viterbi_decoder_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a369c736f380acf4dc8218080f54d3287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::oneseg::viterbi_decoder_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="98" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="106">
+        <label>block</label>
+      </node>
+      <node id="105">
+        <label>gr::oneseg::viterbi_decoder</label>
+        <link refid="classgr_1_1oneseg_1_1viterbi__decoder"/>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>gr::oneseg::viterbi_decoder_impl</label>
+        <link refid="classgr_1_1oneseg_1_1viterbi__decoder__impl"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="109">
+        <label>block</label>
+      </node>
+      <node id="108">
+        <label>gr::oneseg::viterbi_decoder</label>
+        <link refid="classgr_1_1oneseg_1_1viterbi__decoder"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>gr::oneseg::viterbi_decoder_impl</label>
+        <link refid="classgr_1_1oneseg_1_1viterbi__decoder__impl"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" line="34" column="1" bodyfile="/home/jordy/gr-oneseg/lib/viterbi_decoder_impl.h" bodystart="33" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a5d8290998a8a42acc799e1eaae57c992" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_alpha_avg</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a832a6b255404117daaea07fe07f76f4d" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_bsize</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1aebfe4c84447cd69243d3241d603b2243" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_inbits</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1ae227cb5f6026506c6d8e104d78355c03" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_init</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a27aee38499f01d5dbea2fbed96fa2c54" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_k</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1acc2d2962f35e2f56a01f0403f6dd7f0c" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_last_ber_out</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1ad1f18b5c8a0d00e90597c1d4413f7b9d" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_m</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a05f858ce1b2762de729e9e80658d3679" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_n</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1afa5e612b342d57fe8700b806fa2619eb" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_nbits</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a170da2a4ade67ac827d7aa43d34fa0b4" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_new_ber</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a1a2172f18c22f8c6acf9fe842c5ec471" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_nout</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a5217ca9868167a7a67dc503af1eac598" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_nsymbols</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a29427209d8331ec543e15acc184ae67d" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_ntraceback</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1adb6ba807dc2111f48ae4078815600f14" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_puncture</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a85a00af265da4772bfebed2f44f3fe00" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_puncture_1_2</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a4fa1f08bc1cd98664f977f63440fff8a" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_puncture_2_3</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a28b6001c6387f5437ed4ae3f0cb3db14" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_puncture_3_4</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a0bd45e12a56078617fc36d7ecacae1f0" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_puncture_5_6</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1adaf11e35f46017ec1839f6d4433ef7af" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_puncture_7_8</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a80b38ff8f37929d617ca7bbf23b72928" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_S0</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a512187073d9f09f7b6448723322f9c60" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_SK</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1af26cf964e34807dc88149e0eaa7a4d48" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>d_vp</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1ac965a93209ec76bf795e56b65606397d" prot="public" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a369c736f380acf4dc8218080f54d3287" prot="public" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder_1ae6cb9d8db599967505545ddb762cae58" prot="public" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1ad33f4ab864be819b6cf8a2abb6198efe" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>mettab</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder_1a49f6500411228d044e1a382be19c88a8" prot="public" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1ab6c1105a3e4b251687ab185d6474bcf4" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>state0</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a958e94366fb60a897c17e5fcac4ff90b" prot="private" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>state1</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1adac987da7f72d3837304e52b57d51e48" prot="public" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>viterbi_decoder_impl</name></member>
+      <member refid="classgr_1_1oneseg_1_1viterbi__decoder__impl_1a10771d8efccdec752f4032d247411ac7" prot="public" virt="non-virtual"><scope>gr::oneseg::viterbi_decoder_impl</scope><name>~viterbi_decoder_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

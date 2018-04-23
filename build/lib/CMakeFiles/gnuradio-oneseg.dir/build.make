@@ -328,6 +328,12 @@ lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_fil
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_system.so
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-runtime.so
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-pmt.so
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-analog.so
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libvolk.so
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-blocks.so
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-digital.so
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-fft.so
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-filter.so
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libgnuradio-oneseg-1.0.0git.so"
 	cd /home/jordy/gr-oneseg/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-oneseg.dir/link.txt --verbose=$(VERBOSE)

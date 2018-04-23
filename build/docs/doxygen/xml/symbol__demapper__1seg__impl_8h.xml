@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="symbol__demapper__1seg__impl_8h" kind="file" language="C++">
+    <compoundname>symbol_demapper_1seg_impl.h</compoundname>
+    <includes refid="symbol__demapper__1seg_8h" local="no">oneseg/symbol_demapper_1seg.h</includes>
+    <incdepgraph>
+      <node id="116">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="115">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="113">
+        <label>oneseg/symbol_demapper_1seg.h</label>
+        <link refid="symbol__demapper__1seg_8h"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>symbol_demapper_1seg_impl.h</label>
+        <link refid="symbol_demapper_1seg_impl.h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>oneseg/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1oneseg_1_1symbol__demapper__1seg__impl" prot="public">gr::oneseg::symbol_demapper_1seg_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1oneseg">gr::oneseg</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jordy/gr-oneseg/lib/symbol_demapper_1seg_impl.h"/>
+  </compounddef>
+</doxygen>

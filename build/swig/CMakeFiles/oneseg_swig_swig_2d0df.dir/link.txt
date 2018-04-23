@@ -1,1 +1,1 @@
-/usr/bin/c++   -msse -msse2 -msse3 -O3 -DNDEBUG   CMakeFiles/oneseg_swig_swig_2d0df.dir/oneseg_swig_swig_2d0df.cpp.o  -o oneseg_swig_swig_2d0df -rdynamic 
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/oneseg_swig_swig_2d0df.dir/oneseg_swig_swig_2d0df.cpp.o  -o oneseg_swig_swig_2d0df -rdynamic 

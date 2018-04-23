@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1oneseg_1_1bit__deinterleaver__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::oneseg::bit_deinterleaver_impl</compoundname>
+    <basecompoundref refid="classgr_1_1oneseg_1_1bit__deinterleaver" prot="public" virt="non-virtual">gr::oneseg::bit_deinterleaver</basecompoundref>
+    <includes refid="bit__deinterleaver__impl_8h" local="no">bit_deinterleaver_impl.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1abf095d6acdd1fe4f3bf633921093a938" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::bit_deinterleaver_impl::d_data_carriers_mode1</definition>
+        <argsstring></argsstring>
+        <name>d_data_carriers_mode1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="33" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1af93bab3e02e25628ae415caf0b742499" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::bit_deinterleaver_impl::d_total_segments</definition>
+        <argsstring></argsstring>
+        <name>d_total_segments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="34" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1af9739d684c09fa5e74059ac9a17b61de" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::bit_deinterleaver_impl::d_total_layers</definition>
+        <argsstring></argsstring>
+        <name>d_total_layers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="35" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a6b1cce0f5c94653f897efb6de66dabc6" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::bit_deinterleaver_impl::d_layer</definition>
+        <argsstring></argsstring>
+        <name>d_layer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="36" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a577d0dc933773ccc2009ec682c375723" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::bit_deinterleaver_impl::d_delay_qpsk[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_delay_qpsk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="38" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a34fc40f0ee73d97a89883d78fcae9e1c" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::bit_deinterleaver_impl::d_delay_16qam[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_delay_16qam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="39" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a56db6f49d72b1e66a496112215bbd870" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::oneseg::bit_deinterleaver_impl::d_delay_64qam[]</definition>
+        <argsstring>[]</argsstring>
+        <name>d_delay_64qam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="40" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a8d4beb68584b8adac96949c884c73c9b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::bit_deinterleaver_impl::d_mode</definition>
+        <argsstring></argsstring>
+        <name>d_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="42" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1ac94698ffcf51551efa77f34615d87fa1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::bit_deinterleaver_impl::d_const_size</definition>
+        <argsstring></argsstring>
+        <name>d_const_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="43" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1abfdaed309ce47e173b123393ee276bf5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::bit_deinterleaver_impl::d_num_bits</definition>
+        <argsstring></argsstring>
+        <name>d_num_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="44" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a857a75cb32cb86e482c4a0e83b539bf8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::bit_deinterleaver_impl::d_nsegments</definition>
+        <argsstring></argsstring>
+        <name>d_nsegments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="45" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1afdba7c350e8475506ebb54494f7a0561" prot="private" static="no" mutable="no">
+        <type>const int *</type>
+        <definition>const int* gr::oneseg::bit_deinterleaver_impl::d_delay</definition>
+        <argsstring></argsstring>
+        <name>d_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="46" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a6ca699fc2f13b4b39b1687e700cb9df4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::bit_deinterleaver_impl::d_carriers_per_segment</definition>
+        <argsstring></argsstring>
+        <name>d_carriers_per_segment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="47" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a33f846755073bf55388f3146baaa263c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::oneseg::bit_deinterleaver_impl::d_noutput</definition>
+        <argsstring></argsstring>
+        <name>d_noutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="48" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a97fe2fcf686f77667b9137a8e2ceb999" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::deque&lt; unsigned char &gt; * &gt;</type>
+        <definition>std::vector&lt;std::deque&lt;unsigned char&gt; *&gt; gr::oneseg::bit_deinterleaver_impl::d_shift</definition>
+        <argsstring></argsstring>
+        <name>d_shift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="55" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1aa86b52e1739ce5b7b57ac8481f7f4b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::oneseg::bit_deinterleaver_impl::bit_deinterleaver_impl</definition>
+        <argsstring>(int mode, int segments, int constellation_size)</argsstring>
+        <name>bit_deinterleaver_impl</name>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>segments</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>constellation_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a27018f15e42fe2776414c207cad9b82f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::oneseg::bit_deinterleaver_impl::~bit_deinterleaver_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~bit_deinterleaver_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a8c74ce87778e0966e8d8e79ca5d7bdda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::oneseg::bit_deinterleaver_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="63" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>gr::oneseg::bit_deinterleaver</label>
+        <link refid="classgr_1_1oneseg_1_1bit__deinterleaver"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::sync_interpolator</label>
+      </node>
+      <node id="5">
+        <label>gr::oneseg::bit_deinterleaver_impl</label>
+        <link refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>gr::oneseg::bit_deinterleaver</label>
+        <link refid="classgr_1_1oneseg_1_1bit__deinterleaver"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::sync_interpolator</label>
+      </node>
+      <node id="8">
+        <label>gr::oneseg::bit_deinterleaver_impl</label>
+        <link refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" line="30" column="1" bodyfile="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h" bodystart="29" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1aa86b52e1739ce5b7b57ac8481f7f4b9f" prot="public" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>bit_deinterleaver_impl</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a6ca699fc2f13b4b39b1687e700cb9df4" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_carriers_per_segment</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1ac94698ffcf51551efa77f34615d87fa1" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_const_size</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1abf095d6acdd1fe4f3bf633921093a938" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_data_carriers_mode1</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1afdba7c350e8475506ebb54494f7a0561" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_delay</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a34fc40f0ee73d97a89883d78fcae9e1c" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_delay_16qam</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a56db6f49d72b1e66a496112215bbd870" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_delay_64qam</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a577d0dc933773ccc2009ec682c375723" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_delay_qpsk</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a6b1cce0f5c94653f897efb6de66dabc6" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_layer</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a8d4beb68584b8adac96949c884c73c9b" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_mode</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a33f846755073bf55388f3146baaa263c" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_noutput</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a857a75cb32cb86e482c4a0e83b539bf8" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_nsegments</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1abfdaed309ce47e173b123393ee276bf5" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_num_bits</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a97fe2fcf686f77667b9137a8e2ceb999" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_shift</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1af9739d684c09fa5e74059ac9a17b61de" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_total_layers</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1af93bab3e02e25628ae415caf0b742499" prot="private" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>d_total_segments</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver_1a313d6b84a222a42132a4faeed374dc4a" prot="public" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver_1aac14380f5306e6505a7b3bbcc9efd03e" prot="public" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a8c74ce87778e0966e8d8e79ca5d7bdda" prot="public" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl_1a27018f15e42fe2776414c207cad9b82f" prot="public" virt="non-virtual"><scope>gr::oneseg::bit_deinterleaver_impl</scope><name>~bit_deinterleaver_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

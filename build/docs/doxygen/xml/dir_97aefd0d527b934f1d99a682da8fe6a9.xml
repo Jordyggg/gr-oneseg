@@ -2,7 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
   <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
     <compoundname>lib</compoundname>
+    <innerfile refid="bit__deinterleaver__impl_8h">bit_deinterleaver_impl.h</innerfile>
+    <innerfile refid="byte__deinterleaver__impl_8h">byte_deinterleaver_impl.h</innerfile>
+    <innerfile refid="d__viterbi_8h">d_viterbi.h</innerfile>
+    <innerfile refid="energy__descrambler__impl_8h">energy_descrambler_impl.h</innerfile>
+    <innerfile refid="frequency__deinterleaver__1seg__impl_8h">frequency_deinterleaver_1seg_impl.h</innerfile>
     <innerfile refid="ofdm__synchronization__1seg__impl_8h">ofdm_synchronization_1seg_impl.h</innerfile>
+    <innerfile refid="reed__solomon__dec__isdbt__impl_8h">reed_solomon_dec_isdbt_impl.h</innerfile>
+    <innerfile refid="symbol__demapper__1seg__impl_8h">symbol_demapper_1seg_impl.h</innerfile>
+    <innerfile refid="time__deinterleaver__1seg__impl_8h">time_deinterleaver_1seg_impl.h</innerfile>
+    <innerfile refid="tmcc__decoder__1seg__impl_8h">tmcc_decoder_1seg_impl.h</innerfile>
+    <innerfile refid="viterbi__decoder__impl_8h">viterbi_decoder_impl.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

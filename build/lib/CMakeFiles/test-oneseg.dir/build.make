@@ -386,6 +386,12 @@ lib/test-oneseg: /usr/local/lib/libgnuradio-runtime.so
 lib/test-oneseg: /usr/local/lib/libgnuradio-pmt.so
 lib/test-oneseg: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/test-oneseg: /usr/lib/x86_64-linux-gnu/libboost_system.so
+lib/test-oneseg: /usr/local/lib/libgnuradio-analog.so
+lib/test-oneseg: /usr/local/lib/libvolk.so
+lib/test-oneseg: /usr/local/lib/libgnuradio-blocks.so
+lib/test-oneseg: /usr/local/lib/libgnuradio-digital.so
+lib/test-oneseg: /usr/local/lib/libgnuradio-fft.so
+lib/test-oneseg: /usr/local/lib/libgnuradio-filter.so
 lib/test-oneseg: lib/CMakeFiles/test-oneseg.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable test-oneseg"
 	cd /home/jordy/gr-oneseg/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-oneseg.dir/link.txt --verbose=$(VERBOSE)

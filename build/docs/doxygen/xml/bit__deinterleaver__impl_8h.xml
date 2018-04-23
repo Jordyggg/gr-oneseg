@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="bit__deinterleaver__impl_8h" kind="file" language="C++">
+    <compoundname>bit_deinterleaver_impl.h</compoundname>
+    <includes refid="bit__deinterleaver_8h" local="no">oneseg/bit_deinterleaver.h</includes>
+    <incdepgraph>
+      <node id="32">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="30">
+        <label>oneseg/bit_deinterleaver.h</label>
+        <link refid="bit__deinterleaver_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>gnuradio/sync_interpolator.h</label>
+      </node>
+      <node id="29">
+        <label>bit_deinterleaver_impl.h</label>
+        <link refid="bit_deinterleaver_impl.h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>oneseg/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1oneseg_1_1bit__deinterleaver__impl" prot="public">gr::oneseg::bit_deinterleaver_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1oneseg">gr::oneseg</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.h"/>
+  </compounddef>
+</doxygen>

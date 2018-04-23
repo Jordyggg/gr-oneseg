@@ -37031,7 +37031,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"ofdm_synchronization_1seg_sptr_message_ports_out", _wrap_ofdm_synchronization_1seg_sptr_message_ports_out, METH_VARARGS, (char *)"ofdm_synchronization_1seg_sptr_message_ports_out(ofdm_synchronization_1seg_sptr self) -> swig_int_ptr"},
 	 { (char *)"ofdm_synchronization_1seg_sptr_message_subscribers", (PyCFunction) _wrap_ofdm_synchronization_1seg_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"ofdm_synchronization_1seg_sptr_message_subscribers(ofdm_synchronization_1seg_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"ofdm_synchronization_1seg_sptr_swigregister", ofdm_synchronization_1seg_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"tmcc_decoder_1seg_make", (PyCFunction) _wrap_tmcc_decoder_1seg_make, METH_VARARGS | METH_KEYWORDS, (char *)"tmcc_decoder_1seg_make(int mode, bool print_params) -> tmcc_decoder_1seg_sptr"},
+	 { (char *)"tmcc_decoder_1seg_make", (PyCFunction) _wrap_tmcc_decoder_1seg_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"tmcc_decoder_1seg_make(int mode, bool print_params) -> tmcc_decoder_1seg_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::tmcc_decoder_1seg.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::tmcc_decoder_1seg's constructor is in a private implementation class. oneseg::tmcc_decoder_1seg::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (mode, print_params)\n"
+		""},
 	 { (char *)"delete_tmcc_decoder_1seg", _wrap_delete_tmcc_decoder_1seg, METH_VARARGS, (char *)"delete_tmcc_decoder_1seg(tmcc_decoder_1seg self)"},
 	 { (char *)"tmcc_decoder_1seg_swigregister", tmcc_decoder_1seg_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_tmcc_decoder_1seg_sptr", _wrap_new_tmcc_decoder_1seg_sptr, METH_VARARGS, (char *)"\n"
@@ -37040,7 +37048,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"tmcc_decoder_1seg_sptr___deref__", _wrap_tmcc_decoder_1seg_sptr___deref__, METH_VARARGS, (char *)"tmcc_decoder_1seg_sptr___deref__(tmcc_decoder_1seg_sptr self) -> tmcc_decoder_1seg"},
 	 { (char *)"delete_tmcc_decoder_1seg_sptr", _wrap_delete_tmcc_decoder_1seg_sptr, METH_VARARGS, (char *)"delete_tmcc_decoder_1seg_sptr(tmcc_decoder_1seg_sptr self)"},
-	 { (char *)"tmcc_decoder_1seg_sptr_make", (PyCFunction) _wrap_tmcc_decoder_1seg_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"tmcc_decoder_1seg_sptr_make(tmcc_decoder_1seg_sptr self, int mode, bool print_params) -> tmcc_decoder_1seg_sptr"},
+	 { (char *)"tmcc_decoder_1seg_sptr_make", (PyCFunction) _wrap_tmcc_decoder_1seg_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"tmcc_decoder_1seg_sptr_make(tmcc_decoder_1seg_sptr self, int mode, bool print_params) -> tmcc_decoder_1seg_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::tmcc_decoder_1seg.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::tmcc_decoder_1seg's constructor is in a private implementation class. oneseg::tmcc_decoder_1seg::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (mode, print_params)\n"
+		""},
 	 { (char *)"tmcc_decoder_1seg_sptr_history", _wrap_tmcc_decoder_1seg_sptr_history, METH_VARARGS, (char *)"tmcc_decoder_1seg_sptr_history(tmcc_decoder_1seg_sptr self) -> unsigned int"},
 	 { (char *)"tmcc_decoder_1seg_sptr_declare_sample_delay", _wrap_tmcc_decoder_1seg_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -37124,7 +37140,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"tmcc_decoder_1seg_sptr_message_ports_out", _wrap_tmcc_decoder_1seg_sptr_message_ports_out, METH_VARARGS, (char *)"tmcc_decoder_1seg_sptr_message_ports_out(tmcc_decoder_1seg_sptr self) -> swig_int_ptr"},
 	 { (char *)"tmcc_decoder_1seg_sptr_message_subscribers", (PyCFunction) _wrap_tmcc_decoder_1seg_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"tmcc_decoder_1seg_sptr_message_subscribers(tmcc_decoder_1seg_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"tmcc_decoder_1seg_sptr_swigregister", tmcc_decoder_1seg_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"frequency_deinterleaver_1seg_make", (PyCFunction) _wrap_frequency_deinterleaver_1seg_make, METH_VARARGS | METH_KEYWORDS, (char *)"frequency_deinterleaver_1seg_make(int mode) -> frequency_deinterleaver_1seg_sptr"},
+	 { (char *)"frequency_deinterleaver_1seg_make", (PyCFunction) _wrap_frequency_deinterleaver_1seg_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"frequency_deinterleaver_1seg_make(int mode) -> frequency_deinterleaver_1seg_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::frequency_deinterleaver_1seg.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::frequency_deinterleaver_1seg's constructor is in a private implementation class. oneseg::frequency_deinterleaver_1seg::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (mode)\n"
+		""},
 	 { (char *)"delete_frequency_deinterleaver_1seg", _wrap_delete_frequency_deinterleaver_1seg, METH_VARARGS, (char *)"delete_frequency_deinterleaver_1seg(frequency_deinterleaver_1seg self)"},
 	 { (char *)"frequency_deinterleaver_1seg_swigregister", frequency_deinterleaver_1seg_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_frequency_deinterleaver_1seg_sptr", _wrap_new_frequency_deinterleaver_1seg_sptr, METH_VARARGS, (char *)"\n"
@@ -37133,7 +37157,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"frequency_deinterleaver_1seg_sptr___deref__", _wrap_frequency_deinterleaver_1seg_sptr___deref__, METH_VARARGS, (char *)"frequency_deinterleaver_1seg_sptr___deref__(frequency_deinterleaver_1seg_sptr self) -> frequency_deinterleaver_1seg"},
 	 { (char *)"delete_frequency_deinterleaver_1seg_sptr", _wrap_delete_frequency_deinterleaver_1seg_sptr, METH_VARARGS, (char *)"delete_frequency_deinterleaver_1seg_sptr(frequency_deinterleaver_1seg_sptr self)"},
-	 { (char *)"frequency_deinterleaver_1seg_sptr_make", (PyCFunction) _wrap_frequency_deinterleaver_1seg_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"frequency_deinterleaver_1seg_sptr_make(frequency_deinterleaver_1seg_sptr self, int mode) -> frequency_deinterleaver_1seg_sptr"},
+	 { (char *)"frequency_deinterleaver_1seg_sptr_make", (PyCFunction) _wrap_frequency_deinterleaver_1seg_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"frequency_deinterleaver_1seg_sptr_make(frequency_deinterleaver_1seg_sptr self, int mode) -> frequency_deinterleaver_1seg_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::frequency_deinterleaver_1seg.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::frequency_deinterleaver_1seg's constructor is in a private implementation class. oneseg::frequency_deinterleaver_1seg::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (mode)\n"
+		""},
 	 { (char *)"frequency_deinterleaver_1seg_sptr_history", _wrap_frequency_deinterleaver_1seg_sptr_history, METH_VARARGS, (char *)"frequency_deinterleaver_1seg_sptr_history(frequency_deinterleaver_1seg_sptr self) -> unsigned int"},
 	 { (char *)"frequency_deinterleaver_1seg_sptr_declare_sample_delay", _wrap_frequency_deinterleaver_1seg_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -37217,7 +37249,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"frequency_deinterleaver_1seg_sptr_message_ports_out", _wrap_frequency_deinterleaver_1seg_sptr_message_ports_out, METH_VARARGS, (char *)"frequency_deinterleaver_1seg_sptr_message_ports_out(frequency_deinterleaver_1seg_sptr self) -> swig_int_ptr"},
 	 { (char *)"frequency_deinterleaver_1seg_sptr_message_subscribers", (PyCFunction) _wrap_frequency_deinterleaver_1seg_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"frequency_deinterleaver_1seg_sptr_message_subscribers(frequency_deinterleaver_1seg_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"frequency_deinterleaver_1seg_sptr_swigregister", frequency_deinterleaver_1seg_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"time_deinterleaver_1seg_make", (PyCFunction) _wrap_time_deinterleaver_1seg_make, METH_VARARGS | METH_KEYWORDS, (char *)"time_deinterleaver_1seg_make(int mode, int length) -> time_deinterleaver_1seg_sptr"},
+	 { (char *)"time_deinterleaver_1seg_make", (PyCFunction) _wrap_time_deinterleaver_1seg_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"time_deinterleaver_1seg_make(int mode, int length) -> time_deinterleaver_1seg_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::time_deinterleaver_1seg.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::time_deinterleaver_1seg's constructor is in a private implementation class. oneseg::time_deinterleaver_1seg::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (mode, length)\n"
+		""},
 	 { (char *)"delete_time_deinterleaver_1seg", _wrap_delete_time_deinterleaver_1seg, METH_VARARGS, (char *)"delete_time_deinterleaver_1seg(time_deinterleaver_1seg self)"},
 	 { (char *)"time_deinterleaver_1seg_swigregister", time_deinterleaver_1seg_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_time_deinterleaver_1seg_sptr", _wrap_new_time_deinterleaver_1seg_sptr, METH_VARARGS, (char *)"\n"
@@ -37226,7 +37266,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"time_deinterleaver_1seg_sptr___deref__", _wrap_time_deinterleaver_1seg_sptr___deref__, METH_VARARGS, (char *)"time_deinterleaver_1seg_sptr___deref__(time_deinterleaver_1seg_sptr self) -> time_deinterleaver_1seg"},
 	 { (char *)"delete_time_deinterleaver_1seg_sptr", _wrap_delete_time_deinterleaver_1seg_sptr, METH_VARARGS, (char *)"delete_time_deinterleaver_1seg_sptr(time_deinterleaver_1seg_sptr self)"},
-	 { (char *)"time_deinterleaver_1seg_sptr_make", (PyCFunction) _wrap_time_deinterleaver_1seg_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"time_deinterleaver_1seg_sptr_make(time_deinterleaver_1seg_sptr self, int mode, int length) -> time_deinterleaver_1seg_sptr"},
+	 { (char *)"time_deinterleaver_1seg_sptr_make", (PyCFunction) _wrap_time_deinterleaver_1seg_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"time_deinterleaver_1seg_sptr_make(time_deinterleaver_1seg_sptr self, int mode, int length) -> time_deinterleaver_1seg_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::time_deinterleaver_1seg.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::time_deinterleaver_1seg's constructor is in a private implementation class. oneseg::time_deinterleaver_1seg::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (mode, length)\n"
+		""},
 	 { (char *)"time_deinterleaver_1seg_sptr_history", _wrap_time_deinterleaver_1seg_sptr_history, METH_VARARGS, (char *)"time_deinterleaver_1seg_sptr_history(time_deinterleaver_1seg_sptr self) -> unsigned int"},
 	 { (char *)"time_deinterleaver_1seg_sptr_declare_sample_delay", _wrap_time_deinterleaver_1seg_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -37310,7 +37358,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"time_deinterleaver_1seg_sptr_message_ports_out", _wrap_time_deinterleaver_1seg_sptr_message_ports_out, METH_VARARGS, (char *)"time_deinterleaver_1seg_sptr_message_ports_out(time_deinterleaver_1seg_sptr self) -> swig_int_ptr"},
 	 { (char *)"time_deinterleaver_1seg_sptr_message_subscribers", (PyCFunction) _wrap_time_deinterleaver_1seg_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"time_deinterleaver_1seg_sptr_message_subscribers(time_deinterleaver_1seg_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"time_deinterleaver_1seg_sptr_swigregister", time_deinterleaver_1seg_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"symbol_demapper_1seg_make", (PyCFunction) _wrap_symbol_demapper_1seg_make, METH_VARARGS | METH_KEYWORDS, (char *)"symbol_demapper_1seg_make(int mode, int constellation_size) -> symbol_demapper_1seg_sptr"},
+	 { (char *)"symbol_demapper_1seg_make", (PyCFunction) _wrap_symbol_demapper_1seg_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"symbol_demapper_1seg_make(int mode, int constellation_size) -> symbol_demapper_1seg_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::symbol_demapper_1seg.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::symbol_demapper_1seg's constructor is in a private implementation class. oneseg::symbol_demapper_1seg::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (mode, constellation_size)\n"
+		""},
 	 { (char *)"delete_symbol_demapper_1seg", _wrap_delete_symbol_demapper_1seg, METH_VARARGS, (char *)"delete_symbol_demapper_1seg(symbol_demapper_1seg self)"},
 	 { (char *)"symbol_demapper_1seg_swigregister", symbol_demapper_1seg_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_symbol_demapper_1seg_sptr", _wrap_new_symbol_demapper_1seg_sptr, METH_VARARGS, (char *)"\n"
@@ -37319,7 +37375,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"symbol_demapper_1seg_sptr___deref__", _wrap_symbol_demapper_1seg_sptr___deref__, METH_VARARGS, (char *)"symbol_demapper_1seg_sptr___deref__(symbol_demapper_1seg_sptr self) -> symbol_demapper_1seg"},
 	 { (char *)"delete_symbol_demapper_1seg_sptr", _wrap_delete_symbol_demapper_1seg_sptr, METH_VARARGS, (char *)"delete_symbol_demapper_1seg_sptr(symbol_demapper_1seg_sptr self)"},
-	 { (char *)"symbol_demapper_1seg_sptr_make", (PyCFunction) _wrap_symbol_demapper_1seg_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"symbol_demapper_1seg_sptr_make(symbol_demapper_1seg_sptr self, int mode, int constellation_size) -> symbol_demapper_1seg_sptr"},
+	 { (char *)"symbol_demapper_1seg_sptr_make", (PyCFunction) _wrap_symbol_demapper_1seg_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"symbol_demapper_1seg_sptr_make(symbol_demapper_1seg_sptr self, int mode, int constellation_size) -> symbol_demapper_1seg_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::symbol_demapper_1seg.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::symbol_demapper_1seg's constructor is in a private implementation class. oneseg::symbol_demapper_1seg::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (mode, constellation_size)\n"
+		""},
 	 { (char *)"symbol_demapper_1seg_sptr_history", _wrap_symbol_demapper_1seg_sptr_history, METH_VARARGS, (char *)"symbol_demapper_1seg_sptr_history(symbol_demapper_1seg_sptr self) -> unsigned int"},
 	 { (char *)"symbol_demapper_1seg_sptr_declare_sample_delay", _wrap_symbol_demapper_1seg_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -37403,7 +37467,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"symbol_demapper_1seg_sptr_message_ports_out", _wrap_symbol_demapper_1seg_sptr_message_ports_out, METH_VARARGS, (char *)"symbol_demapper_1seg_sptr_message_ports_out(symbol_demapper_1seg_sptr self) -> swig_int_ptr"},
 	 { (char *)"symbol_demapper_1seg_sptr_message_subscribers", (PyCFunction) _wrap_symbol_demapper_1seg_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"symbol_demapper_1seg_sptr_message_subscribers(symbol_demapper_1seg_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"symbol_demapper_1seg_sptr_swigregister", symbol_demapper_1seg_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"bit_deinterleaver_make", (PyCFunction) _wrap_bit_deinterleaver_make, METH_VARARGS | METH_KEYWORDS, (char *)"bit_deinterleaver_make(int mode, int segments, int constellation_size) -> bit_deinterleaver_sptr"},
+	 { (char *)"bit_deinterleaver_make", (PyCFunction) _wrap_bit_deinterleaver_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"bit_deinterleaver_make(int mode, int segments, int constellation_size) -> bit_deinterleaver_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::bit_deinterleaver.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::bit_deinterleaver's constructor is in a private implementation class. oneseg::bit_deinterleaver::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (mode, segments, constellation_size)\n"
+		""},
 	 { (char *)"delete_bit_deinterleaver", _wrap_delete_bit_deinterleaver, METH_VARARGS, (char *)"delete_bit_deinterleaver(bit_deinterleaver self)"},
 	 { (char *)"bit_deinterleaver_swigregister", bit_deinterleaver_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_bit_deinterleaver_sptr", _wrap_new_bit_deinterleaver_sptr, METH_VARARGS, (char *)"\n"
@@ -37412,7 +37484,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"bit_deinterleaver_sptr___deref__", _wrap_bit_deinterleaver_sptr___deref__, METH_VARARGS, (char *)"bit_deinterleaver_sptr___deref__(bit_deinterleaver_sptr self) -> bit_deinterleaver"},
 	 { (char *)"delete_bit_deinterleaver_sptr", _wrap_delete_bit_deinterleaver_sptr, METH_VARARGS, (char *)"delete_bit_deinterleaver_sptr(bit_deinterleaver_sptr self)"},
-	 { (char *)"bit_deinterleaver_sptr_make", (PyCFunction) _wrap_bit_deinterleaver_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"bit_deinterleaver_sptr_make(bit_deinterleaver_sptr self, int mode, int segments, int constellation_size) -> bit_deinterleaver_sptr"},
+	 { (char *)"bit_deinterleaver_sptr_make", (PyCFunction) _wrap_bit_deinterleaver_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"bit_deinterleaver_sptr_make(bit_deinterleaver_sptr self, int mode, int segments, int constellation_size) -> bit_deinterleaver_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::bit_deinterleaver.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::bit_deinterleaver's constructor is in a private implementation class. oneseg::bit_deinterleaver::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (mode, segments, constellation_size)\n"
+		""},
 	 { (char *)"bit_deinterleaver_sptr_history", _wrap_bit_deinterleaver_sptr_history, METH_VARARGS, (char *)"bit_deinterleaver_sptr_history(bit_deinterleaver_sptr self) -> unsigned int"},
 	 { (char *)"bit_deinterleaver_sptr_declare_sample_delay", _wrap_bit_deinterleaver_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -37496,7 +37576,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"bit_deinterleaver_sptr_message_ports_out", _wrap_bit_deinterleaver_sptr_message_ports_out, METH_VARARGS, (char *)"bit_deinterleaver_sptr_message_ports_out(bit_deinterleaver_sptr self) -> swig_int_ptr"},
 	 { (char *)"bit_deinterleaver_sptr_message_subscribers", (PyCFunction) _wrap_bit_deinterleaver_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"bit_deinterleaver_sptr_message_subscribers(bit_deinterleaver_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"bit_deinterleaver_sptr_swigregister", bit_deinterleaver_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"viterbi_decoder_make", (PyCFunction) _wrap_viterbi_decoder_make, METH_VARARGS | METH_KEYWORDS, (char *)"viterbi_decoder_make(int constellation_size, int rate) -> viterbi_decoder_sptr"},
+	 { (char *)"viterbi_decoder_make", (PyCFunction) _wrap_viterbi_decoder_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"viterbi_decoder_make(int constellation_size, int rate) -> viterbi_decoder_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::viterbi_decoder.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::viterbi_decoder's constructor is in a private implementation class. oneseg::viterbi_decoder::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (constellation_size, rate)\n"
+		""},
 	 { (char *)"delete_viterbi_decoder", _wrap_delete_viterbi_decoder, METH_VARARGS, (char *)"delete_viterbi_decoder(viterbi_decoder self)"},
 	 { (char *)"viterbi_decoder_swigregister", viterbi_decoder_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_viterbi_decoder_sptr", _wrap_new_viterbi_decoder_sptr, METH_VARARGS, (char *)"\n"
@@ -37505,7 +37593,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"viterbi_decoder_sptr___deref__", _wrap_viterbi_decoder_sptr___deref__, METH_VARARGS, (char *)"viterbi_decoder_sptr___deref__(viterbi_decoder_sptr self) -> viterbi_decoder"},
 	 { (char *)"delete_viterbi_decoder_sptr", _wrap_delete_viterbi_decoder_sptr, METH_VARARGS, (char *)"delete_viterbi_decoder_sptr(viterbi_decoder_sptr self)"},
-	 { (char *)"viterbi_decoder_sptr_make", (PyCFunction) _wrap_viterbi_decoder_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"viterbi_decoder_sptr_make(viterbi_decoder_sptr self, int constellation_size, int rate) -> viterbi_decoder_sptr"},
+	 { (char *)"viterbi_decoder_sptr_make", (PyCFunction) _wrap_viterbi_decoder_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"viterbi_decoder_sptr_make(viterbi_decoder_sptr self, int constellation_size, int rate) -> viterbi_decoder_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::viterbi_decoder.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::viterbi_decoder's constructor is in a private implementation class. oneseg::viterbi_decoder::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (constellation_size, rate)\n"
+		""},
 	 { (char *)"viterbi_decoder_sptr_history", _wrap_viterbi_decoder_sptr_history, METH_VARARGS, (char *)"viterbi_decoder_sptr_history(viterbi_decoder_sptr self) -> unsigned int"},
 	 { (char *)"viterbi_decoder_sptr_declare_sample_delay", _wrap_viterbi_decoder_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -37589,7 +37685,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"viterbi_decoder_sptr_message_ports_out", _wrap_viterbi_decoder_sptr_message_ports_out, METH_VARARGS, (char *)"viterbi_decoder_sptr_message_ports_out(viterbi_decoder_sptr self) -> swig_int_ptr"},
 	 { (char *)"viterbi_decoder_sptr_message_subscribers", (PyCFunction) _wrap_viterbi_decoder_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"viterbi_decoder_sptr_message_subscribers(viterbi_decoder_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"viterbi_decoder_sptr_swigregister", viterbi_decoder_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"byte_deinterleaver_make", _wrap_byte_deinterleaver_make, METH_VARARGS, (char *)"byte_deinterleaver_make() -> byte_deinterleaver_sptr"},
+	 { (char *)"byte_deinterleaver_make", _wrap_byte_deinterleaver_make, METH_VARARGS, (char *)"\n"
+		"byte_deinterleaver_make() -> byte_deinterleaver_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::byte_deinterleaver.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::byte_deinterleaver's constructor is in a private implementation class. oneseg::byte_deinterleaver::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
 	 { (char *)"delete_byte_deinterleaver", _wrap_delete_byte_deinterleaver, METH_VARARGS, (char *)"delete_byte_deinterleaver(byte_deinterleaver self)"},
 	 { (char *)"byte_deinterleaver_swigregister", byte_deinterleaver_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_byte_deinterleaver_sptr", _wrap_new_byte_deinterleaver_sptr, METH_VARARGS, (char *)"\n"
@@ -37598,7 +37702,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"byte_deinterleaver_sptr___deref__", _wrap_byte_deinterleaver_sptr___deref__, METH_VARARGS, (char *)"byte_deinterleaver_sptr___deref__(byte_deinterleaver_sptr self) -> byte_deinterleaver"},
 	 { (char *)"delete_byte_deinterleaver_sptr", _wrap_delete_byte_deinterleaver_sptr, METH_VARARGS, (char *)"delete_byte_deinterleaver_sptr(byte_deinterleaver_sptr self)"},
-	 { (char *)"byte_deinterleaver_sptr_make", _wrap_byte_deinterleaver_sptr_make, METH_VARARGS, (char *)"byte_deinterleaver_sptr_make(byte_deinterleaver_sptr self) -> byte_deinterleaver_sptr"},
+	 { (char *)"byte_deinterleaver_sptr_make", _wrap_byte_deinterleaver_sptr_make, METH_VARARGS, (char *)"\n"
+		"byte_deinterleaver_sptr_make(byte_deinterleaver_sptr self) -> byte_deinterleaver_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::byte_deinterleaver.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::byte_deinterleaver's constructor is in a private implementation class. oneseg::byte_deinterleaver::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
 	 { (char *)"byte_deinterleaver_sptr_history", _wrap_byte_deinterleaver_sptr_history, METH_VARARGS, (char *)"byte_deinterleaver_sptr_history(byte_deinterleaver_sptr self) -> unsigned int"},
 	 { (char *)"byte_deinterleaver_sptr_declare_sample_delay", _wrap_byte_deinterleaver_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -37682,7 +37794,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"byte_deinterleaver_sptr_message_ports_out", _wrap_byte_deinterleaver_sptr_message_ports_out, METH_VARARGS, (char *)"byte_deinterleaver_sptr_message_ports_out(byte_deinterleaver_sptr self) -> swig_int_ptr"},
 	 { (char *)"byte_deinterleaver_sptr_message_subscribers", (PyCFunction) _wrap_byte_deinterleaver_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"byte_deinterleaver_sptr_message_subscribers(byte_deinterleaver_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"byte_deinterleaver_sptr_swigregister", byte_deinterleaver_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"energy_descrambler_make", _wrap_energy_descrambler_make, METH_VARARGS, (char *)"energy_descrambler_make() -> energy_descrambler_sptr"},
+	 { (char *)"energy_descrambler_make", _wrap_energy_descrambler_make, METH_VARARGS, (char *)"\n"
+		"energy_descrambler_make() -> energy_descrambler_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::energy_descrambler.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::energy_descrambler's constructor is in a private implementation class. oneseg::energy_descrambler::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
 	 { (char *)"delete_energy_descrambler", _wrap_delete_energy_descrambler, METH_VARARGS, (char *)"delete_energy_descrambler(energy_descrambler self)"},
 	 { (char *)"energy_descrambler_swigregister", energy_descrambler_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_energy_descrambler_sptr", _wrap_new_energy_descrambler_sptr, METH_VARARGS, (char *)"\n"
@@ -37691,7 +37811,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"energy_descrambler_sptr___deref__", _wrap_energy_descrambler_sptr___deref__, METH_VARARGS, (char *)"energy_descrambler_sptr___deref__(energy_descrambler_sptr self) -> energy_descrambler"},
 	 { (char *)"delete_energy_descrambler_sptr", _wrap_delete_energy_descrambler_sptr, METH_VARARGS, (char *)"delete_energy_descrambler_sptr(energy_descrambler_sptr self)"},
-	 { (char *)"energy_descrambler_sptr_make", _wrap_energy_descrambler_sptr_make, METH_VARARGS, (char *)"energy_descrambler_sptr_make(energy_descrambler_sptr self) -> energy_descrambler_sptr"},
+	 { (char *)"energy_descrambler_sptr_make", _wrap_energy_descrambler_sptr_make, METH_VARARGS, (char *)"\n"
+		"energy_descrambler_sptr_make(energy_descrambler_sptr self) -> energy_descrambler_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::energy_descrambler.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::energy_descrambler's constructor is in a private implementation class. oneseg::energy_descrambler::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
 	 { (char *)"energy_descrambler_sptr_history", _wrap_energy_descrambler_sptr_history, METH_VARARGS, (char *)"energy_descrambler_sptr_history(energy_descrambler_sptr self) -> unsigned int"},
 	 { (char *)"energy_descrambler_sptr_declare_sample_delay", _wrap_energy_descrambler_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -37775,7 +37903,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"energy_descrambler_sptr_message_ports_out", _wrap_energy_descrambler_sptr_message_ports_out, METH_VARARGS, (char *)"energy_descrambler_sptr_message_ports_out(energy_descrambler_sptr self) -> swig_int_ptr"},
 	 { (char *)"energy_descrambler_sptr_message_subscribers", (PyCFunction) _wrap_energy_descrambler_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"energy_descrambler_sptr_message_subscribers(energy_descrambler_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"energy_descrambler_sptr_swigregister", energy_descrambler_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"reed_solomon_dec_isdbt_make", _wrap_reed_solomon_dec_isdbt_make, METH_VARARGS, (char *)"reed_solomon_dec_isdbt_make() -> reed_solomon_dec_isdbt_sptr"},
+	 { (char *)"reed_solomon_dec_isdbt_make", _wrap_reed_solomon_dec_isdbt_make, METH_VARARGS, (char *)"\n"
+		"reed_solomon_dec_isdbt_make() -> reed_solomon_dec_isdbt_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::reed_solomon_dec_isdbt.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::reed_solomon_dec_isdbt's constructor is in a private implementation class. oneseg::reed_solomon_dec_isdbt::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
 	 { (char *)"delete_reed_solomon_dec_isdbt", _wrap_delete_reed_solomon_dec_isdbt, METH_VARARGS, (char *)"delete_reed_solomon_dec_isdbt(reed_solomon_dec_isdbt self)"},
 	 { (char *)"reed_solomon_dec_isdbt_swigregister", reed_solomon_dec_isdbt_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_reed_solomon_dec_isdbt_sptr", _wrap_new_reed_solomon_dec_isdbt_sptr, METH_VARARGS, (char *)"\n"
@@ -37784,7 +37920,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"reed_solomon_dec_isdbt_sptr___deref__", _wrap_reed_solomon_dec_isdbt_sptr___deref__, METH_VARARGS, (char *)"reed_solomon_dec_isdbt_sptr___deref__(reed_solomon_dec_isdbt_sptr self) -> reed_solomon_dec_isdbt"},
 	 { (char *)"delete_reed_solomon_dec_isdbt_sptr", _wrap_delete_reed_solomon_dec_isdbt_sptr, METH_VARARGS, (char *)"delete_reed_solomon_dec_isdbt_sptr(reed_solomon_dec_isdbt_sptr self)"},
-	 { (char *)"reed_solomon_dec_isdbt_sptr_make", _wrap_reed_solomon_dec_isdbt_sptr_make, METH_VARARGS, (char *)"reed_solomon_dec_isdbt_sptr_make(reed_solomon_dec_isdbt_sptr self) -> reed_solomon_dec_isdbt_sptr"},
+	 { (char *)"reed_solomon_dec_isdbt_sptr_make", _wrap_reed_solomon_dec_isdbt_sptr_make, METH_VARARGS, (char *)"\n"
+		"reed_solomon_dec_isdbt_sptr_make(reed_solomon_dec_isdbt_sptr self) -> reed_solomon_dec_isdbt_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of oneseg::reed_solomon_dec_isdbt.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, oneseg::reed_solomon_dec_isdbt's constructor is in a private implementation class. oneseg::reed_solomon_dec_isdbt::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (NONE)\n"
+		""},
 	 { (char *)"reed_solomon_dec_isdbt_sptr_history", _wrap_reed_solomon_dec_isdbt_sptr_history, METH_VARARGS, (char *)"reed_solomon_dec_isdbt_sptr_history(reed_solomon_dec_isdbt_sptr self) -> unsigned int"},
 	 { (char *)"reed_solomon_dec_isdbt_sptr_declare_sample_delay", _wrap_reed_solomon_dec_isdbt_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
