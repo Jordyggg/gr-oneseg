@@ -26,7 +26,7 @@ git clone https://github.com/Jordyggg/gr-oneseg.git
     make && sudo make install
     sudo ldconfig  
 
-FOR another Operative Systems and different location for the intallation of GNU Radio  in needed the following instructions:
+FOR another Operative Systems and different location for the installation of GNU Radio  in needed the following instructions:
 
 git clone https://github.com/Jordyggg/gr-oneseg.git   
     cd gr-oneseg   
