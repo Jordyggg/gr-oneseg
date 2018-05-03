@@ -123,7 +123,7 @@ find_package(Doxygen)
 # caps such as FILTER or FFT) and change the version to the minimum
 # API compatible version required.
 
-set(Gnuradio REQUIRED FILTER DIGITAL VOLK FFT FILTER FEC)
+set(GR_REQUIRED_COMPONENTS RUNTIME VOLK FFT FILTER FEC)
 find_package(Gnuradio "3.7.2" REQUIRED)
 list(INSERT CMAKE_MODULE_PATH 0 ${CMAKE_SOURCE_DIR}/cmake/Modules)
 include(GrVersion)

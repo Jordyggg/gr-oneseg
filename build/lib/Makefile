@@ -249,6 +249,87 @@ byte_deinterleaver_impl.cc.s:
 	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/byte_deinterleaver_impl.cc.s
 .PHONY : byte_deinterleaver_impl.cc.s
 
+d_metrics.o: d_metrics.c.o
+
+.PHONY : d_metrics.o
+
+# target to build an object file
+d_metrics.c.o:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o
+.PHONY : d_metrics.c.o
+
+d_metrics.i: d_metrics.c.i
+
+.PHONY : d_metrics.i
+
+# target to preprocess a source file
+d_metrics.c.i:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.i
+.PHONY : d_metrics.c.i
+
+d_metrics.s: d_metrics.c.s
+
+.PHONY : d_metrics.s
+
+# target to generate assembly for a file
+d_metrics.c.s:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.s
+.PHONY : d_metrics.c.s
+
+d_tab.o: d_tab.c.o
+
+.PHONY : d_tab.o
+
+# target to build an object file
+d_tab.c.o:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o
+.PHONY : d_tab.c.o
+
+d_tab.i: d_tab.c.i
+
+.PHONY : d_tab.i
+
+# target to preprocess a source file
+d_tab.c.i:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.i
+.PHONY : d_tab.c.i
+
+d_tab.s: d_tab.c.s
+
+.PHONY : d_tab.s
+
+# target to generate assembly for a file
+d_tab.c.s:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.s
+.PHONY : d_tab.c.s
+
+d_viterbi.o: d_viterbi.c.o
+
+.PHONY : d_viterbi.o
+
+# target to build an object file
+d_viterbi.c.o:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o
+.PHONY : d_viterbi.c.o
+
+d_viterbi.i: d_viterbi.c.i
+
+.PHONY : d_viterbi.i
+
+# target to preprocess a source file
+d_viterbi.c.i:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.i
+.PHONY : d_viterbi.c.i
+
+d_viterbi.s: d_viterbi.c.s
+
+.PHONY : d_viterbi.s
+
+# target to generate assembly for a file
+d_viterbi.c.s:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.s
+.PHONY : d_viterbi.c.s
+
 energy_descrambler_impl.o: energy_descrambler_impl.cc.o
 
 .PHONY : energy_descrambler_impl.o
@@ -810,6 +891,15 @@ help:
 	@echo "... byte_deinterleaver_impl.o"
 	@echo "... byte_deinterleaver_impl.i"
 	@echo "... byte_deinterleaver_impl.s"
+	@echo "... d_metrics.o"
+	@echo "... d_metrics.i"
+	@echo "... d_metrics.s"
+	@echo "... d_tab.o"
+	@echo "... d_tab.i"
+	@echo "... d_tab.s"
+	@echo "... d_viterbi.o"
+	@echo "... d_viterbi.i"
+	@echo "... d_viterbi.s"
 	@echo "... energy_descrambler_impl.o"
 	@echo "... energy_descrambler_impl.i"
 	@echo "... energy_descrambler_impl.s"

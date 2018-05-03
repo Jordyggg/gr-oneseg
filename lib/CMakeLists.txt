@@ -34,6 +34,9 @@ list(APPEND oneseg_sources
     viterbi_decoder_impl.cc
     byte_deinterleaver_impl.cc
     energy_descrambler_impl.cc
+    d_viterbi.c
+    d_metrics.c
+    d_tab.c
     reed_solomon_dec_isdbt_impl.cc )
 
 set(oneseg_sources "${oneseg_sources}" PARENT_SCOPE)

@@ -273,9 +273,81 @@ lib/CMakeFiles/gnuradio-oneseg.dir/energy_descrambler_impl.cc.o.provides: lib/CM
 lib/CMakeFiles/gnuradio-oneseg.dir/energy_descrambler_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-oneseg.dir/energy_descrambler_impl.cc.o
 
 
+lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o: lib/CMakeFiles/gnuradio-oneseg.dir/flags.make
+lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o: ../lib/d_viterbi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o   -c /home/jordy/gr-oneseg/lib/d_viterbi.c
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.i"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jordy/gr-oneseg/lib/d_viterbi.c > CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.i
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.s"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jordy/gr-oneseg/lib/d_viterbi.c -o CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.s
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o.requires
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o.provides: lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o.provides
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o.provides.build: lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o
+
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o: lib/CMakeFiles/gnuradio-oneseg.dir/flags.make
+lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o: ../lib/d_metrics.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o   -c /home/jordy/gr-oneseg/lib/d_metrics.c
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.i"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jordy/gr-oneseg/lib/d_metrics.c > CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.i
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.s"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jordy/gr-oneseg/lib/d_metrics.c -o CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.s
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o.requires
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o.provides: lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o.provides
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o.provides.build: lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o
+
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o: lib/CMakeFiles/gnuradio-oneseg.dir/flags.make
+lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o: ../lib/d_tab.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o   -c /home/jordy/gr-oneseg/lib/d_tab.c
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gnuradio-oneseg.dir/d_tab.c.i"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/jordy/gr-oneseg/lib/d_tab.c > CMakeFiles/gnuradio-oneseg.dir/d_tab.c.i
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gnuradio-oneseg.dir/d_tab.c.s"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/jordy/gr-oneseg/lib/d_tab.c -o CMakeFiles/gnuradio-oneseg.dir/d_tab.c.s
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o.requires:
+
+.PHONY : lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o.requires
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o.provides: lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o.provides
+
+lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o.provides.build: lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o
+
+
 lib/CMakeFiles/gnuradio-oneseg.dir/reed_solomon_dec_isdbt_impl.cc.o: lib/CMakeFiles/gnuradio-oneseg.dir/flags.make
 lib/CMakeFiles/gnuradio-oneseg.dir/reed_solomon_dec_isdbt_impl.cc.o: ../lib/reed_solomon_dec_isdbt_impl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/CMakeFiles/gnuradio-oneseg.dir/reed_solomon_dec_isdbt_impl.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object lib/CMakeFiles/gnuradio-oneseg.dir/reed_solomon_dec_isdbt_impl.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-oneseg.dir/reed_solomon_dec_isdbt_impl.cc.o -c /home/jordy/gr-oneseg/lib/reed_solomon_dec_isdbt_impl.cc
 
 lib/CMakeFiles/gnuradio-oneseg.dir/reed_solomon_dec_isdbt_impl.cc.i: cmake_force
@@ -308,6 +380,9 @@ gnuradio__oneseg_OBJECTS = \
 "CMakeFiles/gnuradio-oneseg.dir/viterbi_decoder_impl.cc.o" \
 "CMakeFiles/gnuradio-oneseg.dir/byte_deinterleaver_impl.cc.o" \
 "CMakeFiles/gnuradio-oneseg.dir/energy_descrambler_impl.cc.o" \
+"CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o" \
+"CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o" \
+"CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o" \
 "CMakeFiles/gnuradio-oneseg.dir/reed_solomon_dec_isdbt_impl.cc.o"
 
 # External object files for target gnuradio-oneseg
@@ -322,20 +397,21 @@ lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/bit
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/viterbi_decoder_impl.cc.o
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/byte_deinterleaver_impl.cc.o
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/energy_descrambler_impl.cc.o
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/reed_solomon_dec_isdbt_impl.cc.o
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/build.make
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_system.so
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-runtime.so
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-pmt.so
-lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-analog.so
-lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libvolk.so
-lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-blocks.so
-lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-digital.so
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-fec.so
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-fft.so
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-filter.so
+lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: /usr/local/lib/libvolk.so
 lib/libgnuradio-oneseg-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-oneseg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library libgnuradio-oneseg-1.0.0git.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared library libgnuradio-oneseg-1.0.0git.so"
 	cd /home/jordy/gr-oneseg/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-oneseg.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/jordy/gr-oneseg/build/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-oneseg-1.0.0git.so.0.0.0 libgnuradio-oneseg-1.0.0git.so.0.0.0 libgnuradio-oneseg-1.0.0git.so
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/cmake -E create_symlink libgnuradio-oneseg-1.0.0git.so.0.0.0 /home/jordy/gr-oneseg/build/lib/libgnuradio-oneseg.so
@@ -359,6 +435,9 @@ lib/CMakeFiles/gnuradio-oneseg.dir/requires: lib/CMakeFiles/gnuradio-oneseg.dir/
 lib/CMakeFiles/gnuradio-oneseg.dir/requires: lib/CMakeFiles/gnuradio-oneseg.dir/viterbi_decoder_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-oneseg.dir/requires: lib/CMakeFiles/gnuradio-oneseg.dir/byte_deinterleaver_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-oneseg.dir/requires: lib/CMakeFiles/gnuradio-oneseg.dir/energy_descrambler_impl.cc.o.requires
+lib/CMakeFiles/gnuradio-oneseg.dir/requires: lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o.requires
+lib/CMakeFiles/gnuradio-oneseg.dir/requires: lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o.requires
+lib/CMakeFiles/gnuradio-oneseg.dir/requires: lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o.requires
 lib/CMakeFiles/gnuradio-oneseg.dir/requires: lib/CMakeFiles/gnuradio-oneseg.dir/reed_solomon_dec_isdbt_impl.cc.o.requires
 
 .PHONY : lib/CMakeFiles/gnuradio-oneseg.dir/requires

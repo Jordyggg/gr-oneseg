@@ -1,8 +1,24 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/jordy/gr-oneseg/lib/d_metrics.c" "/home/jordy/gr-oneseg/build/lib/CMakeFiles/gnuradio-oneseg.dir/d_metrics.c.o"
+  "/home/jordy/gr-oneseg/lib/d_tab.c" "/home/jordy/gr-oneseg/build/lib/CMakeFiles/gnuradio-oneseg.dir/d_tab.c.o"
+  "/home/jordy/gr-oneseg/lib/d_viterbi.c" "/home/jordy/gr-oneseg/build/lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../lib"
+  "../include"
+  "lib"
+  "include"
+  "/usr/local/include"
+  )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jordy/gr-oneseg/lib/bit_deinterleaver_impl.cc" "/home/jordy/gr-oneseg/build/lib/CMakeFiles/gnuradio-oneseg.dir/bit_deinterleaver_impl.cc.o"
   "/home/jordy/gr-oneseg/lib/byte_deinterleaver_impl.cc" "/home/jordy/gr-oneseg/build/lib/CMakeFiles/gnuradio-oneseg.dir/byte_deinterleaver_impl.cc.o"

@@ -4,7 +4,7 @@
 # GNU Radio Python Flow Graph
 # Title: Receptor ISDBTb ONESEG
 # Description: demodula la señal de IDSBT de un segmento
-# Generated: Sat Apr  7 12:17:59 2018
+# Generated: Wed May  2 20:45:36 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -21,9 +21,11 @@ import os
 import sys
 sys.path.append(os.environ.get('GRC_HIER_PATH', os.path.expanduser('~/.grc_gnuradio')))
 
+from MER_OneSeg import MER_OneSeg  # grc-generated hier_block
 from PyQt4 import Qt
 from PyQt4.QtCore import QObject, pyqtSlot
 from SYNC_DEM_OFDM_1SEG import SYNC_DEM_OFDM_1SEG  # grc-generated hier_block
+from decoder_1seg import decoder_1seg  # grc-generated hier_block
 from gnuradio import blocks
 from gnuradio import eng_notation
 from gnuradio import filter
@@ -97,6 +99,39 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self._mode_combo_box.currentIndexChanged.connect(
         	lambda i: self.set_mode(self._mode_options[i]))
         self.Tabber1_grid_layout_0.addWidget(self._mode_tool_bar, 1,0,1,0)
+        self._time_options = (0*2**(mode-1), 1*2**(mode-1), 2*2**(mode-1), 3*2**(mode-1), )
+        self._time_labels = ('op1', 'op2', 'op3', 'op4', )
+        self._time_tool_bar = Qt.QToolBar(self)
+        self._time_tool_bar.addWidget(Qt.QLabel('Length time'+": "))
+        self._time_combo_box = Qt.QComboBox()
+        self._time_tool_bar.addWidget(self._time_combo_box)
+        for label in self._time_labels: self._time_combo_box.addItem(label)
+        self._time_callback = lambda i: Qt.QMetaObject.invokeMethod(self._time_combo_box, "setCurrentIndex", Qt.Q_ARG("int", self._time_options.index(i)))
+        self._time_callback(self.time)
+        self._time_combo_box.currentIndexChanged.connect(
+        	lambda i: self.set_time(self._time_options[i]))
+        self.Tabber1_grid_layout_0.addWidget(self._time_tool_bar, 3,0,1,0)
+        self._rate_options = (0, 1, 2, 3, )
+        self._rate_labels = ('1/2', '2/3', '3/4', '5/6', )
+        self._rate_group_box = Qt.QGroupBox('Viterbi Rate')
+        self._rate_box = Qt.QVBoxLayout()
+        class variable_chooser_button_group(Qt.QButtonGroup):
+            def __init__(self, parent=None):
+                Qt.QButtonGroup.__init__(self, parent)
+            @pyqtSlot(int)
+            def updateButtonChecked(self, button_id):
+                self.button(button_id).setChecked(True)
+        self._rate_button_group = variable_chooser_button_group()
+        self._rate_group_box.setLayout(self._rate_box)
+        for i, label in enumerate(self._rate_labels):
+        	radio_button = Qt.QRadioButton(label)
+        	self._rate_box.addWidget(radio_button)
+        	self._rate_button_group.addButton(radio_button, i)
+        self._rate_callback = lambda i: Qt.QMetaObject.invokeMethod(self._rate_button_group, "updateButtonChecked", Qt.Q_ARG("int", self._rate_options.index(i)))
+        self._rate_callback(self.rate)
+        self._rate_button_group.buttonClicked[int].connect(
+        	lambda i: self.set_rate(self._rate_options[i]))
+        self.Tabber1_grid_layout_0.addWidget(self._rate_group_box, 4,0,1,0)
         self._guard_options = (1/4.0, 1/8.0, 1/16.0, 1/32.0, )
         self._guard_labels = ('1/4', '1/8', '1/16', '1/32', )
         self._guard_tool_bar = Qt.QToolBar(self)
@@ -138,39 +173,6 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self.Tabber_layout_3.addLayout(self.Tabber_grid_layout_3)
         self.Tabber.addTab(self.Tabber_widget_3, 'Measurements')
         self.top_grid_layout.addWidget(self.Tabber, 0,2,1,2)
-        self._time_options = (0*2**(mode-1), 1*2**(mode-1), 2*2**(mode-1), 3*2**(mode-1), )
-        self._time_labels = ('op1', 'op2', 'op3', 'op4', )
-        self._time_tool_bar = Qt.QToolBar(self)
-        self._time_tool_bar.addWidget(Qt.QLabel('Length time'+": "))
-        self._time_combo_box = Qt.QComboBox()
-        self._time_tool_bar.addWidget(self._time_combo_box)
-        for label in self._time_labels: self._time_combo_box.addItem(label)
-        self._time_callback = lambda i: Qt.QMetaObject.invokeMethod(self._time_combo_box, "setCurrentIndex", Qt.Q_ARG("int", self._time_options.index(i)))
-        self._time_callback(self.time)
-        self._time_combo_box.currentIndexChanged.connect(
-        	lambda i: self.set_time(self._time_options[i]))
-        self.Tabber1_grid_layout_0.addWidget(self._time_tool_bar, 3,0,1,0)
-        self._rate_options = (0, 1, 2, 3, )
-        self._rate_labels = ('1/2', '2/3', '3/4', '5/6', )
-        self._rate_group_box = Qt.QGroupBox('Viterbi Rate')
-        self._rate_box = Qt.QVBoxLayout()
-        class variable_chooser_button_group(Qt.QButtonGroup):
-            def __init__(self, parent=None):
-                Qt.QButtonGroup.__init__(self, parent)
-            @pyqtSlot(int)
-            def updateButtonChecked(self, button_id):
-                self.button(button_id).setChecked(True)
-        self._rate_button_group = variable_chooser_button_group()
-        self._rate_group_box.setLayout(self._rate_box)
-        for i, label in enumerate(self._rate_labels):
-        	radio_button = Qt.QRadioButton(label)
-        	self._rate_box.addWidget(radio_button)
-        	self._rate_button_group.addButton(radio_button, i)
-        self._rate_callback = lambda i: Qt.QMetaObject.invokeMethod(self._rate_button_group, "updateButtonChecked", Qt.Q_ARG("int", self._rate_options.index(i)))
-        self._rate_callback(self.rate)
-        self._rate_button_group.buttonClicked[int].connect(
-        	lambda i: self.set_rate(self._rate_options[i]))
-        self.Tabber1_grid_layout_0.addWidget(self._rate_group_box, 4,0,1,0)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
         	2*(int(total_carriers*(1+guard))), #size
         	samp_rate, #samp_rate
@@ -249,6 +251,99 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self.qtgui_number_sink_0_1.enable_autoscale(False)
         self._qtgui_number_sink_0_1_win = sip.wrapinstance(self.qtgui_number_sink_0_1.pyqwidget(), Qt.QWidget)
         self.Tabber_grid_layout_3.addWidget(self._qtgui_number_sink_0_1_win, 0,2,1,1)
+        self.qtgui_number_sink_0_0_0 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_VERT,
+            1
+        )
+        self.qtgui_number_sink_0_0_0.set_update_time(0.1)
+        self.qtgui_number_sink_0_0_0.set_title("BER Reed Solomon")
+        
+        labels = ['', '', '', '', '',
+                  '', '', '', '', '']
+        units = ['', '', '', '', '',
+                 '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+                  ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+                  1, 1, 1, 1, 1]
+        for i in xrange(1):
+            self.qtgui_number_sink_0_0_0.set_min(i, -10)
+            self.qtgui_number_sink_0_0_0.set_max(i, 0)
+            self.qtgui_number_sink_0_0_0.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0_0_0.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0_0_0.set_label(i, labels[i])
+            self.qtgui_number_sink_0_0_0.set_unit(i, units[i])
+            self.qtgui_number_sink_0_0_0.set_factor(i, factor[i])
+        
+        self.qtgui_number_sink_0_0_0.enable_autoscale(False)
+        self._qtgui_number_sink_0_0_0_win = sip.wrapinstance(self.qtgui_number_sink_0_0_0.pyqwidget(), Qt.QWidget)
+        self.Tabber_grid_layout_3.addWidget(self._qtgui_number_sink_0_0_0_win, 0,4,1,1)
+        self.qtgui_number_sink_0_0 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_VERT,
+            1
+        )
+        self.qtgui_number_sink_0_0.set_update_time(0.1)
+        self.qtgui_number_sink_0_0.set_title("BER Viterbi")
+        
+        labels = ['', '', '', '', '',
+                  '', '', '', '', '']
+        units = ['', '', '', '', '',
+                 '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+                  ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+                  1, 1, 1, 1, 1]
+        for i in xrange(1):
+            self.qtgui_number_sink_0_0.set_min(i, -20)
+            self.qtgui_number_sink_0_0.set_max(i, 0)
+            self.qtgui_number_sink_0_0.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0_0.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0_0.set_label(i, labels[i])
+            self.qtgui_number_sink_0_0.set_unit(i, units[i])
+            self.qtgui_number_sink_0_0.set_factor(i, factor[i])
+        
+        self.qtgui_number_sink_0_0.enable_autoscale(False)
+        self._qtgui_number_sink_0_0_win = sip.wrapinstance(self.qtgui_number_sink_0_0.pyqwidget(), Qt.QWidget)
+        self.Tabber_grid_layout_3.addWidget(self._qtgui_number_sink_0_0_win, 0,3,1,1)
+        self.qtgui_number_sink_0 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_VERT,
+            1
+        )
+        self.qtgui_number_sink_0.set_update_time(0.1)
+        self.qtgui_number_sink_0.set_title("Modulation Error Rate")
+        
+        labels = ['', '', '', '', '',
+                  '', '', '', '', '']
+        units = ['', '', '', '', '',
+                 '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+                  ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+                  1, 1, 1, 1, 1]
+        for i in xrange(1):
+            self.qtgui_number_sink_0.set_min(i, 0)
+            self.qtgui_number_sink_0.set_max(i, 30)
+            self.qtgui_number_sink_0.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0.set_label(i, labels[i])
+            self.qtgui_number_sink_0.set_unit(i, units[i])
+            self.qtgui_number_sink_0.set_factor(i, factor[i])
+        
+        self.qtgui_number_sink_0.enable_autoscale(False)
+        self._qtgui_number_sink_0_win = sip.wrapinstance(self.qtgui_number_sink_0.pyqwidget(), Qt.QWidget)
+        self.Tabber_grid_layout_3.addWidget(self._qtgui_number_sink_0_win, 0,1,1,1)
         self.qtgui_freq_sink_x_0 = qtgui.freq_sink_c(
         	1024, #size
         	firdes.WIN_BLACKMAN_hARRIS, #wintype
@@ -292,15 +387,72 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         
         self._qtgui_freq_sink_x_0_win = sip.wrapinstance(self.qtgui_freq_sink_x_0.pyqwidget(), Qt.QWidget)
         self.Tabber_grid_layout_0.addWidget(self._qtgui_freq_sink_x_0_win, 0, 0,0,0)
+        self.qtgui_const_sink_x_0 = qtgui.const_sink_c(
+        	96*2**(mode-1), #size
+        	'Constellation', #name
+        	1 #number of inputs
+        )
+        self.qtgui_const_sink_x_0.set_update_time(0.10)
+        self.qtgui_const_sink_x_0.set_y_axis(-2, 2)
+        self.qtgui_const_sink_x_0.set_x_axis(-2, 2)
+        self.qtgui_const_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, "")
+        self.qtgui_const_sink_x_0.enable_autoscale(False)
+        self.qtgui_const_sink_x_0.enable_grid(False)
+        self.qtgui_const_sink_x_0.enable_axis_labels(True)
+        
+        if not True:
+          self.qtgui_const_sink_x_0.disable_legend()
+        
+        labels = ['', '', '', '', '',
+                  '', '', '', '', '']
+        widths = [1, 1, 1, 1, 1,
+                  1, 1, 1, 1, 1]
+        colors = ["blue", "red", "red", "red", "red",
+                  "red", "red", "red", "red", "red"]
+        styles = [0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0]
+        markers = [0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0]
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
+                  1.0, 1.0, 1.0, 1.0, 1.0]
+        for i in xrange(1):
+            if len(labels[i]) == 0:
+                self.qtgui_const_sink_x_0.set_line_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_const_sink_x_0.set_line_label(i, labels[i])
+            self.qtgui_const_sink_x_0.set_line_width(i, widths[i])
+            self.qtgui_const_sink_x_0.set_line_color(i, colors[i])
+            self.qtgui_const_sink_x_0.set_line_style(i, styles[i])
+            self.qtgui_const_sink_x_0.set_line_marker(i, markers[i])
+            self.qtgui_const_sink_x_0.set_line_alpha(i, alphas[i])
+        
+        self._qtgui_const_sink_x_0_win = sip.wrapinstance(self.qtgui_const_sink_x_0.pyqwidget(), Qt.QWidget)
+        self.Tabber_grid_layout_1.addWidget(self._qtgui_const_sink_x_0_win, 0,0,0,0)
+        self.oneseg_tmcc_decoder_1seg_0 = oneseg.tmcc_decoder_1seg(mode, True)
+        self.oneseg_time_deinterleaver_1seg_0 = oneseg.time_deinterleaver_1seg(mode, time)
+        self.oneseg_symbol_demapper_1seg_0 = oneseg.symbol_demapper_1seg(mode, 4)
         self.oneseg_ofdm_synchronization_1seg_0 = oneseg.ofdm_synchronization_1seg(mode, guard)
+        self.oneseg_frequency_deinterleaver_1seg_0 = oneseg.frequency_deinterleaver_1seg(mode)
         self.low_pass_filter_0 = filter.fir_filter_ccf(1, firdes.low_pass(
         	1, samp_rate, 500e3/2.0, 5e3, firdes.WIN_HAMMING, 6.76))
+        self.decoder_1seg_0 = decoder_1seg(
+            mod=4,
+            mode=mode,
+            rate=rate,
+        )
+        self.blocks_vector_to_stream_0_2 = blocks.vector_to_stream(gr.sizeof_gr_complex*1, 96*2**(mode-1))
+        self.blocks_vector_to_stream_0 = blocks.vector_to_stream(gr.sizeof_char*1, 188)
         self.blocks_throttle_0 = blocks.throttle(gr.sizeof_gr_complex*1, samp_rate,True)
         self.blocks_null_sink_0 = blocks.null_sink(gr.sizeof_gr_complex*432)
         self.blocks_file_source_1_0 = blocks.file_source(gr.sizeof_gr_complex*1, '/home/jordy/gr-isdbt/examples/SAVECANALES/GAMA_15.dat', True)
+        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/jordy/ones.ts', False)
+        self.blocks_file_sink_0.set_unbuffered(False)
         self.SYNC_DEM_OFDM_1SEG_1 = SYNC_DEM_OFDM_1SEG(
             carriers=total_carriers,
             guarda=guard,
+        )
+        self.MER_OneSeg_1 = MER_OneSeg(
+            Portadoras_OneSeg=96*2**(mode-1),
         )
         self._DB_tool_bar = Qt.QToolBar(self)
         self._DB_tool_bar.addWidget(Qt.QLabel('Ganancia USRP (dB)'+": "))
@@ -313,14 +465,27 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         ##################################################
         # Connections
         ##################################################
+        self.connect((self.MER_OneSeg_1, 0), (self.qtgui_number_sink_0, 0))    
         self.connect((self.SYNC_DEM_OFDM_1SEG_1, 0), (self.oneseg_ofdm_synchronization_1seg_0, 0))    
         self.connect((self.SYNC_DEM_OFDM_1SEG_1, 1), (self.qtgui_number_sink_0_1, 0))    
         self.connect((self.SYNC_DEM_OFDM_1SEG_1, 2), (self.qtgui_time_sink_x_0, 0))    
         self.connect((self.blocks_file_source_1_0, 0), (self.blocks_throttle_0, 0))    
         self.connect((self.blocks_throttle_0, 0), (self.low_pass_filter_0, 0))    
+        self.connect((self.blocks_vector_to_stream_0, 0), (self.blocks_file_sink_0, 0))    
+        self.connect((self.blocks_vector_to_stream_0_2, 0), (self.qtgui_const_sink_x_0, 0))    
+        self.connect((self.decoder_1seg_0, 0), (self.blocks_vector_to_stream_0, 0))    
+        self.connect((self.decoder_1seg_0, 2), (self.qtgui_number_sink_0_0, 0))    
+        self.connect((self.decoder_1seg_0, 1), (self.qtgui_number_sink_0_0_0, 0))    
         self.connect((self.low_pass_filter_0, 0), (self.SYNC_DEM_OFDM_1SEG_1, 0))    
         self.connect((self.low_pass_filter_0, 0), (self.qtgui_freq_sink_x_0, 0))    
+        self.connect((self.oneseg_frequency_deinterleaver_1seg_0, 0), (self.oneseg_time_deinterleaver_1seg_0, 0))    
         self.connect((self.oneseg_ofdm_synchronization_1seg_0, 0), (self.blocks_null_sink_0, 0))    
+        self.connect((self.oneseg_ofdm_synchronization_1seg_0, 0), (self.oneseg_tmcc_decoder_1seg_0, 0))    
+        self.connect((self.oneseg_symbol_demapper_1seg_0, 0), (self.decoder_1seg_0, 0))    
+        self.connect((self.oneseg_time_deinterleaver_1seg_0, 0), (self.MER_OneSeg_1, 0))    
+        self.connect((self.oneseg_time_deinterleaver_1seg_0, 0), (self.blocks_vector_to_stream_0_2, 0))    
+        self.connect((self.oneseg_time_deinterleaver_1seg_0, 0), (self.oneseg_symbol_demapper_1seg_0, 0))    
+        self.connect((self.oneseg_tmcc_decoder_1seg_0, 0), (self.oneseg_frequency_deinterleaver_1seg_0, 0))    
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "Receptor_OneSeg")
@@ -332,11 +497,13 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
 
     def set_mode(self, mode):
         self.mode = mode
-        self.set_total_carriers(2**(10+self.mode)/8)
         self._mode_callback(self.mode)
+        self.set_total_carriers(2**(10+self.mode)/8)
         self.set_time(1*2**(self.mode-1))
+        self.decoder_1seg_0.set_mode(self.mode)
         self.set_data_carriers(96*2**(self.mode-1))
         self.set_active_carriers(108*2**(self.mode-1))
+        self.MER_OneSeg_1.set_Portadoras_OneSeg(96*2**(self.mode-1))
 
     def get_total_carriers(self):
         return self.total_carriers
@@ -368,6 +535,7 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
     def set_rate(self, rate):
         self.rate = rate
         self._rate_callback(self.rate)
+        self.decoder_1seg_0.set_rate(self.rate)
 
     def get_guard(self):
         return self.guard

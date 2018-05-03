@@ -349,7 +349,7 @@ SWIG_VERSION:STRING=3.0.8
 _oneseg_swig_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;gnuradio-oneseg;
 
 //Dependencies for the target
-gnuradio-oneseg_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/local/lib/libgnuradio-runtime.so;general;/usr/local/lib/libgnuradio-pmt.so;general;/usr/local/lib/libgnuradio-analog.so;general;/usr/local/lib/libvolk.so;general;/usr/local/lib/libgnuradio-blocks.so;general;/usr/local/lib/libgnuradio-digital.so;general;/usr/local/lib/libgnuradio-fft.so;general;/usr/local/lib/libgnuradio-filter.so;
+gnuradio-oneseg_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/local/lib/libgnuradio-runtime.so;general;/usr/local/lib/libgnuradio-pmt.so;general;/usr/local/lib/libgnuradio-fec.so;general;/usr/local/lib/libgnuradio-fft.so;general;/usr/local/lib/libgnuradio-filter.so;general;/usr/local/lib/libvolk.so;
 
 //Value Computed by CMake
 gr-oneseg_BINARY_DIR:STATIC=/home/jordy/gr-oneseg/build
