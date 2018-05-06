@@ -105,9 +105,33 @@ lib/CMakeFiles/test-oneseg.dir/qa_oneseg.cc.o.provides: lib/CMakeFiles/test-ones
 lib/CMakeFiles/test-oneseg.dir/qa_oneseg.cc.o.provides.build: lib/CMakeFiles/test-oneseg.dir/qa_oneseg.cc.o
 
 
+lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
+lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o: ../lib/qa_mer_one_seg.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o -c /home/jordy/gr-oneseg/lib/qa_mer_one_seg.cc
+
+lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.i"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jordy/gr-oneseg/lib/qa_mer_one_seg.cc > CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.i
+
+lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.s"
+	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jordy/gr-oneseg/lib/qa_mer_one_seg.cc -o CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.s
+
+lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o.requires:
+
+.PHONY : lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o.requires
+
+lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o.provides: lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/test-oneseg.dir/build.make lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o.provides.build
+.PHONY : lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o.provides
+
+lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o.provides.build: lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o
+
+
 lib/CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
 lib/CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.o: ../lib/qa_reed_solomon_dec_isdbt.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.o -c /home/jordy/gr-oneseg/lib/qa_reed_solomon_dec_isdbt.cc
 
 lib/CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.i: cmake_force
@@ -131,7 +155,7 @@ lib/CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.o.provides.build: li
 
 lib/CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
 lib/CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.o: ../lib/qa_energy_descrambler.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.o -c /home/jordy/gr-oneseg/lib/qa_energy_descrambler.cc
 
 lib/CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.i: cmake_force
@@ -155,7 +179,7 @@ lib/CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.o.provides.build: lib/CM
 
 lib/CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
 lib/CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.o: ../lib/qa_byte_deinterleaver.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.o -c /home/jordy/gr-oneseg/lib/qa_byte_deinterleaver.cc
 
 lib/CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.i: cmake_force
@@ -179,7 +203,7 @@ lib/CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.o.provides.build: lib/CM
 
 lib/CMakeFiles/test-oneseg.dir/qa_viterbi_decoder.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
 lib/CMakeFiles/test-oneseg.dir/qa_viterbi_decoder.cc.o: ../lib/qa_viterbi_decoder.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_viterbi_decoder.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_viterbi_decoder.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_viterbi_decoder.cc.o -c /home/jordy/gr-oneseg/lib/qa_viterbi_decoder.cc
 
 lib/CMakeFiles/test-oneseg.dir/qa_viterbi_decoder.cc.i: cmake_force
@@ -203,7 +227,7 @@ lib/CMakeFiles/test-oneseg.dir/qa_viterbi_decoder.cc.o.provides.build: lib/CMake
 
 lib/CMakeFiles/test-oneseg.dir/qa_bit_deinterleaver.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
 lib/CMakeFiles/test-oneseg.dir/qa_bit_deinterleaver.cc.o: ../lib/qa_bit_deinterleaver.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_bit_deinterleaver.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_bit_deinterleaver.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_bit_deinterleaver.cc.o -c /home/jordy/gr-oneseg/lib/qa_bit_deinterleaver.cc
 
 lib/CMakeFiles/test-oneseg.dir/qa_bit_deinterleaver.cc.i: cmake_force
@@ -227,7 +251,7 @@ lib/CMakeFiles/test-oneseg.dir/qa_bit_deinterleaver.cc.o.provides.build: lib/CMa
 
 lib/CMakeFiles/test-oneseg.dir/qa_symbol_demapper_1seg.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
 lib/CMakeFiles/test-oneseg.dir/qa_symbol_demapper_1seg.cc.o: ../lib/qa_symbol_demapper_1seg.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_symbol_demapper_1seg.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_symbol_demapper_1seg.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_symbol_demapper_1seg.cc.o -c /home/jordy/gr-oneseg/lib/qa_symbol_demapper_1seg.cc
 
 lib/CMakeFiles/test-oneseg.dir/qa_symbol_demapper_1seg.cc.i: cmake_force
@@ -251,7 +275,7 @@ lib/CMakeFiles/test-oneseg.dir/qa_symbol_demapper_1seg.cc.o.provides.build: lib/
 
 lib/CMakeFiles/test-oneseg.dir/qa_time_deinterleaver_1seg.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
 lib/CMakeFiles/test-oneseg.dir/qa_time_deinterleaver_1seg.cc.o: ../lib/qa_time_deinterleaver_1seg.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_time_deinterleaver_1seg.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_time_deinterleaver_1seg.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_time_deinterleaver_1seg.cc.o -c /home/jordy/gr-oneseg/lib/qa_time_deinterleaver_1seg.cc
 
 lib/CMakeFiles/test-oneseg.dir/qa_time_deinterleaver_1seg.cc.i: cmake_force
@@ -275,7 +299,7 @@ lib/CMakeFiles/test-oneseg.dir/qa_time_deinterleaver_1seg.cc.o.provides.build: l
 
 lib/CMakeFiles/test-oneseg.dir/qa_frequency_deinterleaver_1seg.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
 lib/CMakeFiles/test-oneseg.dir/qa_frequency_deinterleaver_1seg.cc.o: ../lib/qa_frequency_deinterleaver_1seg.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_frequency_deinterleaver_1seg.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_frequency_deinterleaver_1seg.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_frequency_deinterleaver_1seg.cc.o -c /home/jordy/gr-oneseg/lib/qa_frequency_deinterleaver_1seg.cc
 
 lib/CMakeFiles/test-oneseg.dir/qa_frequency_deinterleaver_1seg.cc.i: cmake_force
@@ -299,7 +323,7 @@ lib/CMakeFiles/test-oneseg.dir/qa_frequency_deinterleaver_1seg.cc.o.provides.bui
 
 lib/CMakeFiles/test-oneseg.dir/qa_tmcc_decoder_1seg.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
 lib/CMakeFiles/test-oneseg.dir/qa_tmcc_decoder_1seg.cc.o: ../lib/qa_tmcc_decoder_1seg.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_tmcc_decoder_1seg.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_tmcc_decoder_1seg.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_tmcc_decoder_1seg.cc.o -c /home/jordy/gr-oneseg/lib/qa_tmcc_decoder_1seg.cc
 
 lib/CMakeFiles/test-oneseg.dir/qa_tmcc_decoder_1seg.cc.i: cmake_force
@@ -323,7 +347,7 @@ lib/CMakeFiles/test-oneseg.dir/qa_tmcc_decoder_1seg.cc.o.provides.build: lib/CMa
 
 lib/CMakeFiles/test-oneseg.dir/qa_ofdm_synchronization_1seg.cc.o: lib/CMakeFiles/test-oneseg.dir/flags.make
 lib/CMakeFiles/test-oneseg.dir/qa_ofdm_synchronization_1seg.cc.o: ../lib/qa_ofdm_synchronization_1seg.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_ofdm_synchronization_1seg.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object lib/CMakeFiles/test-oneseg.dir/qa_ofdm_synchronization_1seg.cc.o"
 	cd /home/jordy/gr-oneseg/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test-oneseg.dir/qa_ofdm_synchronization_1seg.cc.o -c /home/jordy/gr-oneseg/lib/qa_ofdm_synchronization_1seg.cc
 
 lib/CMakeFiles/test-oneseg.dir/qa_ofdm_synchronization_1seg.cc.i: cmake_force
@@ -349,6 +373,7 @@ lib/CMakeFiles/test-oneseg.dir/qa_ofdm_synchronization_1seg.cc.o.provides.build:
 test__oneseg_OBJECTS = \
 "CMakeFiles/test-oneseg.dir/test_oneseg.cc.o" \
 "CMakeFiles/test-oneseg.dir/qa_oneseg.cc.o" \
+"CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o" \
 "CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.o" \
 "CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.o" \
 "CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.o" \
@@ -365,6 +390,7 @@ test__oneseg_EXTERNAL_OBJECTS =
 
 lib/test-oneseg: lib/CMakeFiles/test-oneseg.dir/test_oneseg.cc.o
 lib/test-oneseg: lib/CMakeFiles/test-oneseg.dir/qa_oneseg.cc.o
+lib/test-oneseg: lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o
 lib/test-oneseg: lib/CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.o
 lib/test-oneseg: lib/CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.o
 lib/test-oneseg: lib/CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.o
@@ -391,7 +417,7 @@ lib/test-oneseg: /usr/local/lib/libgnuradio-fft.so
 lib/test-oneseg: /usr/local/lib/libgnuradio-filter.so
 lib/test-oneseg: /usr/local/lib/libvolk.so
 lib/test-oneseg: lib/CMakeFiles/test-oneseg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable test-oneseg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jordy/gr-oneseg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable test-oneseg"
 	cd /home/jordy/gr-oneseg/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-oneseg.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -401,6 +427,7 @@ lib/CMakeFiles/test-oneseg.dir/build: lib/test-oneseg
 
 lib/CMakeFiles/test-oneseg.dir/requires: lib/CMakeFiles/test-oneseg.dir/test_oneseg.cc.o.requires
 lib/CMakeFiles/test-oneseg.dir/requires: lib/CMakeFiles/test-oneseg.dir/qa_oneseg.cc.o.requires
+lib/CMakeFiles/test-oneseg.dir/requires: lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o.requires
 lib/CMakeFiles/test-oneseg.dir/requires: lib/CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.o.requires
 lib/CMakeFiles/test-oneseg.dir/requires: lib/CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.o.requires
 lib/CMakeFiles/test-oneseg.dir/requires: lib/CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.o.requires

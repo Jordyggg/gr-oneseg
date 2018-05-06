@@ -4,7 +4,7 @@
 # GNU Radio Python Flow Graph
 # Title: Receptor ISDBTb ONESEG
 # Description: demodula la señal de IDSBT de un segmento
-# Generated: Wed May  2 20:45:36 2018
+# Generated: Sat May  5 23:01:34 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -451,8 +451,8 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
             carriers=total_carriers,
             guarda=guard,
         )
-        self.MER_OneSeg_1 = MER_OneSeg(
-            Portadoras_OneSeg=96*2**(mode-1),
+        self.MER_OneSeg_0 = MER_OneSeg(
+            Portadoras_OneSeg=96*2**(2),
         )
         self._DB_tool_bar = Qt.QToolBar(self)
         self._DB_tool_bar.addWidget(Qt.QLabel('Ganancia USRP (dB)'+": "))
@@ -465,7 +465,7 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.MER_OneSeg_1, 0), (self.qtgui_number_sink_0, 0))    
+        self.connect((self.MER_OneSeg_0, 0), (self.qtgui_number_sink_0, 0))    
         self.connect((self.SYNC_DEM_OFDM_1SEG_1, 0), (self.oneseg_ofdm_synchronization_1seg_0, 0))    
         self.connect((self.SYNC_DEM_OFDM_1SEG_1, 1), (self.qtgui_number_sink_0_1, 0))    
         self.connect((self.SYNC_DEM_OFDM_1SEG_1, 2), (self.qtgui_time_sink_x_0, 0))    
@@ -482,7 +482,7 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self.connect((self.oneseg_ofdm_synchronization_1seg_0, 0), (self.blocks_null_sink_0, 0))    
         self.connect((self.oneseg_ofdm_synchronization_1seg_0, 0), (self.oneseg_tmcc_decoder_1seg_0, 0))    
         self.connect((self.oneseg_symbol_demapper_1seg_0, 0), (self.decoder_1seg_0, 0))    
-        self.connect((self.oneseg_time_deinterleaver_1seg_0, 0), (self.MER_OneSeg_1, 0))    
+        self.connect((self.oneseg_time_deinterleaver_1seg_0, 0), (self.MER_OneSeg_0, 0))    
         self.connect((self.oneseg_time_deinterleaver_1seg_0, 0), (self.blocks_vector_to_stream_0_2, 0))    
         self.connect((self.oneseg_time_deinterleaver_1seg_0, 0), (self.oneseg_symbol_demapper_1seg_0, 0))    
         self.connect((self.oneseg_tmcc_decoder_1seg_0, 0), (self.oneseg_frequency_deinterleaver_1seg_0, 0))    
@@ -503,7 +503,6 @@ class Receptor_OneSeg(gr.top_block, Qt.QWidget):
         self.decoder_1seg_0.set_mode(self.mode)
         self.set_data_carriers(96*2**(self.mode-1))
         self.set_active_carriers(108*2**(self.mode-1))
-        self.MER_OneSeg_1.set_Portadoras_OneSeg(96*2**(self.mode-1))
 
     def get_total_carriers(self):
         return self.total_carriers

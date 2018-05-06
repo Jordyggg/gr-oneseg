@@ -34,6 +34,12 @@ oneseg/api.h
 gnuradio/sync_block.h
 -
 
+../include/oneseg/mer_one_seg.h
+oneseg/api.h
+-
+gnuradio/sync_block.h
+-
+
 ../include/oneseg/ofdm_synchronization_1seg.h
 oneseg/api.h
 -
@@ -135,6 +141,8 @@ oneseg/energy_descrambler.h
 /home/jordy/gr-oneseg/build/swig/oneseg/energy_descrambler.h
 oneseg/reed_solomon_dec_isdbt.h
 /home/jordy/gr-oneseg/build/swig/oneseg/reed_solomon_dec_isdbt.h
+oneseg/mer_one_seg.h
+/home/jordy/gr-oneseg/build/swig/oneseg/mer_one_seg.h
 float.h
 -
 math.h

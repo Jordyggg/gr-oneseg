@@ -78,6 +78,12 @@ lib/CMakeFiles/gnuradio-oneseg.dir/byte_deinterleaver_impl.cc.o: /usr/local/incl
 lib/CMakeFiles/gnuradio-oneseg.dir/byte_deinterleaver_impl.cc.o: /usr/local/include/pmt/pmt.h
 lib/CMakeFiles/gnuradio-oneseg.dir/byte_deinterleaver_impl.cc.o: /usr/local/include/pmt/pmt_sugar.h
 
+lib/CMakeFiles/gnuradio-oneseg.dir/demapper.cc.o: ../include/oneseg/api.h
+lib/CMakeFiles/gnuradio-oneseg.dir/demapper.cc.o: ../include/oneseg/demapper.h
+lib/CMakeFiles/gnuradio-oneseg.dir/demapper.cc.o: ../lib/demapper.cc
+lib/CMakeFiles/gnuradio-oneseg.dir/demapper.cc.o: /usr/local/include/gnuradio/attributes.h
+lib/CMakeFiles/gnuradio-oneseg.dir/demapper.cc.o: /usr/local/include/gnuradio/gr_complex.h
+
 lib/CMakeFiles/gnuradio-oneseg.dir/energy_descrambler_impl.cc.o: ../include/oneseg/api.h
 lib/CMakeFiles/gnuradio-oneseg.dir/energy_descrambler_impl.cc.o: ../include/oneseg/energy_descrambler.h
 lib/CMakeFiles/gnuradio-oneseg.dir/energy_descrambler_impl.cc.o: ../lib/energy_descrambler_impl.cc
@@ -146,6 +152,53 @@ lib/CMakeFiles/gnuradio-oneseg.dir/frequency_deinterleaver_1seg_impl.cc.o: /usr/
 lib/CMakeFiles/gnuradio-oneseg.dir/frequency_deinterleaver_1seg_impl.cc.o: /usr/local/include/pmt/api.h
 lib/CMakeFiles/gnuradio-oneseg.dir/frequency_deinterleaver_1seg_impl.cc.o: /usr/local/include/pmt/pmt.h
 lib/CMakeFiles/gnuradio-oneseg.dir/frequency_deinterleaver_1seg_impl.cc.o: /usr/local/include/pmt/pmt_sugar.h
+
+lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.o: ../include/oneseg/api.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.o: ../include/oneseg/mer.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.o: ../lib/mer.cc
+lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.o: /usr/local/include/gnuradio/api.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.o: /usr/local/include/gnuradio/attributes.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.o: /usr/local/include/gnuradio/gr_complex.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.o: /usr/local/include/gnuradio/io_signature.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.o: /usr/local/include/gnuradio/runtime_types.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.o: /usr/local/include/gnuradio/types.h
+
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: ../include/oneseg/api.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: ../include/oneseg/demapper.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: ../include/oneseg/mer.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: ../include/oneseg/mer_one_seg.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: ../lib/mer_one_seg_impl.cc
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: ../lib/mer_one_seg_impl.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/api.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/attributes.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/basic_block.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/block.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/block_registry.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/config.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/gr_complex.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/io_signature.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/logger.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/messages/msg_accepter.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/messages/msg_producer.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/msg_accepter.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/rpccallbackregister_base.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/rpcmanager.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/rpcmanager_base.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/rpcregisterhelpers.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/rpcserver_aggregator.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/rpcserver_base.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/rpcserver_booter_aggregator.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/rpcserver_booter_base.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/rpcserver_selector.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/runtime_types.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/sptr_magic.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/sync_block.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/tags.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/thread/thread.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/gnuradio/types.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/pmt/api.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/pmt/pmt.h
+lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o: /usr/local/include/pmt/pmt_sugar.h
 
 lib/CMakeFiles/gnuradio-oneseg.dir/ofdm_synchronization_1seg_impl.cc.o: ../include/oneseg/api.h
 lib/CMakeFiles/gnuradio-oneseg.dir/ofdm_synchronization_1seg_impl.cc.o: ../include/oneseg/ofdm_synchronization_1seg.h

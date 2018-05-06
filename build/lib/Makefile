@@ -330,6 +330,33 @@ d_viterbi.c.s:
 	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/d_viterbi.c.s
 .PHONY : d_viterbi.c.s
 
+demapper.o: demapper.cc.o
+
+.PHONY : demapper.o
+
+# target to build an object file
+demapper.cc.o:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/demapper.cc.o
+.PHONY : demapper.cc.o
+
+demapper.i: demapper.cc.i
+
+.PHONY : demapper.i
+
+# target to preprocess a source file
+demapper.cc.i:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/demapper.cc.i
+.PHONY : demapper.cc.i
+
+demapper.s: demapper.cc.s
+
+.PHONY : demapper.s
+
+# target to generate assembly for a file
+demapper.cc.s:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/demapper.cc.s
+.PHONY : demapper.cc.s
+
 energy_descrambler_impl.o: energy_descrambler_impl.cc.o
 
 .PHONY : energy_descrambler_impl.o
@@ -383,6 +410,60 @@ frequency_deinterleaver_1seg_impl.s: frequency_deinterleaver_1seg_impl.cc.s
 frequency_deinterleaver_1seg_impl.cc.s:
 	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/frequency_deinterleaver_1seg_impl.cc.s
 .PHONY : frequency_deinterleaver_1seg_impl.cc.s
+
+mer.o: mer.cc.o
+
+.PHONY : mer.o
+
+# target to build an object file
+mer.cc.o:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.o
+.PHONY : mer.cc.o
+
+mer.i: mer.cc.i
+
+.PHONY : mer.i
+
+# target to preprocess a source file
+mer.cc.i:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.i
+.PHONY : mer.cc.i
+
+mer.s: mer.cc.s
+
+.PHONY : mer.s
+
+# target to generate assembly for a file
+mer.cc.s:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/mer.cc.s
+.PHONY : mer.cc.s
+
+mer_one_seg_impl.o: mer_one_seg_impl.cc.o
+
+.PHONY : mer_one_seg_impl.o
+
+# target to build an object file
+mer_one_seg_impl.cc.o:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.o
+.PHONY : mer_one_seg_impl.cc.o
+
+mer_one_seg_impl.i: mer_one_seg_impl.cc.i
+
+.PHONY : mer_one_seg_impl.i
+
+# target to preprocess a source file
+mer_one_seg_impl.cc.i:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.i
+.PHONY : mer_one_seg_impl.cc.i
+
+mer_one_seg_impl.s: mer_one_seg_impl.cc.s
+
+.PHONY : mer_one_seg_impl.s
+
+# target to generate assembly for a file
+mer_one_seg_impl.cc.s:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/gnuradio-oneseg.dir/build.make lib/CMakeFiles/gnuradio-oneseg.dir/mer_one_seg_impl.cc.s
+.PHONY : mer_one_seg_impl.cc.s
 
 ofdm_synchronization_1seg_impl.o: ofdm_synchronization_1seg_impl.cc.o
 
@@ -518,6 +599,33 @@ qa_frequency_deinterleaver_1seg.s: qa_frequency_deinterleaver_1seg.cc.s
 qa_frequency_deinterleaver_1seg.cc.s:
 	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/test-oneseg.dir/build.make lib/CMakeFiles/test-oneseg.dir/qa_frequency_deinterleaver_1seg.cc.s
 .PHONY : qa_frequency_deinterleaver_1seg.cc.s
+
+qa_mer_one_seg.o: qa_mer_one_seg.cc.o
+
+.PHONY : qa_mer_one_seg.o
+
+# target to build an object file
+qa_mer_one_seg.cc.o:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/test-oneseg.dir/build.make lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o
+.PHONY : qa_mer_one_seg.cc.o
+
+qa_mer_one_seg.i: qa_mer_one_seg.cc.i
+
+.PHONY : qa_mer_one_seg.i
+
+# target to preprocess a source file
+qa_mer_one_seg.cc.i:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/test-oneseg.dir/build.make lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.i
+.PHONY : qa_mer_one_seg.cc.i
+
+qa_mer_one_seg.s: qa_mer_one_seg.cc.s
+
+.PHONY : qa_mer_one_seg.s
+
+# target to generate assembly for a file
+qa_mer_one_seg.cc.s:
+	cd /home/jordy/gr-oneseg/build && $(MAKE) -f lib/CMakeFiles/test-oneseg.dir/build.make lib/CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.s
+.PHONY : qa_mer_one_seg.cc.s
 
 qa_ofdm_synchronization_1seg.o: qa_ofdm_synchronization_1seg.cc.o
 
@@ -900,12 +1008,21 @@ help:
 	@echo "... d_viterbi.o"
 	@echo "... d_viterbi.i"
 	@echo "... d_viterbi.s"
+	@echo "... demapper.o"
+	@echo "... demapper.i"
+	@echo "... demapper.s"
 	@echo "... energy_descrambler_impl.o"
 	@echo "... energy_descrambler_impl.i"
 	@echo "... energy_descrambler_impl.s"
 	@echo "... frequency_deinterleaver_1seg_impl.o"
 	@echo "... frequency_deinterleaver_1seg_impl.i"
 	@echo "... frequency_deinterleaver_1seg_impl.s"
+	@echo "... mer.o"
+	@echo "... mer.i"
+	@echo "... mer.s"
+	@echo "... mer_one_seg_impl.o"
+	@echo "... mer_one_seg_impl.i"
+	@echo "... mer_one_seg_impl.s"
 	@echo "... ofdm_synchronization_1seg_impl.o"
 	@echo "... ofdm_synchronization_1seg_impl.i"
 	@echo "... ofdm_synchronization_1seg_impl.s"
@@ -921,6 +1038,9 @@ help:
 	@echo "... qa_frequency_deinterleaver_1seg.o"
 	@echo "... qa_frequency_deinterleaver_1seg.i"
 	@echo "... qa_frequency_deinterleaver_1seg.s"
+	@echo "... qa_mer_one_seg.o"
+	@echo "... qa_mer_one_seg.i"
+	@echo "... qa_mer_one_seg.s"
 	@echo "... qa_ofdm_synchronization_1seg.o"
 	@echo "... qa_ofdm_synchronization_1seg.i"
 	@echo "... qa_ofdm_synchronization_1seg.s"

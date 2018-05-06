@@ -22,6 +22,16 @@ oneseg/api.h
 gnuradio/block.h
 -
 
+../include/oneseg/demapper.h
+oneseg/api.h
+-
+gnuradio/gr_complex.h
+-
+stdio.h
+-
+vector
+-
+
 ../include/oneseg/energy_descrambler.h
 oneseg/api.h
 -
@@ -29,6 +39,16 @@ gnuradio/block.h
 -
 
 ../include/oneseg/frequency_deinterleaver_1seg.h
+oneseg/api.h
+-
+gnuradio/sync_block.h
+-
+
+../include/oneseg/mer.h
+oneseg/api.h
+-
+
+../include/oneseg/mer_one_seg.h
 oneseg/api.h
 -
 gnuradio/sync_block.h
@@ -102,6 +122,18 @@ oneseg/byte_deinterleaver.h
 xmmintrin.h
 -
 
+/home/jordy/gr-oneseg/lib/demapper.cc
+config.h
+-
+oneseg/demapper.h
+-
+stdexcept
+-
+stdlib.h
+-
+cstdio
+-
+
 /home/jordy/gr-oneseg/lib/energy_descrambler_impl.cc
 config.h
 /home/jordy/gr-oneseg/lib/config.h
@@ -128,6 +160,32 @@ frequency_deinterleaver_1seg_impl.h
 
 /home/jordy/gr-oneseg/lib/frequency_deinterleaver_1seg_impl.h
 oneseg/frequency_deinterleaver_1seg.h
+-
+
+/home/jordy/gr-oneseg/lib/mer.cc
+config.h
+/home/jordy/gr-oneseg/lib/config.h
+gnuradio/io_signature.h
+-
+oneseg/mer.h
+-
+stdio.h
+-
+
+/home/jordy/gr-oneseg/lib/mer_one_seg_impl.cc
+config.h
+/home/jordy/gr-oneseg/lib/config.h
+gnuradio/io_signature.h
+-
+mer_one_seg_impl.h
+/home/jordy/gr-oneseg/lib/mer_one_seg_impl.h
+
+/home/jordy/gr-oneseg/lib/mer_one_seg_impl.h
+oneseg/mer_one_seg.h
+-
+oneseg/demapper.h
+-
+oneseg/mer.h
 -
 
 /home/jordy/gr-oneseg/lib/ofdm_synchronization_1seg_impl.cc

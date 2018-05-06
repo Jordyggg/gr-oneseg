@@ -44,6 +44,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/jordy/gr-oneseg/grc/oneseg_byte_deinterleaver.xml"
     "/home/jordy/gr-oneseg/grc/oneseg_energy_descrambler.xml"
     "/home/jordy/gr-oneseg/grc/oneseg_reed_solomon_dec_isdbt.xml"
+    "/home/jordy/gr-oneseg/grc/oneseg_mer_one_seg.xml"
     )
 endif()
 

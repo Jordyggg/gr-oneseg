@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test-oneseg.dir/test_oneseg.cc.o"
   "CMakeFiles/test-oneseg.dir/qa_oneseg.cc.o"
+  "CMakeFiles/test-oneseg.dir/qa_mer_one_seg.cc.o"
   "CMakeFiles/test-oneseg.dir/qa_reed_solomon_dec_isdbt.cc.o"
   "CMakeFiles/test-oneseg.dir/qa_energy_descrambler.cc.o"
   "CMakeFiles/test-oneseg.dir/qa_byte_deinterleaver.cc.o"

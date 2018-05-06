@@ -37,7 +37,10 @@ list(APPEND oneseg_sources
     d_viterbi.c
     d_metrics.c
     d_tab.c
-    reed_solomon_dec_isdbt_impl.cc )
+    demapper.cc
+    mer.cc
+    reed_solomon_dec_isdbt_impl.cc
+    mer_one_seg_impl.cc )
 
 set(oneseg_sources "${oneseg_sources}" PARENT_SCOPE)
 if(NOT oneseg_sources)
@@ -70,6 +73,7 @@ include_directories(${CPPUNIT_INCLUDE_DIRS})
 list(APPEND test_oneseg_sources
     ${CMAKE_CURRENT_SOURCE_DIR}/test_oneseg.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_oneseg.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_mer_one_seg.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_reed_solomon_dec_isdbt.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_energy_descrambler.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_byte_deinterleaver.cc

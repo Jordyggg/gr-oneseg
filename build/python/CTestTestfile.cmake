@@ -14,3 +14,4 @@ add_test(qa_viterbi_decoder "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_vit
 add_test(qa_byte_deinterleaver "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_byte_deinterleaver_test.sh")
 add_test(qa_energy_descrambler "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_energy_descrambler_test.sh")
 add_test(qa_reed_solomon_dec_isdbt "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_reed_solomon_dec_isdbt_test.sh")
+add_test(qa_mer_one_seg "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_mer_one_seg_test.sh")

@@ -36,6 +36,7 @@
 #include "qa_byte_deinterleaver.h"
 #include "qa_energy_descrambler.h"
 #include "qa_reed_solomon_dec_isdbt.h"
+#include "qa_mer_one_seg.h"
 
 CppUnit::TestSuite *
 qa_oneseg::suite()
@@ -51,6 +52,7 @@ qa_oneseg::suite()
   s->addTest(gr::oneseg::qa_byte_deinterleaver::suite());
   s->addTest(gr::oneseg::qa_energy_descrambler::suite());
   s->addTest(gr::oneseg::qa_reed_solomon_dec_isdbt::suite());
+  s->addTest(gr::oneseg::qa_mer_one_seg::suite());
 
   return s;
 }

@@ -34,6 +34,12 @@ oneseg/api.h
 gnuradio/sync_block.h
 -
 
+../include/oneseg/mer_one_seg.h
+oneseg/api.h
+-
+gnuradio/sync_block.h
+-
+
 ../include/oneseg/ofdm_synchronization_1seg.h
 oneseg/api.h
 -
@@ -134,6 +140,22 @@ cppunit/extensions/HelperMacros.h
 cppunit/TestCase.h
 -
 
+/home/jordy/gr-oneseg/lib/qa_mer_one_seg.cc
+gnuradio/attributes.h
+-
+cppunit/TestAssert.h
+-
+qa_mer_one_seg.h
+/home/jordy/gr-oneseg/lib/qa_mer_one_seg.h
+oneseg/mer_one_seg.h
+-
+
+/home/jordy/gr-oneseg/lib/qa_mer_one_seg.h
+cppunit/extensions/HelperMacros.h
+-
+cppunit/TestCase.h
+-
+
 /home/jordy/gr-oneseg/lib/qa_ofdm_synchronization_1seg.cc
 gnuradio/attributes.h
 -
@@ -173,6 +195,8 @@ qa_energy_descrambler.h
 /home/jordy/gr-oneseg/lib/qa_energy_descrambler.h
 qa_reed_solomon_dec_isdbt.h
 /home/jordy/gr-oneseg/lib/qa_reed_solomon_dec_isdbt.h
+qa_mer_one_seg.h
+/home/jordy/gr-oneseg/lib/qa_mer_one_seg.h
 
 /home/jordy/gr-oneseg/lib/qa_oneseg.h
 gnuradio/attributes.h

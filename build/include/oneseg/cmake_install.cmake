@@ -45,6 +45,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/jordy/gr-oneseg/include/oneseg/byte_deinterleaver.h"
     "/home/jordy/gr-oneseg/include/oneseg/energy_descrambler.h"
     "/home/jordy/gr-oneseg/include/oneseg/reed_solomon_dec_isdbt.h"
+    "/home/jordy/gr-oneseg/include/oneseg/mer_one_seg.h"
     )
 endif()
 

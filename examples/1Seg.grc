@@ -778,7 +778,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -790,7 +790,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>MER_OneSeg_1</value>
+      <value>MER_OneSeg_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -802,7 +802,7 @@
     </param>
     <param>
       <key>Portadoras_OneSeg</key>
-      <value>96*2**(mode-1)</value>
+      <value>96*2**(2)</value>
     </param>
   </block>
   <block>
@@ -5081,7 +5081,7 @@
     </param>
   </block>
   <connection>
-    <source_block_id>MER_OneSeg_1</source_block_id>
+    <source_block_id>MER_OneSeg_0</source_block_id>
     <sink_block_id>qtgui_number_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -5184,7 +5184,7 @@
   </connection>
   <connection>
     <source_block_id>oneseg_time_deinterleaver_1seg_0</source_block_id>
-    <sink_block_id>MER_OneSeg_1</sink_block_id>
+    <sink_block_id>MER_OneSeg_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

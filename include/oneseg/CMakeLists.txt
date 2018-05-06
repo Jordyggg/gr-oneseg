@@ -31,5 +31,6 @@ install(FILES
     viterbi_decoder.h
     byte_deinterleaver.h
     energy_descrambler.h
-    reed_solomon_dec_isdbt.h DESTINATION include/oneseg
+    reed_solomon_dec_isdbt.h
+    mer_one_seg.h DESTINATION include/oneseg
 )

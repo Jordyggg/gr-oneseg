@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<block>
+  <name>Modulation Error Ratio</name>
+  <key>oneseg_mer_one_seg</key>
+  <category>oneseg</category>
+  <import>import oneseg</import>
+  <make>oneseg.mer_one_seg($symbol_table,$alpha)</make>
+  <param>
+	<name>Symbol Table</name>
+	<key>symbol_table</key>
+	<type>complex_vector</type>
+  </param>
+  <param>
+	<name>Alpha</name>
+	<key>alpha</key>
+	<type>float</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>mer</name>
+    <type>float</type>
+  </source>
+
+  <source>
+    <name>mer_msg</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>
+  
+ <doc></doc>
+</block>

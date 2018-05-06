@@ -26,5 +26,6 @@ install(FILES
     oneseg_viterbi_decoder.xml
     oneseg_byte_deinterleaver.xml
     oneseg_energy_descrambler.xml
-    oneseg_reed_solomon_dec_isdbt.xml DESTINATION share/gnuradio/grc/blocks
+    oneseg_reed_solomon_dec_isdbt.xml
+    oneseg_mer_one_seg.xml DESTINATION share/gnuradio/grc/blocks
 )

@@ -32,9 +32,12 @@
     <Test id="10">
       <Name>gr::oneseg::qa_reed_solomon_dec_isdbt::t1</Name>
     </Test>
+    <Test id="11">
+      <Name>gr::oneseg::qa_mer_one_seg::t1</Name>
+    </Test>
   </SuccessfulTests>
   <Statistics>
-    <Tests>10</Tests>
+    <Tests>11</Tests>
     <FailuresTotal>0</FailuresTotal>
     <Errors>0</Errors>
     <Failures>0</Failures>

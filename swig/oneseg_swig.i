@@ -18,6 +18,7 @@
 #include "oneseg/byte_deinterleaver.h"
 #include "oneseg/energy_descrambler.h"
 #include "oneseg/reed_solomon_dec_isdbt.h"
+#include "oneseg/mer_one_seg.h"
 %}
 
 %include "oneseg/ofdm_synchronization_1seg.h"
@@ -41,3 +42,5 @@ GR_SWIG_BLOCK_MAGIC2(oneseg, byte_deinterleaver);
 GR_SWIG_BLOCK_MAGIC2(oneseg, energy_descrambler);
 %include "oneseg/reed_solomon_dec_isdbt.h"
 GR_SWIG_BLOCK_MAGIC2(oneseg, reed_solomon_dec_isdbt);
+%include "oneseg/mer_one_seg.h"
+GR_SWIG_BLOCK_MAGIC2(oneseg, mer_one_seg);

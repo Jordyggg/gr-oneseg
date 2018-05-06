@@ -10,6 +10,7 @@
 /usr/local/include/oneseg/byte_deinterleaver.h
 /usr/local/include/oneseg/energy_descrambler.h
 /usr/local/include/oneseg/reed_solomon_dec_isdbt.h
+/usr/local/include/oneseg/mer_one_seg.h
 /usr/local/lib/libgnuradio-oneseg-1.0.0git.so.0.0.0
 /usr/local/lib/libgnuradio-oneseg-1.0.0git.so
 /usr/local/lib/libgnuradio-oneseg.so
@@ -33,6 +34,7 @@
 /usr/local/share/gnuradio/grc/blocks/oneseg_byte_deinterleaver.xml
 /usr/local/share/gnuradio/grc/blocks/oneseg_energy_descrambler.xml
 /usr/local/share/gnuradio/grc/blocks/oneseg_reed_solomon_dec_isdbt.xml
+/usr/local/share/gnuradio/grc/blocks/oneseg_mer_one_seg.xml
 /usr/local/share/doc/gr-oneseg/xml/symbol__demapper__1seg_8h.xml
 /usr/local/share/doc/gr-oneseg/xml/symbol__demapper__1seg__impl_8h.xml
 /usr/local/share/doc/gr-oneseg/xml/indexpage.xml

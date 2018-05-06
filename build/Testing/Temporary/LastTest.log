@@ -1,87 +1,87 @@
-Start testing: May 01 07:37 -05
+Start testing: May 05 22:58 -05
 ----------------------------------------------------------
-1/11 Testing: test_oneseg
-1/11 Test: test_oneseg
+1/12 Testing: test_oneseg
+1/12 Test: test_oneseg
 Command: "/bin/sh" "/home/jordy/gr-oneseg/build/lib/test_oneseg_test.sh"
 Directory: /home/jordy/gr-oneseg/build/lib
-"test_oneseg" start time: May 01 07:37 -05
+"test_oneseg" start time: May 05 22:58 -05
 Output:
 ----------------------------------------------------------
-..........
+...........
 
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"test_oneseg" end time: May 01 07:37 -05
+"test_oneseg" end time: May 05 22:58 -05
 "test_oneseg" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/11 Testing: qa_ofdm_synchronization_1seg
-2/11 Test: qa_ofdm_synchronization_1seg
+2/12 Testing: qa_ofdm_synchronization_1seg
+2/12 Test: qa_ofdm_synchronization_1seg
 Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_ofdm_synchronization_1seg_test.sh"
 Directory: /home/jordy/gr-oneseg/build/python
-"qa_ofdm_synchronization_1seg" start time: May 01 07:37 -05
+"qa_ofdm_synchronization_1seg" start time: May 05 22:58 -05
 Output:
 ----------------------------------------------------------
 .
 ----------------------------------------------------------------------
 Ran 1 test in 0.002s
-
-OK
-<end of output>
-Test time =   0.59 sec
-----------------------------------------------------------
-Test Passed.
-"qa_ofdm_synchronization_1seg" end time: May 01 07:37 -05
-"qa_ofdm_synchronization_1seg" time elapsed: 00:00:00
-----------------------------------------------------------
-
-3/11 Testing: qa_tmcc_decoder_1seg
-3/11 Test: qa_tmcc_decoder_1seg
-Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_tmcc_decoder_1seg_test.sh"
-Directory: /home/jordy/gr-oneseg/build/python
-"qa_tmcc_decoder_1seg" start time: May 01 07:37 -05
-Output:
-----------------------------------------------------------
-.
-----------------------------------------------------------------------
-Ran 1 test in 0.002s
-
-OK
-<end of output>
-Test time =   0.59 sec
-----------------------------------------------------------
-Test Passed.
-"qa_tmcc_decoder_1seg" end time: May 01 07:37 -05
-"qa_tmcc_decoder_1seg" time elapsed: 00:00:00
-----------------------------------------------------------
-
-4/11 Testing: qa_frequency_deinterleaver_1seg
-4/11 Test: qa_frequency_deinterleaver_1seg
-Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_frequency_deinterleaver_1seg_test.sh"
-Directory: /home/jordy/gr-oneseg/build/python
-"qa_frequency_deinterleaver_1seg" start time: May 01 07:37 -05
-Output:
-----------------------------------------------------------
-.
-----------------------------------------------------------------------
-Ran 1 test in 0.001s
 
 OK
 <end of output>
 Test time =   0.58 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_frequency_deinterleaver_1seg" end time: May 01 07:37 -05
+"qa_ofdm_synchronization_1seg" end time: May 05 22:58 -05
+"qa_ofdm_synchronization_1seg" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/12 Testing: qa_tmcc_decoder_1seg
+3/12 Test: qa_tmcc_decoder_1seg
+Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_tmcc_decoder_1seg_test.sh"
+Directory: /home/jordy/gr-oneseg/build/python
+"qa_tmcc_decoder_1seg" start time: May 05 22:58 -05
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+<end of output>
+Test time =   0.60 sec
+----------------------------------------------------------
+Test Passed.
+"qa_tmcc_decoder_1seg" end time: May 05 22:58 -05
+"qa_tmcc_decoder_1seg" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/12 Testing: qa_frequency_deinterleaver_1seg
+4/12 Test: qa_frequency_deinterleaver_1seg
+Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_frequency_deinterleaver_1seg_test.sh"
+Directory: /home/jordy/gr-oneseg/build/python
+"qa_frequency_deinterleaver_1seg" start time: May 05 22:58 -05
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+<end of output>
+Test time =   0.59 sec
+----------------------------------------------------------
+Test Passed.
+"qa_frequency_deinterleaver_1seg" end time: May 05 22:58 -05
 "qa_frequency_deinterleaver_1seg" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/11 Testing: qa_time_deinterleaver_1seg
-5/11 Test: qa_time_deinterleaver_1seg
+5/12 Testing: qa_time_deinterleaver_1seg
+5/12 Test: qa_time_deinterleaver_1seg
 Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_time_deinterleaver_1seg_test.sh"
 Directory: /home/jordy/gr-oneseg/build/python
-"qa_time_deinterleaver_1seg" start time: May 01 07:37 -05
+"qa_time_deinterleaver_1seg" start time: May 05 22:58 -05
 Output:
 ----------------------------------------------------------
 .
@@ -90,38 +90,38 @@ Ran 1 test in 0.002s
 
 OK
 <end of output>
-Test time =   0.59 sec
+Test time =   0.58 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_time_deinterleaver_1seg" end time: May 01 07:37 -05
+"qa_time_deinterleaver_1seg" end time: May 05 22:58 -05
 "qa_time_deinterleaver_1seg" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/11 Testing: qa_symbol_demapper_1seg
-6/11 Test: qa_symbol_demapper_1seg
+6/12 Testing: qa_symbol_demapper_1seg
+6/12 Test: qa_symbol_demapper_1seg
 Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_symbol_demapper_1seg_test.sh"
 Directory: /home/jordy/gr-oneseg/build/python
-"qa_symbol_demapper_1seg" start time: May 01 07:37 -05
+"qa_symbol_demapper_1seg" start time: May 05 22:58 -05
 Output:
 ----------------------------------------------------------
 .
 ----------------------------------------------------------------------
-Ran 1 test in 0.001s
+Ran 1 test in 0.002s
 
 OK
 <end of output>
 Test time =   0.59 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_symbol_demapper_1seg" end time: May 01 07:37 -05
+"qa_symbol_demapper_1seg" end time: May 05 22:58 -05
 "qa_symbol_demapper_1seg" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/11 Testing: qa_bit_deinterleaver
-7/11 Test: qa_bit_deinterleaver
+7/12 Testing: qa_bit_deinterleaver
+7/12 Test: qa_bit_deinterleaver
 Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_bit_deinterleaver_test.sh"
 Directory: /home/jordy/gr-oneseg/build/python
-"qa_bit_deinterleaver" start time: May 01 07:37 -05
+"qa_bit_deinterleaver" start time: May 05 22:58 -05
 Output:
 ----------------------------------------------------------
 .
@@ -130,38 +130,38 @@ Ran 1 test in 0.002s
 
 OK
 <end of output>
-Test time =   0.59 sec
+Test time =   0.60 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_bit_deinterleaver" end time: May 01 07:37 -05
+"qa_bit_deinterleaver" end time: May 05 22:58 -05
 "qa_bit_deinterleaver" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-8/11 Testing: qa_viterbi_decoder
-8/11 Test: qa_viterbi_decoder
+8/12 Testing: qa_viterbi_decoder
+8/12 Test: qa_viterbi_decoder
 Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_viterbi_decoder_test.sh"
 Directory: /home/jordy/gr-oneseg/build/python
-"qa_viterbi_decoder" start time: May 01 07:37 -05
+"qa_viterbi_decoder" start time: May 05 22:58 -05
 Output:
 ----------------------------------------------------------
 .
 ----------------------------------------------------------------------
-Ran 1 test in 0.001s
+Ran 1 test in 0.002s
 
 OK
 <end of output>
-Test time =   0.57 sec
+Test time =   0.59 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_viterbi_decoder" end time: May 01 07:37 -05
+"qa_viterbi_decoder" end time: May 05 22:58 -05
 "qa_viterbi_decoder" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-9/11 Testing: qa_byte_deinterleaver
-9/11 Test: qa_byte_deinterleaver
+9/12 Testing: qa_byte_deinterleaver
+9/12 Test: qa_byte_deinterleaver
 Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_byte_deinterleaver_test.sh"
 Directory: /home/jordy/gr-oneseg/build/python
-"qa_byte_deinterleaver" start time: May 01 07:37 -05
+"qa_byte_deinterleaver" start time: May 05 22:58 -05
 Output:
 ----------------------------------------------------------
 .
@@ -170,38 +170,18 @@ Ran 1 test in 0.002s
 
 OK
 <end of output>
-Test time =   0.59 sec
+Test time =   0.60 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_byte_deinterleaver" end time: May 01 07:37 -05
+"qa_byte_deinterleaver" end time: May 05 22:58 -05
 "qa_byte_deinterleaver" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-10/11 Testing: qa_energy_descrambler
-10/11 Test: qa_energy_descrambler
+10/12 Testing: qa_energy_descrambler
+10/12 Test: qa_energy_descrambler
 Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_energy_descrambler_test.sh"
 Directory: /home/jordy/gr-oneseg/build/python
-"qa_energy_descrambler" start time: May 01 07:37 -05
-Output:
-----------------------------------------------------------
-.
-----------------------------------------------------------------------
-Ran 1 test in 0.001s
-
-OK
-<end of output>
-Test time =   0.59 sec
-----------------------------------------------------------
-Test Passed.
-"qa_energy_descrambler" end time: May 01 07:37 -05
-"qa_energy_descrambler" time elapsed: 00:00:00
-----------------------------------------------------------
-
-11/11 Testing: qa_reed_solomon_dec_isdbt
-11/11 Test: qa_reed_solomon_dec_isdbt
-Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_reed_solomon_dec_isdbt_test.sh"
-Directory: /home/jordy/gr-oneseg/build/python
-"qa_reed_solomon_dec_isdbt" start time: May 01 07:37 -05
+"qa_energy_descrambler" start time: May 05 22:58 -05
 Output:
 ----------------------------------------------------------
 .
@@ -210,11 +190,51 @@ Ran 1 test in 0.002s
 
 OK
 <end of output>
-Test time =   0.59 sec
+Test time =   0.60 sec
 ----------------------------------------------------------
 Test Passed.
-"qa_reed_solomon_dec_isdbt" end time: May 01 07:37 -05
+"qa_energy_descrambler" end time: May 05 22:58 -05
+"qa_energy_descrambler" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/12 Testing: qa_reed_solomon_dec_isdbt
+11/12 Test: qa_reed_solomon_dec_isdbt
+Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_reed_solomon_dec_isdbt_test.sh"
+Directory: /home/jordy/gr-oneseg/build/python
+"qa_reed_solomon_dec_isdbt" start time: May 05 22:58 -05
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+<end of output>
+Test time =   0.62 sec
+----------------------------------------------------------
+Test Passed.
+"qa_reed_solomon_dec_isdbt" end time: May 05 22:58 -05
 "qa_reed_solomon_dec_isdbt" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 01 07:37 -05
+12/12 Testing: qa_mer_one_seg
+12/12 Test: qa_mer_one_seg
+Command: "/bin/sh" "/home/jordy/gr-oneseg/build/python/qa_mer_one_seg_test.sh"
+Directory: /home/jordy/gr-oneseg/build/python
+"qa_mer_one_seg" start time: May 05 22:58 -05
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+<end of output>
+Test time =   0.58 sec
+----------------------------------------------------------
+Test Passed.
+"qa_mer_one_seg" end time: May 05 22:58 -05
+"qa_mer_one_seg" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 05 22:58 -05
