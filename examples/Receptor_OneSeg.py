@@ -4,7 +4,7 @@
 # GNU Radio Python Flow Graph
 # Title: Receptor ISDBTb ONESEG
 # Description: demodula la señal de IDSBT de un segmento
-# Generated: Mon May 14 19:05:03 2018
+# Generated: Mon May 14 20:14:32 2018
 ##################################################
 
 if __name__ == '__main__':
