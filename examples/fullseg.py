@@ -4,7 +4,7 @@
 # GNU Radio Python Flow Graph
 # Title: Receptor_FullSeg
 # Description: recieves isdbtb full seg signal
-# Generated: Wed May  2 15:40:59 2018
+# Generated: Mon May 14 19:04:49 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -40,7 +40,7 @@ import numpy as np
 import sip
 
 
-class Jordy_ggg_fullseg(gr.top_block, Qt.QWidget):
+class fullseg(gr.top_block, Qt.QWidget):
 
     def __init__(self):
         gr.top_block.__init__(self, "Receptor_FullSeg")
@@ -62,7 +62,7 @@ class Jordy_ggg_fullseg(gr.top_block, Qt.QWidget):
         self.top_grid_layout = Qt.QGridLayout()
         self.top_layout.addLayout(self.top_grid_layout)
 
-        self.settings = Qt.QSettings("GNU Radio", "Jordy_ggg_fullseg")
+        self.settings = Qt.QSettings("GNU Radio", "fullseg")
         self.restoreGeometry(self.settings.value("geometry").toByteArray())
 
         ##################################################
@@ -668,7 +668,7 @@ class Jordy_ggg_fullseg(gr.top_block, Qt.QWidget):
         self.connect((self.low_pass_filter_0_0, 0), (self.isdbt_ofdm_sym_acquisition_0, 0))    
 
     def closeEvent(self, event):
-        self.settings = Qt.QSettings("GNU Radio", "Jordy_ggg_fullseg")
+        self.settings = Qt.QSettings("GNU Radio", "fullseg")
         self.settings.setValue("geometry", self.saveGeometry())
         event.accept()
 
@@ -764,7 +764,7 @@ class Jordy_ggg_fullseg(gr.top_block, Qt.QWidget):
         self.A = A
 
 
-def main(top_block_cls=Jordy_ggg_fullseg, options=None):
+def main(top_block_cls=fullseg, options=None):
     if gr.enable_realtime_scheduling() != gr.RT_OK:
         print "Error: failed to enable real-time scheduling."
 
