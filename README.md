@@ -7,11 +7,11 @@ measures. A mathematical algorithm was implemented for the perfect synchronizati
 
 This proyect was implemented in a system formed by a personal computer, the USRP 2920 connected through of a USB adapter to GigaBit Ethernet.
 
-Software Specifications:
----GNU Radio 3.7.10.1
----gr-modtool
----UBUNTU 1604
----UHD_003.010.002
+Software Specifications:  
+---GNU Radio 3.7.10.1  
+---gr-modtool  
+---UBUNTU 1604  
+---UHD_003.010.002  
  
 
 **Installation instructions**
@@ -23,19 +23,19 @@ git clone https://github.com/Jordyggg/gr-oneseg.git
     mkdir build  
     cd build  
     cmake ../  
-    make && sudo make install
+    make && sudo make install  
     sudo ldconfig  
 
 FOR another Operative Systems and different location for the installation of GNU Radio  in needed the following instructions:
 
-git clone https://github.com/Jordyggg/gr-oneseg.git   
-    cd gr-oneseg   
+git clone https://github.com/Jordyggg/gr-oneseg.git  
+    cd gr-oneseg  
     mkdir build  
     cd build  
-    cmake -DCMAKE_INSTALL_PREFIX=<your_GNURadio_install_dir> ../
-    cmake ../  
-    make
-    make install 
+    cmake -DCMAKE_INSTALL_PREFIX=<your_GNURadio_install_dir> ../  
+    make   
+    sudo make install  
+    sudo ldconfig
 
 **Problems**
 
